@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+header{
+    background-color: hsl(207, 100%, 95%);
+    text-align: center;
+    padding: 25px;
+    font-family: 標楷體;
+    border: 2px solid black;
+}
+.navbar{
+    background-color: hsl(0, 0%, 17%);
+    height: 50px;
+}
+aside{
+    width:20%;
+    float: left;
+    padding: 10px;
+}
+section{
+    width:40%;
+    float: left;
+    padding: 10px;
+}
+article{
+    width:40%;
+    float: left;
+    padding: 10px;
+}
+footer{
+    display: block;
+    clear: both;
+    background-color: hsl(207, 100%, 95%);
+    text-align: center;
+    padding: 25px;
+}
+@media screen and (max-width:600px){
+    aside, section, article{
+        width:100%;
+    }
+    /*it's also known as responsive css*/
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: beige;
+    color: dimgray;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: azure;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px rgb(114, 114, 114);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: blanchedalmond;
+}
+.dropdown a:hover{
+    background-color: rgb(95, 35, 35);
+}
