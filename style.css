@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    font-family: 標楷體;
+    font-weight: lighter;
+}
+body{
+    margin: 0px;
+}
+header{
+    background-color: hsl(207, 100%, 95%);
+    text-align: center;
+    padding: 25px;
+    border: 2px solid black;
+}
+.navigation-bar h2{
+    float: left;
+    color:white;
+    background-color: dimgray;
+    padding: 10px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navigation-bar ul{
+    list-style-type: none;
+    background-color: dimgray;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navigation-bar li{
+    float:left
+}
+.navigation-bar li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: left;
+}
+.navigation-bar li a:hover{
+    background-color: rgb(40, 95, 95);
+}
+.dropdown{
+    display: block;
+    float: left;
+    text-align: center;
+}
+.dropdown .secondDrop{
+    display: none;
+    text-align: center;
+}
+.dropdown:hover .secondDrop{
+    display: block;
+    background-color: dimgray;
+}
+.dropdown .secondDrop .thirdDrop{
+    display: none;
+}
+.dropdown .secondDrop:hover .thirdDrop{
+    display: block;
+    float: inline-end;
+}
+
+aside{
+    width:20%;
+    float: left;
+    padding: 10px;
+}
+section{
+    width:40%;
+    float: left;
+    padding: 10px;
+}
+article{
+    width:40%;
+    float: left;
+    padding: 10px;
+}
+footer{
+    display: block;
+    clear: both;
+    background-color: hsl(207, 100%, 95%);
+    text-align: center;
+    padding: 25px;
+}
+@media screen and (max-width:600px){
+    aside, section, article{
+        width:100%;
+    }
+    /*it's also known as responsive css*/
+}
