@@ -49,6 +49,21 @@ header{
                 }
             }
         }
+        &:hover #BrownRoot{
+            display: block;
+            &:hover #BrownRootTypes{
+                display: block;
+            }
+        }
+        &:hover #Deterioration{
+            display: block;
+        }
+        &:hover #PreparedFund{
+            display: block;
+            &:hover #PFLetterOfAppropriationTypes{
+                display: block;
+            }
+        }
     }
 }
 #Funds{
@@ -102,6 +117,38 @@ header{
 }
 
 /*funds and purchases/funds/brown root*/
+#BrownRoot{
+    display: none;
+    background-color: #606060;
+}
+#BrownRootTypes{
+    display: none;
+    background-color: #757575;
+}
+
+/*funds and purchases/funds/Deterioration*/
+#Deterioration{
+    display: none;
+    background-color: #606060;
+}
+
+/*funds and purchases/funds/PreparedFund*/
+#PreparedFund{
+    display: none;
+    background-color: #606060; 
+}
+#PFLetterOfAppropriationTypes{
+    display: none;
+    background-color: #757575;
+}
+
+
+
+
+
+
+
+
 
 
 
