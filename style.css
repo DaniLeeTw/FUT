@@ -5,30 +5,89 @@
 }
 body{
     margin: 0px;
+    background-color: #262626;
+    color: #ffffff;
 }
 header{
-    background-color: hsl(207, 100%, 95%);
     text-align: center;
     padding: 25px;
     border: 2px solid black;
 }
-.navigation-bar h2{
+
+/*funds and purchases/funds/approve*/
+#FundsAndPurchases{
+    display: block;
+}
+#FundsAndPurchases:hover #Funds{
+    display: block;
+}
+#Funds{
+    display: none;
+    background-color: #4c4c4c;
+}
+#Funds:hover #Approve{
+    display: block;
+}
+#Approve{
+    display: none;
+    background-color: #606060;
+}
+#Approve:hover #PetitionToApprove{
+    display: block;
+}
+#Approve:hover #LetterOfApproval{
+    display: block;
+}
+#PetitionToApprove{
+    display: none;
+    background-color: #757575;
+}
+#PetitionToApprove:hover #PetitionToApproveTypes{
+    display: block;
+}
+#PetitionToApproveTypes{
+    display: none;
+    background-color: #8a8a8a;
+}
+#LetterOfApproval{
+    display: none;
+    background-color: #757575;
+}
+#LetterOfApproval:hover #LetterOfApprovalTypes{
+    display: block;
+}
+#LetterOfApprovalTypes{
+    display: none;
+    background-color: #8a8a8a;
+}
+
+/*funds and purchases/funds/appropriate
+
+/*Construction supervision and examination*/
+#ConstructionSupervisionAndExamination{
+    display: block;
+}
+#ConstructionSupervisionAndExamination:hover #SuperVision{
+    display: block;
+}
+#SuperVision{
+    display: none;
+}
+
+.navigation-bar p{
     float: left;
-    color:white;
-    background-color: dimgray;
-    padding: 10px;
+    color:#ffffff;
+    background-color: #383838;
+    padding: 15px;
     margin: 0px;
     overflow: hidden;
 }
 .navigation-bar ul{
     list-style-type: none;
-    background-color: dimgray;
+    background-color: #383838;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
-}
-.navigation-bar li{
-    float:left
 }
 .navigation-bar li a{
     color: white;
@@ -40,11 +99,13 @@ header{
 .navigation-bar li a:hover{
     background-color: rgb(40, 95, 95);
 }
+
 .dropdown{
     display: block;
     float: left;
     text-align: center;
 }
+/*
 .dropdown .secondDrop{
     display: none;
     text-align: center;
@@ -60,6 +121,14 @@ header{
     display: block;
     float: inline-end;
 }
+*/
+
+
+
+
+
+
+
 
 aside{
     width:20%;

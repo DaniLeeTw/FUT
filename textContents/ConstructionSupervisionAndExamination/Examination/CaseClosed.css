@@ -1,0 +1,10 @@
+body{
+    background-color: #262626;
+    color: #ffffff;
+}
+button{
+    background-color: white;
+}
+button a:visited{
+    color: #262626;
+}

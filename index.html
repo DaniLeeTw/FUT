@@ -12,24 +12,26 @@
         <h1>常用文字</h1>
     </header>
     <nav class="navigation-bar">
-        <h2>選擇公文類型：</h2>
+        <p>選擇公文類型：</p>
         <ul>
             <!--經費及採購相關-->
-            <li class="dropdown">
-                <a class="dropdownContentFundsAndPurchases" href="textContents/FundsAndPurchases/FundsAndPurchases.html">經費及採購相關</a>
-                <div class="secondDrop">
+            <li id="FundsAndPurchases">
+                <a href="textContents/FundsAndPurchases/FundsAndPurchases.html">經費及採購相關</a>
+                <div id="Funds">
                     <a href="textContents/FundsAndPurchases/Funds/Funds.html">經費</a>
-                    <div class="thirdDrop">
+                    <div id="Approve">
                         <a href="textContents/FundsAndPurchases/Funds/Approve/Approve.html">核定</a>
-                        <div class="forthDrop">
+                        <div id="PetitionToApprove">
                             <a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApprove.html">核定簽</a>
-                            <div class="fifthDrop">
+                            <div id="PetitionToApproveTypes">
                                 <a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApproveType1.html">態樣一（純工程）</a>
                                 <a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApproveType2.html">態樣二（含設備）</a>
                                 <a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApproveType3.html">態樣三（純設備）</a>
                             </div>
+                        </div>
+                        <div id="LetterOfApproval">
                             <a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApproval.html">核定函</a>
-                            <div class="fifthDrop">
+                            <div id="LetterOfApprovalTypes">
                                 <a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApprovalType1.html">態樣一（純工程）</a>
                                 <a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApprovalType2.html">態樣二（含設備）</a>
                                 <a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApprovalType3.html">態樣三（純設備）</a>
@@ -71,9 +73,9 @@
                 </div>
             </li>
             <!--工程督導及施工查核-->
-            <li class="dropdown">
+            <li id="ConstructionSupervisionAndExamination">
                 <a href="textContents/ConstructionSupervisionAndExamination/ConstructionSupervisionAndExamination.html">工程督導及施工查核</a>
-                <div class="secondDrop">
+                <div id="SuperVision">
                     <a href="textContents/ConstructionSupervisionAndExamination/SuperVision/Supervision.html">工程督導</a>
                     <div class="thirdDrop">
                         <a href="textContents/ConstructionSupervisionAndExamination/SuperVision/LetterOfSupervisionRecords.html">督導紀錄函</a>
@@ -103,6 +105,7 @@
                     <a href="textContents/Meetings/Records/LetterOfRecords.html">紀錄</a>
                 </div>
             </li>
+            <!--首頁-->
             <li class="dropdown">
                 <a href="index.html">首頁</a>
             </li>
@@ -130,6 +133,6 @@
         <a href="/nuclear-waste-depository/nuclear-waste-depository.html">back to the nuclear test site</a>
     </footer>
 -->
-    <script src="常用文字.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
