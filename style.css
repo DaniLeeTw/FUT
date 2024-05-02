@@ -17,33 +17,54 @@ header{
 /*funds and purchases/funds/approve*/
 #FundsAndPurchases{
     display: block;
-}
-#FundsAndPurchases:hover #Funds{
-    display: block;
+    &:hover #Funds{
+        display: block;
+        &:hover #Approve{
+            display: block;
+            &:hover #PetitionToApprove{
+                display: block;
+                &:hover #PetitionToApproveTypes{
+                    display: block;
+                }
+            }
+            &:hover #LetterOfApproval{
+                display: block;
+                &:hover #LetterOfApprovalTypes{
+                    display: block;
+                }
+            }
+        }
+        &:hover #Appropriate{
+            display: block;
+            &:hover #PetitionToAppropriate{
+                display: block;
+                &:hover #PetitionToAppropriateTypes{
+                    display: block;
+                }
+            }
+            &:hover #LetterOfAppropriation{
+                display: block;
+                &:hover #LetterOfAppropriationTypes{
+                    display: block;
+                }
+            }
+        }
+    }
 }
 #Funds{
     display: none;
     background-color: #4c4c4c;
 }
-#Funds:hover #Approve{
-    display: block;
-}
 #Approve{
     display: none;
     background-color: #606060;
-}
-#Approve:hover #PetitionToApprove{
-    display: block;
-}
-#Approve:hover #LetterOfApproval{
-    display: block;
+    /*position: absolute;*/
+    left: 100%;
+    top: 0;
 }
 #PetitionToApprove{
     display: none;
     background-color: #757575;
-}
-#PetitionToApprove:hover #PetitionToApproveTypes{
-    display: block;
 }
 #PetitionToApproveTypes{
     display: none;
@@ -53,15 +74,36 @@ header{
     display: none;
     background-color: #757575;
 }
-#LetterOfApproval:hover #LetterOfApprovalTypes{
-    display: block;
-}
 #LetterOfApprovalTypes{
     display: none;
     background-color: #8a8a8a;
 }
 
-/*funds and purchases/funds/appropriate
+/*funds and purchases/funds/appropriate*/
+#Appropriate{
+    display: none;
+    background-color: #606060;
+}
+#PetitionToAppropriate{
+    display: none;
+    background-color: #757575;
+}
+#LetterOfAppropriation{
+    display: none;
+    background-color: #757575;
+}
+#PetitionToAppropriateTypes{
+    display: none;
+    background-color: #8a8a8a;
+}
+#LetterOfAppropriationTypes{
+    display: none;
+    background-color: #8a8a8a;
+}
+
+/*funds and purchases/funds/brown root*/
+
+
 
 /*Construction supervision and examination*/
 #ConstructionSupervisionAndExamination{
@@ -89,15 +131,18 @@ header{
     margin: 0px;
     overflow: hidden;
 }
+.navigation-bar li{
+    float: left;
+}
 .navigation-bar li a{
     color: white;
     text-decoration: none;
     padding: 15px;
     display: block;
-    text-align: left;
+    text-align: center;
 }
 .navigation-bar li a:hover{
-    background-color: rgb(40, 95, 95);
+    background-color: #a1a1a1;
 }
 
 .dropdown{
