@@ -14,7 +14,7 @@ header{
     border: 2px solid black;
 }
 
-/*funds and purchases/funds/approve*/
+
 #FundsAndPurchases{
     display: block;
     &:hover #Funds{
@@ -64,12 +64,20 @@ header{
                 display: block;
             }
         }
+        &:hover #RefusalToLend{
+            display: block;
+        }
+    }
+    &:hover #Purchases{
+        display: block;
     }
 }
 #Funds{
     display: none;
     background-color: #4c4c4c;
 }
+/*funds and purchases/funds/approve*/
+
 #Approve{
     display: none;
     background-color: #606060;
@@ -142,6 +150,21 @@ header{
     background-color: #757575;
 }
 
+/*funds and purchases/funds/RefusalToLend*/
+#RefusalToLend{
+    display: none;
+    background-color: #606060; 
+}
+
+/*funds and purchases/Purchases*/
+#Purchases{
+    display: none;
+    background-color: #4c4c4c; 
+}
+#MostProfitableBid{
+    display: none;
+    background-color: #606060;
+}
 
 
 
