@@ -75,27 +75,42 @@ header{
 #Funds{
     display: none;
     background-color: #4c4c4c;
+    position: relative;
+    width: 200px;
 }
-/*funds and purchases/funds/approve*/
 
+/*funds and purchases/funds/approve*/
 #Approve{
     display: none;
     background-color: #606060;
-    /*position: absolute;*/
+    position: absolute;
     left: 100%;
     top: 0;
+    width: 200px;
 }
 #PetitionToApprove{
     display: none;
     background-color: #757575;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 200px;
 }
 #PetitionToApproveTypes{
     display: none;
     background-color: #8a8a8a;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 200px;
 }
 #LetterOfApproval{
     display: none;
     background-color: #757575;
+    position: relative;
+    width: 200px;
+    top: 100%;
+    left: 0;
 }
 #LetterOfApprovalTypes{
     display: none;
@@ -106,6 +121,10 @@ header{
 #Appropriate{
     display: none;
     background-color: #606060;
+    position: relative;
+    left: 100%;
+    top: 0;
+    width: 200px;
 }
 #PetitionToAppropriate{
     display: none;
