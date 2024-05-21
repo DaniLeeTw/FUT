@@ -1,0 +1,77 @@
+/* Basic menu styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav.menu {
+    margin: 20px;
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu-item > a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item > a:hover {
+    background-color: #555;
+}
+
+/* Submenu styles */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+}
+
+.submenu .menu-item {
+    display: block;
+}
+
+.submenu a {
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.submenu a:hover {
+    background-color: #555;
+}
+
+/* Show submenu on hover */
+.menu-item:hover > .submenu {
+    display: block;
+}
+
+/* Style for nested submenus */
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+.submenu .submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+.submenu .submenu .submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+.submenu .submenu .submenu .submenu .submenu {
+    top: 0;
+    left: 100%;
+}
