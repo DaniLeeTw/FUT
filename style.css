@@ -9,12 +9,18 @@ body{
     color: #ffffff;
 }
 header{
-    text-align: center;
+    text-align: left;
     padding: 25px;
     border: 2px solid black;
+    display: inline-block;
+}
+nav{
+    top: 0;
+    display: inline-block;
 }
 ul{
     min-height: auto;
+    top: 0;
 }
 #FundsAndPurchases{
     display: block;
