@@ -14,7 +14,7 @@ header{
     border: 2px solid black;
 }
 
-
+/*
 #FundsAndPurchases{
     display: block;
     &:hover #Funds{
@@ -77,11 +77,12 @@ header{
     background-color: #4c4c4c;
 }
 /*funds and purchases/funds/approve*/
-
+/*
 #Approve{
     display: none;
     background-color: #606060;
     /*position: absolute;*/
+  /*  
     left: 100%;
     top: 0;
 }
@@ -103,6 +104,7 @@ header{
 }
 
 /*funds and purchases/funds/appropriate*/
+/*
 #Appropriate{
     display: none;
     background-color: #606060;
@@ -125,6 +127,7 @@ header{
 }
 
 /*funds and purchases/funds/brown root*/
+/*
 #BrownRoot{
     display: none;
     background-color: #606060;
@@ -135,12 +138,14 @@ header{
 }
 
 /*funds and purchases/funds/Deterioration*/
+/*
 #Deterioration{
     display: none;
     background-color: #606060;
 }
 
 /*funds and purchases/funds/PreparedFund*/
+/*
 #PreparedFund{
     display: none;
     background-color: #606060; 
@@ -151,12 +156,14 @@ header{
 }
 
 /*funds and purchases/funds/RefusalToLend*/
+/*
 #RefusalToLend{
     display: none;
     background-color: #606060; 
 }
 
 /*funds and purchases/Purchases*/
+/*
 #Purchases{
     display: none;
     background-color: #4c4c4c; 
@@ -176,6 +183,7 @@ header{
 
 
 /*Construction supervision and examination*/
+/*
 #ConstructionSupervisionAndExamination{
     display: block;
 }
@@ -244,7 +252,7 @@ header{
 
 
 
-
+/*
 aside{
     width:20%;
     float: left;
@@ -271,5 +279,5 @@ footer{
     aside, section, article{
         width:100%;
     }
-    /*it's also known as responsive css*/
+    /*it's also known as responsive css
 }
