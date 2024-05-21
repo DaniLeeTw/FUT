@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>常用文字</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="icon" type="image/jpg" href="favicon_io/android-chrome-512x512.png">
 </head>
 <body>
     <header>
         <h1>常用文字</h1>
     </header>
-    <nav class="navigation-bar">
-        <p>選擇公文類型：</p>
-        <ul>
+    <div class="navigation-bar">
+        <p id="chooseType">選擇公文類型：</p>
             <!--經費及採購相關-->
-            <li class="dropOne" id="FundsAndPurchases">
+            <div class="dropOne" id="FundsAndPurchases">
                 <a href="textContents/FundsAndPurchases/FundsAndPurchases.html">經費及採購相關</a>
                 <div class="dropTwo" id="Funds">
                     <a href="textContents/FundsAndPurchases/Funds/Funds.html">經費</a>
@@ -85,9 +84,9 @@
                         <a href="textContents/FundsAndPurchases/Purchases/RejectionOfMostProfitableBid.html">否決最有利標</a>
                     </div>
                 </div>
-            </li>
+            </div>
             <!--工程督導及施工查核-->
-            <li class="dropOne" id="ConstructionSupervisionAndExamination">
+            <div class="dropOne" id="ConstructionSupervisionAndExamination">
                 <a href="textContents/ConstructionSupervisionAndExamination/ConstructionSupervisionAndExamination.html">工程督導及施工查核</a>
                 <div class="dropTwo" id="SuperVision">
                     <a href="textContents/ConstructionSupervisionAndExamination/SuperVision/Supervision.html">工程督導</a>
@@ -110,21 +109,20 @@
                         <a href="textContents/ConstructionSupervisionAndExamination/Examination/CaseClosed.html">結案存查</a>
                     </div>
                 </div>
-            </li>
+            </div>
             <!--會議相關-->
-            <li class="dropOne" id="meetingRelated">
+            <div class="dropOne" id="meetingRelated">
                 <a href="textContents/Meetings/Meetings.html">會議相關</a>
-                <div class="secondDrop">
+                <div class="dropTwo">
                     <a href="textContents/Meetings/Notices/Notice.html">通知單</a>
                     <a href="textContents/Meetings/Records/LetterOfRecords.html">紀錄</a>
                 </div>
-            </li>
+            </div>
             <!--首頁-->
-            <li class="dropdown">
+            <div class="dropOne">
                 <a href="https://danileetw.github.io/FUT/">首頁</a>
-            </li>
-        </ul>
-    </nav>
+            </div>
+    </div>
 <!--
     <main>
         <section>
