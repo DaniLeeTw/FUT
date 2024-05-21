@@ -13,10 +13,12 @@ header{
     padding: 25px;
     border: 2px solid black;
 }
-
-
+ul{
+    min-height: auto;
+}
 #FundsAndPurchases{
     display: block;
+    width: 150px;
     &:hover #Funds{
         display: block;
         &:hover #Approve{
@@ -76,7 +78,8 @@ header{
     display: none;
     background-color: #4c4c4c;
     position: relative;
-    width: 200px;
+    width: 150px;
+    height: 50px;
 }
 
 /*funds and purchases/funds/approve*/
@@ -86,7 +89,8 @@ header{
     position: absolute;
     left: 100%;
     top: 0;
-    width: 200px;
+    width: 150px;
+    height: 50px;
 }
 #PetitionToApprove{
     display: none;
@@ -94,7 +98,8 @@ header{
     position: absolute;
     left: 100%;
     top: 0;
-    width: 200px;
+    height: 50px;
+    width: 150px;
 }
 #PetitionToApproveTypes{
     display: none;
@@ -103,14 +108,16 @@ header{
     left: 100%;
     top: 0;
     width: 200px;
+    height: 50px;
 }
 #LetterOfApproval{
     display: none;
     background-color: #757575;
-    position: relative;
-    width: 200px;
-    top: 100%;
-    left: 0;
+    position: absolute;
+    left: 100%;
+    top: 50px;
+    width: 150px;
+    height: 50px;
 }
 #LetterOfApprovalTypes{
     display: none;
@@ -124,65 +131,126 @@ header{
     position: relative;
     left: 100%;
     top: 0;
-    width: 200px;
+    width: 150px;
+    height: 50px;
 }
 #PetitionToAppropriate{
     display: none;
     background-color: #757575;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 #LetterOfAppropriation{
     display: none;
     background-color: #757575;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 #PetitionToAppropriateTypes{
     display: none;
     background-color: #8a8a8a;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 #LetterOfAppropriationTypes{
     display: none;
     background-color: #8a8a8a;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 
 /*funds and purchases/funds/brown root*/
 #BrownRoot{
     display: none;
     background-color: #606060;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 #BrownRootTypes{
     display: none;
     background-color: #757575;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 
 /*funds and purchases/funds/Deterioration*/
 #Deterioration{
     display: none;
     background-color: #606060;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 
 /*funds and purchases/funds/PreparedFund*/
 #PreparedFund{
     display: none;
     background-color: #606060; 
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 #PFLetterOfAppropriationTypes{
     display: none;
     background-color: #757575;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 
 /*funds and purchases/funds/RefusalToLend*/
 #RefusalToLend{
     display: none;
     background-color: #606060; 
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 
 /*funds and purchases/Purchases*/
 #Purchases{
     display: none;
     background-color: #4c4c4c; 
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 #MostProfitableBid{
     display: none;
     background-color: #606060;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 150px;
+    height: 50px;
 }
 
 
@@ -192,6 +260,18 @@ header{
 
 
 
+
+
+/*Construction supervision and examination*/
+#ConstructionSupervisionAndExamination{
+    display: block;
+}
+#ConstructionSupervisionAndExamination:hover #SuperVision{
+    display: block;
+}
+#SuperVision{
+    display: none;
+}
 
 
 /*Construction supervision and examination*/
