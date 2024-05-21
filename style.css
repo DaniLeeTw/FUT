@@ -6,14 +6,19 @@
 body{
     margin: 0px;
     background-color: #262626;
-    color: #ffffff;
+    color: ghostwhite;
 }
 header{
     text-align: center;
     padding: 25px;
     border: 2px solid black;
 }
-
+a{
+    color: ghostwhite;
+}
+a:visited{
+    color: ghostwhite;
+}
 /*
 #FundsAndPurchases{
     display: block;
