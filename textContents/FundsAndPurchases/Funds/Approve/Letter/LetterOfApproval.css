@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Iansui;
+    src: url('Iansui.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Basic menu styles */
+body {
+    font-family: Iansui;
+    background-color: #353839;
+}
+
+h1{
+    color: aliceblue;
+}
+
+.options{
+    display: inline-block;
+    background-color: #696969;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.options:hover{
+    background-color: #2d2f30;
+}
+
+.options a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.options a:visited{
+    color: aliceblue;
+}
