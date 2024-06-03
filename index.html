@@ -4,149 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>常用文字</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpg" href="favicon_io/android-chrome-512x512.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>常用文字</h1>
+        <h1>選擇公文類型：</h1>
     </header>
-    <nav class="navigation-bar">
-        <p>選擇公文類型：</p>
-        <ul>
-            <!--經費及採購相關-->
-            <li class="dropOne" id="FundsAndPurchases">
-                <a href="textContents/FundsAndPurchases/FundsAndPurchases.html">經費及採購相關</a>
-                <div class="dropTwo" id="Funds">
-                    <a href="textContents/FundsAndPurchases/Funds/Funds.html">經費</a>
-                    <div class="dropThree" id="Approve">
-                        <a href="textContents/FundsAndPurchases/Funds/Approve/Approve.html">核定</a>
-                        <div class="dropFour" id="PetitionToApprove">
-                            <a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApprove.html">核定簽</a>
-                            <div class="dropFive" id="PetitionToApproveTypes">
-                                <a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApproveType1.html">態樣一（純工程）</a>
-                                <a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApproveType2.html">態樣二（含設備）</a>
-                                <a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApproveType3.html">態樣三（純設備）</a>
+    <nav class="menu">
+        <div class="menu-item"><a href="textContents/FundsAndPurchases/FundsAndPurchases.html">經費及採購相關</a>
+            <div class="submenu">
+                <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Funds.html">經費</a>
+                    <div class="submenu">
+                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Approve/Approve.html">核定</a>
+                            <div class="submenu">
+                                <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApprove.html">核定簽</a>
+                                    <div class="submenu">
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApproveType1.html">態樣一（純工程）</a></div>
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApproveType2.html">態樣二（含設備）</a></div>
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Approve/Petition/PetitionToApproveType3.html">態樣三（純設備）</a></div>
+                                    </div>
+                                </div>
+                                <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApproval.html">核定函</a>
+                                    <div class="submenu">
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApprovalType1.html">態樣一（純工程）</a></div>
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApprovalType2.html">態樣二（含設備）</a></div>
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApprovalType3.html">態樣三（純設備）</a></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="dropFour" id="LetterOfApproval">
-                            <a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApproval.html">核定函</a>
-                            <div class="dropFive" id="LetterOfApprovalTypes">
-                                <a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApprovalType1.html">態樣一（純工程）</a>
-                                <a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApprovalType2.html">態樣二（含設備）</a>
-                                <a href="textContents/FundsAndPurchases/Funds/Approve/Letter/LetterOfApprovalType3.html">態樣三（純設備）</a>
+                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Appropriate/Appropiation.html">核撥</a>
+                            <div class="submenu">
+                                <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Appropriate/Petition/PetitionToAppropriate.html">核撥簽</a>
+                                    <div class="submenu">
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Appropriate/Petition/PetitionToAppropriateType1.html">態樣一（純工程）</a></div>
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Appropriate/Petition/PetitionToAppropriateType2.html">態樣二（含設備）</a></div>
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Appropriate/Petition/PetitionToAppropriateType3.html">態樣三（純設備）</a></div>
+                                    </div>
+                                </div>
+                                <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Appropriate/Letter/LetterOfAppropriation.html">核撥函</a>
+                                    <div class="submenu">
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Appropriate/Letter/LetterOfAppropriationType1.html">態樣一（純工程）</a></div>
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Appropriate/Letter/LetterOfAppropriationType2.html">態樣二（含設備）</a></div>
+                                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Appropriate/Letter/LetterOfAppropriationType3.html">態樣三（純設備）</a></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>   
-                    <div class="dropThree" id="Appropriate">
-                        <a href="textContents/FundsAndPurchases/Funds/Appropriate/Appropiation.html">核撥</a>
-                        <div class="dropFour" id="PetitionToAppropriate">
-                            <a href="textContents/FundsAndPurchases/Funds/Appropriate/Petition/PetitionToAppropriate.html">核撥簽</a>
-                            <div class="dropFive" id="PetitionToAppropriateTypes">
-                                <a href="textContents/FundsAndPurchases/Funds/Appropriate/Petition/PetitionToAppropriateType1.html">態樣一（純工程）</a>
-                                <a href="textContents/FundsAndPurchases/Funds/Appropriate/Petition/PetitionToAppropriateType2.html">態樣二（含設備）</a>
-                                <a href="textContents/FundsAndPurchases/Funds/Appropriate/Petition/PetitionToAppropriateType3.html">態樣三（純設備）</a>
+                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/BrownRoot/BrownRoot.html">褐根病</a>
+                            <div class="submenu">
+                                <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/BrownRoot/PetitionToAppropriate.html">核撥簽</a></div>
+                                <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/BrownRoot/LetterOfAppropriation.html">核撥函</a></div>
                             </div>
                         </div>
-                        <div class="dropFour" id="LetterOfAppropriation">   
-                            <a href="textContents/FundsAndPurchases/Funds/Appropriate/Letter/LetterOfAppropriation.html">核撥函</a>
-                            <div class="dropFive" id="LetterOfAppropriationTypes">
-                                <a href="textContents/FundsAndPurchases/Funds/Appropriate/Letter/LetterOfAppropriationType1.html">態樣一（純工程）</a>
-                                <a href="textContents/FundsAndPurchases/Funds/Appropriate/Letter/LetterOfAppropriationType2.html">態樣二（含設備）</a>
-                                <a href="textContents/FundsAndPurchases/Funds/Appropriate/Letter/LetterOfAppropriationType3.html">態樣三（純設備）</a>
+                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/Deterioration/LetterOfApproval.html">材料劣化核定</a></div>
+                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/PreparedFund/PreparedFund.html">申請動支準備金</a>
+                            <div class="submenu">
+                                <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/PreparedFund/LetterOfApprovalType1.html">態樣一（純工程）</a></div>
+                                <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/PreparedFund/LetterOfApprovalType2.html">態樣二（含設備）</a></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dropThree" id="BrownRoot">
-                        <a href="textContents/FundsAndPurchases/Funds/BrownRoot/BrownRoot.html">褐根病</a>
-                        <div class="dropFour" id="BrownRootTypes">
-                            <a href="textContents/FundsAndPurchases/Funds/BrownRoot/PetitionToAppropriate.html">褐根病核撥簽</a>
-                            <a href="textContents/FundsAndPurchases/Funds/BrownRoot/LetterOfAppropriation.html">褐根病核撥函</a>
-                        </div>
-                    </div>
-                    <div class="dropThree" id="Deterioration">
-                        <a href="textContents/FundsAndPurchases/Funds/Deterioration/LetterOfApproval.html">材料劣化核定</a>
-                    </div>
-                    <div class="dropThree" id="PreparedFund">    
-                        <a href="textContents/FundsAndPurchases/Funds/PreparedFund/PreparedFund.html">申請動支準備金</a>
-                        <div class="dropFour" id="PFLetterOfAppropriationTypes">
-                            <a href="textContents/FundsAndPurchases/Funds/PreparedFund/LetterOfApprovalType1.html">態樣一（純工程）</a>
-                            <a href="textContents/FundsAndPurchases/Funds/PreparedFund/LetterOfApprovalType2.html">態樣二（含設備）</a>
-                        </div>
-                    </div>
-                    <div class="dropThree" id="RefusalToLend">
-                        <a href="textContents/FundsAndPurchases/Funds/RefusalToLend/RefusalToLend.html">不借他科室經費回應</a>
+                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Funds/RefusalToLend/RefusalToLend.html">不借他科室經費回應</a></div>
                     </div>
                 </div>
-                <div class="dropTwo" id="Purchases">   
-                    <a href="textContents/FundsAndPurchases/Purchases/Purchases.html">採購策略</a>
-                    <div class="dropThree" id="MostProfitableBid">
-                        <a href="textContents/FundsAndPurchases/Purchases/ApprovalOfMostProfitableBid.html">准用最有利標</a>
-                        <a href="textContents/FundsAndPurchases/Purchases/RejectionOfMostProfitableBid.html">否決最有利標</a>
+                <div class="menu-item"><a href="textContents/FundsAndPurchases/Purchases/Purchases.html">採購策略</a>
+                    <div class="submenu">
+                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Purchases/ApprovalOfMostProfitableBid.html">准用最有利標</a></div>
+                        <div class="menu-item"><a href="textContents/FundsAndPurchases/Purchases/RejectionOfMostProfitableBid.html">否決最有利標</a></div>
                     </div>
                 </div>
-            </li>
-            <!--工程督導及施工查核-->
-            <li class="dropOne" id="ConstructionSupervisionAndExamination">
-                <a href="textContents/ConstructionSupervisionAndExamination/ConstructionSupervisionAndExamination.html">工程督導及施工查核</a>
-                <div class="dropTwo" id="SuperVision">
-                    <a href="textContents/ConstructionSupervisionAndExamination/SuperVision/Supervision.html">工程督導</a>
-                    <div class="dropThree" id="SupervisionTypes">
-                        <a href="textContents/ConstructionSupervisionAndExamination/SuperVision/LetterOfSupervisionRecords.html">督導紀錄函</a>
-                        <a href="textContents/ConstructionSupervisionAndExamination/SuperVision/ImprovementNotGoodEnough.html">督導改善退件</a>
-                        <a href="textContents/ConstructionSupervisionAndExamination/SuperVision/ImprovementGoodByeBye.html">督導解列</a>
-                    </div>
-                    <a href="textContents/ConstructionSupervisionAndExamination/NotYetFinished/NotYetFinished.html">開學未完工</a>
-                    <div class="dropThree" id="NotYetFinished">
-                        <a href="textContents/ConstructionSupervisionAndExamination/NotYetFinished/LetterOfSupervisionRecords.html">督導紀錄函</a>
-                        <a href="textContents/ConstructionSupervisionAndExamination/NotYetFinished/ImprovementNotGoodEnough.html">督導改善退件</a>
-                        <a href="textContents/ConstructionSupervisionAndExamination/NotYetFinished/ImprovementGoodByeBye.html">督導解列</a>
-                    </div>
-                    <a href="textContents/ConstructionSupervisionAndExamination/Examination/Examination.html">市府施工查核</a>
-                    <div class="thirdDrop">
-                        <a href="textContents/ConstructionSupervisionAndExamination/Examination/LetterOfExaminationRecords.html">查核紀錄函轉學校</a>
-                        <a href="textContents/ConstructionSupervisionAndExamination/Examination/TransferToTheGovernment.html">學校報局轉送市府</a>
-                        <a href="textContents/ConstructionSupervisionAndExamination/Examination/ReturnBackToSchool.html">退件函轉學校</a>
-                        <a href="textContents/ConstructionSupervisionAndExamination/Examination/CaseClosed.html">結案存查</a>
+            </div>
+        </div>
+        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/ConstructionSupervisionAndExamination.html">工程督導及施工查核</a>
+            <div class="submenu">
+                <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/SuperVision/Supervision.html">工程督導</a>
+                    <div class="submenu">
+                        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/SuperVision/LetterOfSupervisionRecords.html">督導紀錄函</a></div>
+                        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/SuperVision/ImprovementNotGoodEnough.html">督導改善退件</a></div>
+                        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/SuperVision/ImprovementGoodByeBye.html">督導解列</a></div>
                     </div>
                 </div>
-            </li>
-            <!--會議相關-->
-            <li class="dropdown">
-                <a href="textContents/Meetings/Meetings.html">會議相關</a>
-                <div class="secondDrop">
-                    <a href="textContents/Meetings/Notices/Notice.html">通知單</a>
-                    <a href="textContents/Meetings/Records/LetterOfRecords.html">紀錄</a>
+                <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/NotYetFinished/NotYetFinished.html">開學未完工</a>
+                    <div class="submenu">
+                        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/NotYetFinished/LetterOfSupervisionRecords.html">督導紀錄函</a></div>
+                        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/NotYetFinished/ImprovementNotGoodEnough.html">督導改善退件</a></div>
+                        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/NotYetFinished/ImprovementGoodByeBye.html">督導解列</a></div>
+                    </div>
                 </div>
-            </li>
-            <!--首頁-->
-            <li class="dropdown">
-                <a href="https://danileetw.github.io/FUT/">首頁</a>
-            </li>
-        </ul>
+                <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/Examination/Examination.html">市府施工查核</a>
+                    <div class="submenu">
+                        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/Examination/LetterOfExaminationRecords.html">查核紀錄函轉學校</a></div>
+                        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/Examination/TransferToTheGovernment.html">學校報局轉送市府</a></div>
+                        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/Examination/ReturnBackToSchool.html">退件函轉學校</a></div>
+                        <div class="menu-item"><a href="textContents/ConstructionSupervisionAndExamination/Examination/CaseClosed.html">結案存查</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item"><a href="textContents/Meetings/Meetings.html">會議相關</a>
+            <div class="submenu">
+                <div class="menu-item"><a href="textContents/Meetings/Notices/Notice.html">通知單</a></div>
+                <div class="menu-item"><a href="textContents/Meetings/Records/LetterOfRecords.html">紀錄</a></div>
+            </div>
+        </div>
+        <div class="menu-item"><a href="index.html">首頁</a></div>
+
     </nav>
-<!--
-    <main>
-        <section>
-            <h2>this is a section</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod non nisi molestias facere quo tenetur, quis voluptatum aliquam excepturi doloremque explicabo doloribus illum quas velit quam facilis ullam eaque nesciunt!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis excepturi commodi labore aliquam mollitia dicta repudiandae, sequi quisquam, qui, eius obcaecati expedita eaque recusandae praesentium! Porro accusantium distinctio eius quasi.</p>
-        </section>
-        <article>
-            <h2>this is an article</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus voluptatibus enim optio velit. Recusandae velit pariatur modi, voluptates, laudantium eligendi veritatis rem perferendis optio similique est voluptas cupiditate odit soluta.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, saepe molestias libero alias quae voluptate minus sequi nisi voluptatem culpa eum, id repellendus dolorum earum doloribus necessitatibus excepturi repudiandae quisquam!</p>
-        </article>
-        <div></div>
-    </main>
-    <footer>
-        <h2>footer</h2>
-        <br>
-        <a href="/index/index.html">back to the real index</a>
-        <br>
-        <a href="/nuclear-waste-depository/nuclear-waste-depository.html">back to the nuclear test site</a>
-    </footer>
--->
-    <script src="index.js"></script>
 </body>
 </html>
