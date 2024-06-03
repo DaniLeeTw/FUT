@@ -1,6 +1,18 @@
+@font-face {
+    font-family: Iansui;
+    src: url('fonts/Iansui.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Basic menu styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Iansui;
+    background-color: #353839;
+}
+
+h1{
+    color: aliceblue;
 }
 
 nav.menu {
@@ -16,13 +28,13 @@ nav.menu {
 .menu-item > a {
     display: block;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #47494a;
+    color: aliceblue;
     text-decoration: none;
 }
 
 .menu-item > a:hover {
-    background-color: #555;
+    background-color: #2d2f30;
 }
 
 /* Submenu styles */
@@ -31,7 +43,7 @@ nav.menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: #595b5c;
 }
 
 .submenu .menu-item {
@@ -41,13 +53,13 @@ nav.menu {
 .submenu a {
     padding: 10px 20px;
     display: block;
-    color: #fff;
+    color: aliceblue;
     text-decoration: none;
     white-space: nowrap;
 }
 
 .submenu a:hover {
-    background-color: #555;
+    background-color: #2d2f30;
 }
 
 /* Show submenu on hover */
