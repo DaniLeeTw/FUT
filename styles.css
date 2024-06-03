@@ -44,6 +44,7 @@ nav.menu {
     top: 100%;
     left: 0;
     background-color: #595b5c;
+    z-index: 1;
 }
 
 .submenu .menu-item {
