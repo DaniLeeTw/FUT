@@ -31,6 +31,7 @@ nav.menu {
     background-color: #47494a;
     color: aliceblue;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 .menu-item > a:hover {
@@ -43,8 +44,10 @@ nav.menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #595b5c;
+    background-color: #47494a;
     z-index: 1;
+    border-radius: 10px;
+    width: fit-content;
 }
 
 .submenu .menu-item {
