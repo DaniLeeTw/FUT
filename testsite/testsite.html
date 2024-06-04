@@ -8,23 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>公文生成器</h1>
-        <p>選擇公文類型</p>
-        <div class="dropdown">
-            <button onclick="toggleDropdown()">Dropdown</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#">Item 1</a>
-                <a href="#">Item 2</a>
-                <a href="#">Item 3</a>
-                <a href="#">Item 4</a>
-                <a href="#">Item 5</a>
-                <a href="#">Item 6</a>
-                <a href="#">Item 7</a>
-                <a href="#">Item 8</a>
-                <a href="#">Item 9</a>
-                <a href="#">Item 10</a>
-            </div>
-        </div>    
+        <h1>(測試)公文生成器</h1>
+        <h2>*僅支援簽稿*</h2>    
         <p id="inputSchoolName">輸入校名<br>
             <input type="text" id="blank1" class="blank">
         </p>
@@ -34,15 +19,33 @@
         <p id="inputAmount">輸入金額<br>
             <input type="text" id="blank1" class="blank">
         </p>
+        <p>選擇公文類型</p>
+        <input type="radio" id="Petiton" name="officialDocument" onclick="showOption()">
+        <label for="Petiton">簽</label>
+        <input type="radio" id="Letter" name="officialDocument" onclick="showOption()">
+        <label for="Letter">稿</label>
+        <input type="radio" id="bothPAndL" name="officialDocument" onclick="showOption()">
+        <label for="bothPAndL">簽稿</label><br>
+        
+        <button onclick="dosomething()">click me</button>
+        <p id="greeting"></p>
+   
+        <script>
+            function dosomething(){
+                document.getElementById("greeting").innerHTML = "goodbye";
+            }
+        </script>
+        
         <!--
         <p id="sentence">
             The <input type="text" id="blank1" class="blank"> jumps over the <input type="text" id="blank2" class="blank">.
         </p>
+        -->
         <button id="submit" onclick="checkAnswers()">Submit</button>
         <p id="result"></p>
-        -->
+
     </div>
-    <div class="options"><a href="../index.html">首頁</a></div>
-    <script src="script.js"></script>
+    <div class="button"><a href="../index.html">首頁</a></div>
+    <script src="testsite.js"></script>
 </body>
 </html>

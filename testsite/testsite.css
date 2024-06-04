@@ -88,23 +88,23 @@ h1 {
     display: block;
 }
 
-/*homepage button*/
-.options{
+/*buttons*/
+.button{
     display: inline-block;
     background-color: #696969;
     padding: 10px;
     border-radius: 10px;
 }
 
-.options:hover{
+.button:hover{
     background-color: #2d2f30;
 }
 
-.options a{
+.button a{
     color: aliceblue;
     text-decoration: none;
 }
 
-.options a:visited{
+.button a:visited{
     color: aliceblue;
 }
