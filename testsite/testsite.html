@@ -9,39 +9,29 @@
 <body>
     <div class="container">
         <h1>(測試)公文生成器</h1>
-        <h2>*僅支援簽稿*</h2>    
-        <p id="inputSchoolName">輸入校名<br>
+        <h2 style="color: aquamarine; font-weight: lighter;">*僅支援簽稿*</h2>    
+        <h3 id="inputSchoolName" style="font-weight: lighter;">輸入校名<br>
+            <input type="text" id="blank1" class="blank" placeholder="如：桃源國小">
+        </h3>
+        <h3 id="inputProjectName" style="font-weight: lighter;">輸入案名<br>
+            <input type="text" id="blank1" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width=50px;>
+        </h3>
+        <h3 id="inputAmount" style="font-weight: lighter;">輸入金額<br>
             <input type="text" id="blank1" class="blank">
-        </p>
-        <p id="inputProjectName">輸入案名<br>
-            <input type="text" id="blank1" class="blank">
-        </p>
-        <p id="inputAmount">輸入金額<br>
-            <input type="text" id="blank1" class="blank">
-        </p>
+        </h3>
         <p>選擇公文類型</p>
-        <input type="radio" id="Petiton" name="officialDocument" onclick="showOption()">
-        <label for="Petiton">簽</label>
+        <input type="radio" id="Petition" name="officialDocument" onclick="showOption()">
+        <label for="Petition">簽</label>
         <input type="radio" id="Letter" name="officialDocument" onclick="showOption()">
         <label for="Letter">稿</label>
         <input type="radio" id="bothPAndL" name="officialDocument" onclick="showOption()">
         <label for="bothPAndL">簽稿</label><br>
-        
-        <button onclick="dosomething()">click me</button>
-        <p id="greeting"></p>
-   
-        <script>
-            function dosomething(){
-                document.getElementById("greeting").innerHTML = "goodbye";
-            }
-        </script>
-        
         <!--
         <p id="sentence">
             The <input type="text" id="blank1" class="blank"> jumps over the <input type="text" id="blank2" class="blank">.
         </p>
         -->
-        <button id="submit" onclick="checkAnswers()">Submit</button>
+        <button type="submit" id="submit">確認</button>
         <p id="result"></p>
 
     </div>
