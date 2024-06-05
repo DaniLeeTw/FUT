@@ -18,7 +18,7 @@ body {
     background: #47494a;
     color: aliceblue;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 45px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
 }
@@ -81,4 +81,20 @@ h1 {
 
 .button a:visited{
     color: aliceblue;
+}
+
+#generalConfig{
+    text-align: left;
+}
+
+#conditions{
+    text-align: left;
+}
+
+#additionalInfoSourceAdjust{
+    display: none;
+}
+
+#additionalInfoSuggestedAmount{
+    display: none;
 }

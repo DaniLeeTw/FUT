@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Formatter</title>
+</head>
+<body>
+
+<form id="myForm" onsubmit="return handleFormSubmission(event)">
+  <label for="inputNumber">Enter a number:</label><br>
+  <input type="text" id="inputNumber" name="inputNumber" required><br>
+  <input type="submit" value="Submit">
+
+  <label for="sourceAdjust">是否需調整財源？</label>
+  <input type="radio" id="yesSourceAdjust" value="yes" required>
+  <label for="yesSourceAdjust">是</label>
+  <input type="radio" id="noSourceAdjust" value="no" required>
+  <label for="noSourceAdjust">否</label>
+  <div id="additionalInfoSourceAdjust" style="display: none;">
+      <label for="targetSource">目標財源：</label>
+      <input type="text" id="targetSource"  class="blank">
+      <label for="adjustedSourceA">調整財源1：</label>
+      <input type="text" id="adjustedSourceA"  class="blank">
+      <label for="adjustedSourceAAmount">財源1調整金額：</label>
+      <input type="text" id="adjustedSourceAAmount"  class="blank">
+      <label for="adjustedSourceB">調整財源2：</label>
+      <input type="text" id="adjustedSourceB"  class="blank">
+      <label for="adjustedSourceBAmount">財源2調整金額：</label>
+      <input type="text" id="adjustedSourceBAmount"  class="blank">
+      <label for="adjustedSourceC">調整財源3：</label>
+      <input type="text" id="adjustedSourceC"  class="blank">
+      <label for="adjustedSourceCAmount">財源3調整金額：</label>
+      <input type="text" id="adjustedSourceCAmount"  class="blank">
+      <label for="adjustedSourceD">調整財源4：</label>
+      <input type="text" id="adjustedSourceD"  class="blank">
+      <label for="adjustedSourceDAmount">財源4調整金額：</label>
+      <input type="text" id="adjustedSourceDAmount"  class="blank">
+      <label for="adjustedSourceE">調整財源5：</label>
+      <input type="text" id="adjustedSourceE"  class="blank">
+      <label for="adjustedSourceEAmount">財源5調整金額：</label>
+      <input type="text" id="adjustedSourceEAmount"  class="blank">
+  </div>
+
+</form>
+
+<p id="resultText"></p>
+
+<script src="testtest.js"></script>
+
+</body>
+</html>

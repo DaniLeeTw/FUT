@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   <head></head>
+   <body>
+
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <!--datas filled in the form get sent to the back end with the language of PHQ and it uses the php file extension-->
+        <!--there are 2 requests in the method attribue, get and post. post is used when dealing with confidential information like username and passwords, get is for insensitive datas-->
+        <!--if sending an image file, multipart/form-data is recommended-->
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="spongebob" minlength="6" maxlength="15" required>
+        <br>
+
+        <label for="username">password:</label>
+        <input type="password" id="password" placeholder="spongebob" minlength="6" maxlength="15" required>
+        <br>
+
+        <label for="email">email</label>
+        <input type="email" id="email" placeholder="squarepants@fake.com">
+        <br>
+
+        <label for="phone">phone number</label>
+        <input type="tel" id="phone" placeholder="0912-345-678" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+        <br>
+
+        <label for="bday">birthdate:</label>
+        <input type="date" id="bday">
+        <br>
+        
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1">
+        <br>
+        <!--value makes a default number-->
+        
+        <label for="title">title:</label>
+        
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="PhD.">PhD.</label>
+        <input type="radio" id="PhD." value="PhD." name="title">
+        <br>
+
+        <label for="payment">payment:</label>
+        <select id="payment">
+            <option value="VISA">VISA</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select>
+        <br>
+
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscribe">
+        <br>
+        <label for="comment">comment</label>
+        <textarea id="comment" rows="3" cols="25"></textarea>
+        <br>
+       
+        <label for="file">file</label>
+        <input type="file" id="file" accept="image/png, image/jpeg">
+        <br>
+
+        <input type="reset">
+        <br>
+        <input type="submit">
+
+    </form>
+
+    <br>
+    <a href="/index/index.html">back to the real index</a>
+    <br>
+    <a href="/nuclear-waste-depository/nuclear-waste-depository.html">back to the nuclear test site</a>   </body>
+</html>
