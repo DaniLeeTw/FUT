@@ -3,105 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>公文生成器</title>
+    <title>（測試）公文生成器</title>
     <link rel="stylesheet" href="testsite.css">
 </head>
 <body>
     <form id="myForm">
         <div class="container">
-            <h1>(測試)公文生成器</h1>
-            <h2 style="color: aquamarine; font-weight: lighter;">*僅支援簽稿*</h2>    
+            <h1>（測試）公文生成器</h1>
+            <h2>＊僅支援簽稿＊</h2>    
+            <!--環境設定-->
             <div id="generalConfig">
-                <label for="selectApproveOrAppropriate">核定或核撥：</label>
-                <input type="radio" id="approve" name="approveOrAppropriate" value="yes" required>
-                <label for="yesYearEnd">核定</label>
-                <input type="radio" id="appropriate" name="approveOrAppropriate" value="no" required>
-                <label for="noYearEnd">核撥</label>
-                <br><br>
+                <!--選擇核定或核撥-->
+                <div id="chooseBetweenApproveAndAppropriate">
+                    <p>核定／核撥／準備金：
+                        <input type="radio" id="approve" name="approveOrAppropriateOrPreparedFund" required>
+                        <label for="approve">核定</label>
+                        <input type="radio" id="appropriate" name="approveOrAppropriateOrPreparedFund" required>
+                        <label for="appropriate">核撥</label>
+                        <input type="radio" id="preparedFund" name="approveOrAppropriateOrPreparedFund" required>
+                        <label for="preparedFund">準備金</label>
+                    </p>
+                    
+                    <!--選擇核定態樣-->
+                    <div id="selectApproveTypes">
+                        <p>選擇核定態樣：
+                            <input type="radio" id="approveType1" name="approveTypes" required>
+                            <label for="approveType1">態樣一（純工程）</label>
+                            <input type="radio" id="approveType2" name="approveTypes" required>
+                            <label for="approveType2">態樣二（含設備）</label>
+                            <input type="radio" id="approveType3" name="approveTypes" required>
+                            <label for="approveType3">態樣三（純設備）</label>
+                        </p>
 
-                <label for="selectApproveOrAppropriate">選擇態樣：</label>
-                <select id="types">
-                    <option value="type1">態樣一（純工程）</option>
-                    <option value="type1">態樣二（含設備）</option>
-                    <option value="type1">態樣三（純設備）</option>
-                </select>
-                <br>
+                        <!--選擇核定公文類型-->
+                        <div id="selectApproveKinds">
+                            <p>選擇公文類型：
+                                <input type="radio" id="approveBothPAndL" name="approveKinds" required>
+                                <label for="approveBothPAndL">簽稿</label>
+                                <input type="radio" id="approvePetition" name="approveKinds" required>
+                                <label for="approvePetition">簽</label>
+                                <input type="radio" id="approveLetter" name="approveKinds" required>
+                                <label for="approveLetter">稿</label>
+                            </p>
+                        </div>
+                    </div>
 
-                <p>選擇公文類型</p>
-                <input type="radio" id="bothPAndL" name="officialDocument" required>
-                <label for="bothPAndL">簽稿</label>
+                    <!--選擇核撥態樣-->
+                    <div id="selectApproveTypes">
+                        <p>選擇核撥態樣：
+                            <input type="radio" id="appropriateType1" name="appropriateTypes" required>
+                            <label for="appropriateType1">態樣一（純工程）</label>
+                            <input type="radio" id="appropriateType2" name="appropriateTypes" required>
+                            <label for="appropriateType2">態樣二（含設備）</label>
+                            <input type="radio" id="appropriateType3" name="appropriateTypes" required>
+                            <label for="appropriateType3">態樣三（純設備）</label>
+                        </p>
 
-                <input type="radio" id="Petition" name="officialDocument" required>
-                <label for="Petition">簽</label>
+                        <!--選擇核撥公文類型-->
+                        <div id="selectAppropriateKinds">
+                            <p>選擇公文類型：
+                                <input type="radio" id="appropriateBothPAndL" name="appropriateKinds" required>
+                                <label for="appropriateBothPAndL">簽稿</label>
+                                <input type="radio" id="appropriatePetition" name="appropriateKinds" required>
+                                <label for="appropriatePetition">簽</label>
+                                <input type="radio" id="appropriateLetter" name="appropriateKinds" required>
+                                <label for="appropriateLetter">稿</label>
+                            </p>
+                        </div>
+                    </div>
 
-                <input type="radio" id="Letter" name="officialDocument" required>
-                <label for="Letter">稿</label>
+                    <!--選擇準備金態樣-->
+                    <div id="selectPreparedFundTypes">
+                        <p>選擇準備金態樣：
+                            <input type="radio" id="preparedFundType1" name="preparedFundTypes" required>
+                            <label for="preparedFundType1">態樣一（純工程）</label>
+                            <input type="radio" id="preparedFundType2" name="preparedFundTypes" required>
+                            <label for="preparedFundType2">態樣二（含設備）</label>
+                        </p>
+
+                        <!--選擇核撥公文類型-->
+                        <div id="selectPreparedFundKinds">
+                            <p>選擇公文類型：
+                                <input type="radio" id="preparedFundAgreed" name="preparedFundKinds" required>
+                                <label for="preparedFundAgreed">同意動支</label>
+                                <input type="radio" id="preparedFundDisagreed" name="preparedFundKinds" required>
+                                <label for="preparedFundDisagreed">不同意動支</label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <h3 id="schoolName" style="font-weight: lighter;">輸入校名<br>
-                <input type="text" id="schoolName" class="blank" placeholder="如：桃源國小" required>
-            </h3>
+            <!--個案細節-->
+            <div id="keyInputs">
+                <h3 id="schoolName" style="font-weight: lighter;">輸入校名
+                    <input type="text" id="schoolName" class="blank" placeholder="如：桃源國小" required>
+                </h3>
 
-            <h3 id="projectName" style="font-weight: lighter;">輸入案名<br>
-                <input type="text" id="projectName" name="projectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width=50px; required>
-            </h3>
+                <h3 id="projectName" style="font-weight: lighter;">輸入案名
+                    <input type="text" id="projectName" name="projectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width=50px; required>
+                </h3>
 
-            <h3 for="approveAmount" style="font-weight: lighter;">輸入金額<br>
-                <input type="text" id="approveAmount" name="approveAmount" class="blank" placeholder="如：123456789123" required>
-            </h3>
+                <h3 for="approveAmount" style="font-weight: lighter;">輸入金額
+                    <input type="text" id="approveAmount" name="approveAmount" class="blank" placeholder="如：123456789123" required>
+                </h3>
+            </div>
 
+            <!--特殊情況-->
             <div id="conditions">
             <label for="yearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
             <input type="radio" id="yesYearEnd" name="yesNoYearEnd" value="yes" required>
             <label for="yesYearEnd">是</label>
             <input type="radio" id="noYearEnd" name="yesNoYearEnd" value="no" required>
-            <label for="noYearEnd">否</label><br><br>
+            <label for="noYearEnd">否</label>
 
             <label for="sourceAdjust">是否需調整財源？</label>
             <input type="radio" id="yesSourceAdjust" name="yesNoSourceAdjust" value="yes" required>
             <label for="yesSourceAdjust">是</label>
             <input type="radio" id="noSourceAdjust" name="yesNoSourceAdjust" value="no" required>
             <label for="noSourceAdjust">否</label>
-            <div id="additionalInfoSourceAdjust"><br>
+            <div id="additionalInfoSourceAdjust">
                 <label for="targetSource">目標財源：</label>
-                <input type="text" id="targetSource"  class="blank"><br>
+                <input type="text" id="targetSource"  class="blank">
                 <label for="adjustedSourceA">調整財源1：</label>
-                <input type="text" id="adjustedSourceA"  class="blank"><br>
+                <input type="text" id="adjustedSourceA"  class="blank">
                 <label for="adjustedSourceAAmount">財源1調整金額：</label>
                 <input type="text" id="adjustedSourceAAmount"  class="blank">
                 <label for="adjustedSourceB">調整財源2：</label>
-                <input type="text" id="adjustedSourceB"  class="blank"><br>
+                <input type="text" id="adjustedSourceB"  class="blank">
                 <label for="adjustedSourceBAmount">財源2調整金額：</label>
                 <input type="text" id="adjustedSourceBAmount"  class="blank">
                 <label for="adjustedSourceC">調整財源3：</label>
-                <input type="text" id="adjustedSourceC"  class="blank"><br>
+                <input type="text" id="adjustedSourceC"  class="blank">
                 <label for="adjustedSourceCAmount">財源3調整金額：</label>
                 <input type="text" id="adjustedSourceCAmount"  class="blank">
                 <label for="adjustedSourceD">調整財源4：</label>
-                <input type="text" id="adjustedSourceD"  class="blank"><br>
+                <input type="text" id="adjustedSourceD"  class="blank">
                 <label for="adjustedSourceDAmount">財源4調整金額：</label>
                 <input type="text" id="adjustedSourceDAmount"  class="blank">
                 <label for="adjustedSourceE">調整財源5：</label>
-                <input type="text" id="adjustedSourceE"  class="blank"><br>
+                <input type="text" id="adjustedSourceE"  class="blank">
                 <label for="adjustedSourceEAmount">財源5調整金額：</label>
                 <input type="text" id="adjustedSourceEAmount"  class="blank">
             </div>
-            <br><br>
 
             <label for="suggestedAmount">是否需調整額度？</label>
             <input type="radio" id="yesSuggestedAmount" name="yesNoSuggestedAmound" value="yes" required>
             <label for="yesSuggestedAmount">是</label>
             <input type="radio" id="noSuggestedAmount" name="yesNoSuggestedAmound" value="no" required>
             <label for="noSuggestedAmount">否</label>
-            <div id="additionalInfoSuggestedAmount"><br>
+            <div id="additionalInfoSuggestedAmount">
                 <label for="suggestedTotal">建議補助總額：</label>
-                <input type="text" id="suggestedTotal"  class="blank"><br>
+                <input type="text" id="suggestedTotal"  class="blank">
                 <label for="suggestedConstructionFee">建議補助施工費：</label>
-                <input type="text" id="suggestedConstructionFee"  class="blank"><br>
+                <input type="text" id="suggestedConstructionFee"  class="blank">
                 <label for="suggestedArchitectFee">建議補助委技費：</label>
                 <input type="text" id="suggestedArchitectFee"  class="blank">
                 <label for="suggestedManagementFee">建議補助工管費：</label>
-                <input type="text" id="suggestedManagementFee"  class="blank"><br>
+                <input type="text" id="suggestedManagementFee"  class="blank">
             </div>
 
             <button type="submit" id="submit">確認</button>
@@ -109,6 +168,6 @@
         </div>
         <div class="button"><a href="../index.html">首頁</a></div>
     </form>
-    <script src="testsite.js"></script>
+    <!--<script src="testsite.js"></script>-->
 </body>
 </html>
