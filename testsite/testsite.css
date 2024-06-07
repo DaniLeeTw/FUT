@@ -23,8 +23,20 @@ body {
     text-align: center;
 }
 
-h1 {
+#title {
     text-align: center;
+}
+
+#selectApproveTypes{
+    display: none;
+}
+
+#selectApproveKinds{
+    display: none;
+}
+
+#approvePetitionContent{
+    display: none;
 }
 
 .blank {
@@ -37,21 +49,7 @@ h1 {
     align-items: center;
 }
 
-#submit {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-}
 
-#submit:hover {
-    background-color: #0056b3;
-}
 
 #result {
     text-align: center;
@@ -97,4 +95,25 @@ h1 {
 
 #additionalInfoSuggestedAmount{
     display: none;
+}
+
+
+
+
+
+
+#submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#submit:hover {
+    background-color: #0056b3;
 }

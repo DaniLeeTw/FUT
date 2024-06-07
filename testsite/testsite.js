@@ -1,3 +1,37 @@
+//選擇核定後顯示選擇核定態樣
+const approve = document.getElementById("approve");
+const appropriate = document.getElementById("appropriate");
+const preparedFund = document.getElementById("preparedFund");
+const selectApproveTypes = document.getElementById("selectApproveTypes");
+function ApproveTypes(){
+    if(approve.checked){
+        selectApproveTypes.style.display = "block";
+    }else if(appropriate.checked){
+        selectApproveTypes.style.display = "none";
+    }else if(preparedFund.checked){
+        selectApproveTypes.style.display = "none"
+    }else{
+        selectApproveTypes.style.display = "none"
+    }
+}
+approve.addEventListener('change', ApproveTypes);
+appropriate.addEventListener('change', ApproveTypes);
+preparedFund.addEventListener('change', ApproveTypes);
+
+const approveType1 = document.getElementById("approveType1")
+const approveType2 = document.getElementById("approveType2")
+const approveType3 = document.getElementById("approveType3")
+const selectApproveKinds = document.getElementById("selectApproveKinds")
+function ApproveKinds(){
+    if(approveType1.checked){
+
+    }
+}
+
+
+
+
+
 const bothPAndL = document.getElementById("bothPAndL");
 const Petition = document.getElementById("Petition");
 const Letter = document.getElementById("Letter");
