@@ -36,6 +36,47 @@ body {
 #selectApproveTypes{
     display: none;
 }
+#selectApproveType1Kinds{
+    display: none;
+}
+#approveType1BothPAndLControls{
+    display: none;  
+}
+#approveType1BothPAndLPContent{
+    display: none;
+}
+#approveType1BothPAndLPKeyInputs{
+    display: none;
+}
+#approveType1BothPAndLPConditions{
+    display: none;
+}
+#approveType1BothPAndLPAdditionalInfoSourceAdjustP{
+    display: none;
+}
+#approveType1BothPAndLPAdditionalInfoSuggestedAmount{
+    display: none;
+}
+#approveType1BothPAndLLContent{
+    display: none;
+}
+#approveType1BothPAndLLKeyInputs{
+    display: none;
+}
+#approveType1BothPAndLLConditions{
+    display: none;
+}
+#approveType1BothPAndLLBudgetReview{
+    display: none;
+}
+#approveType1BothPAndLLManagementFeeYear{
+    display: none;
+}
+#approveType1BothPAndLLAdditionalInfoSuggestedAmount{
+    display: none;
+}
+
+
 
 #selectAppropriateTypes{
     display: none;
