@@ -1,75 +1,36 @@
-//選擇核定後顯示選擇核定態樣
+//claiming every id there is
+const myForm = document.getElementById("myForm");
+const title = document.getElementById("title");
+const generalConfig = document.getElementById("generalConfig");
+const chooseBetweenApproveAndAppropriate = document.getElementById("chooseBetweenApproveAndAppropriate");
 const approve = document.getElementById("approve");
 const appropriate = document.getElementById("appropriate");
 const preparedFund = document.getElementById("preparedFund");
 const selectApproveTypes = document.getElementById("selectApproveTypes");
-function ApproveTypes(){
-    if(approve.checked){
-        selectApproveTypes.style.display = "block";
-    }else if(appropriate.checked){
-        selectApproveTypes.style.display = "none";
-    }else if(preparedFund.checked){
-        selectApproveTypes.style.display = "none"
-    }else{
-        selectApproveTypes.style.display = "none"
-    }
-}
-approve.addEventListener('change', ApproveTypes);
-appropriate.addEventListener('change', ApproveTypes);
-preparedFund.addEventListener('change', ApproveTypes);
-
-const approveType1 = document.getElementById("approveType1")
-const approveType2 = document.getElementById("approveType2")
-const approveType3 = document.getElementById("approveType3")
-const selectApproveKinds = document.getElementById("selectApproveKinds")
-function ApproveKinds(){
-    if(approveType1.checked){
-
-    }
-}
+const approveType1 = document.getElementById("approveType1");
+const selectApproveType1Kinds = document.getElementById("selectApproveType1Kinds");
+const approveType1KindsControls = document.getElementById("approveType1KindsControls");
+const approveType1BothPAndLControls = document.getElementById("approveType1BothPAndLControls");
+const approveType1BothPAndL = document.getElementById("approveType1BothPAndL");
+const approveType1BothPAndLPContent = document.getElementById("approveType1BothPAndL-PContent");
+const approveType1BothPAndLPKeyInputs = document.getElementById("approveType1BothPAndLPKeyInputs");
+const approveType1BothPAndLPSchoolName = document.getElementById("approveType1BothPAndLPSchoolName");
+const approveType1BothPAndLPProjectName = document.getElementById("approveType1BothPAndLPProjectName");
+const approveType1BothPAndLPApproveAmount = document.getElementById("approveType1BothPAndLPApproveAmount");
+const approveType1BothPAndLPComingDate = document.getElementById("approveType1BothPAndLPComingDate");
+const approveType1BothPAndLPComingWord = document.getElementById("approveType1BothPAndLPComingWord");
+const approveType1BothPAndLPComingNumber = document.getElementById("approveType1BothPAndLPComingNumber");
+const approveType1BothPAndLPAlertDate = document.getElementById("approveType1BothPAndLPAlertDate");
+const approveType1BothPAndLPSituationArea = document.getElementById("approveType1BothPAndLPSituationArea");
+const approveType1BothPAndLPSituation = document.getElementById("approveType1BothPAndLPSituation");
+const approveType1BothPAndLPInvestigationDate = document.getElementById("approveType1BothPAndLPInvestigationDate");
+const approveType1BothPAndLPInvestigationResult = document.getElementById("approveType1BothPAndLPInvestigationResult");
+const approveType1BothPAndLPOriginalTotal = document.getElementById("approveType1BothPAndLPOriginalTotal");
 
 
 
-
-
-const bothPAndL = document.getElementById("bothPAndL");
-const Petition = document.getElementById("Petition");
-const Letter = document.getElementById("Letter");
-
-const submit = document.getElementById("submit");
-const result = document.getElementById("result");
-
-const schoolName = document.getElementById("schoolName")
-const projectName = document.getElementById("projectName")
-const approveAmount = document.getElementById("approveAmount")
-
-const sourceAdjust = document.getElementById("sourceAdjust")
-const yesSourceAdjust = document.getElementById("yesSourceAdjust")
-const noSourceAdjust = document.getElementById("noSourceAdjust")
-const additionalInfoSourceAdjust = document.getElementById("additionalInfoSourceAdjust")
-function SourceAdjust() {
-    if (yesSourceAdjust.checked) {
-        additionalInfoSourceAdjust.style.display = "block";
-    } else {
-        additionalInfoSourceAdjust.style.display = "none";
-    }
-}
-yesSourceAdjust.addEventListener('change', SourceAdjust);
-noSourceAdjust.addEventListener('change', SourceAdjust);
-
-const suggestedAmount = document.getElementById("suggestedAmount")
-const yesSuggestedAmount = document.getElementById("yesSuggestedAmount")
-const noSuggestedAmount = document.getElementById("noSuggestedAmount")
-const additionalInfoSuggestedAmount = document.getElementById("additionalInfoSuggestedAmount")
-function SuggestedAmount() {
-    if (yesSuggestedAmount.checked) {
-        additionalInfoSuggestedAmount.style.display = "block";
-    } else {
-        additionalInfoSuggestedAmount.style.display = "none";
-    }
-}
-yesSuggestedAmount.addEventListener('change', SuggestedAmount);
-noSuggestedAmount.addEventListener('change', SuggestedAmount);
+//yesSuggestedAmount.addEventListener('change', SuggestedAmount);
+//noSuggestedAmount.addEventListener('change', SuggestedAmount);
 
 submit.onclick = function(){
     if(bothPAndL.checked){

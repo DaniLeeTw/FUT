@@ -27,17 +27,29 @@ body {
     text-align: center;
 }
 
+#caution{
+    text-align: center;
+    color: aquamarine;
+}
+
+/*hide everything first*/
 #selectApproveTypes{
     display: none;
 }
 
-#selectApproveKinds{
+#selectAppropriateTypes{
     display: none;
 }
 
-#approvePetitionContent{
+#selectPreparedFundTypes{
     display: none;
 }
+
+
+
+
+
+
 
 .blank {
     display: inline-block;

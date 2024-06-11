@@ -10,10 +10,10 @@
     <form id="myForm">
         <div class="container">
             <h1 id="title">（測試）公文生成器</h1>
-            <h2>＊僅支援簽稿＊</h2>    
+            <h2 id="caution">＊僅支援簽稿＊</h2>    
             <!--環境設定-->
             <div id="generalConfig">
-                <!--選擇核定或核撥-->
+                <!--選擇核定／核撥／或準備金-->
                 <div id="chooseBetweenApproveAndAppropriate">
                     <p>核定／核撥／準備金：
                         <input type="radio" id="approve" name="approveOrAppropriateOrPreparedFund" required>
@@ -31,415 +31,417 @@
                             <label for="approveType1">態樣一（純工程）</label>   
                                 <!--核定態樣一選擇核定公文類型-->
                                 <div id="selectApproveType1Kinds">
-                                    <p>選擇公文類型：
-                                        <input type="radio" id="approveType1BothPAndL" name="approveKinds" required>
-                                        <label for="approveType1BothPAndL">簽稿</label>
-                                        <!--核定態樣一簽稿-簽-->
-                                        <div id="approveType1BothPAndL-PContent">
-                                            <!--核定態樣一簽稿個案細節-簽-->
-                                            <div id="approveType1BothPAndL-PKeyInputs">
-                                                <label for="approveType1BothPAndL-PSchoolName" style="font-weight: lighter;">輸入校名
-                                                    <input type="text" id="approveType1BothPAndL-PSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
-                                                </label>
-                                                <!--修修看國高中的表達方式-->
-            
-                                                <label for="approveType1BothPAndL-PProjectName" style="font-weight: lighter;">輸入案名
-                                                    <input type="text" id="approveType1BothPAndL-PProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
-                                                </label>
-            
-                                                <label for="approveType1BothPAndL-PApproveAmount" style="font-weight: lighter;">輸入核定金額
-                                                    <input type="text" id="approveType1BothPAndL-PApproveAmount" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-PComingDate" style="font-weight: lighter;">輸入來文日期
-                                                    <input type="text" id="approveType1BothPAndL-PComingDate" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-PComingWord" style="font-weight: lighter;">輸入來文字
-                                                    <input type="text" id="approveType1BothPAndL-PComingWord" class="blank" placeholder="如：北市教工" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-PComingNumber" style="font-weight: lighter;">輸入來文號
-                                                    <input type="text" id="approveType1BothPAndL-PComingNumber" class="blank" placeholder="如：1131111234" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-PAlertDate" style="font-weight: lighter;">輸入通報日期
-                                                    <input type="text" id="approveType1BothPAndL-PAlertDate" class="blank" placeholder="如：113年6月10日" required>
-                                                </label>
-                                                <!--看有沒有辦法做個轉換從1130610轉成有年月日，他們打數字就好了-->
-                                                
-                                                <label for="approveType1BothPAndL-PSituationArea" style="font-weight: lighter;">輸入狀況區域
-                                                    <input type="text" id="approveType1BothPAndL-PSituationArea" class="blank" placeholder="如：明德樓" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-PSituation" style="font-weight: lighter;">輸入狀況
-                                                    <input type="text" id="approveType1BothPAndL-PSituation" class="blank" placeholder="如：牆裂柱爆" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-PInvestigationDate" style="font-weight: lighter;">輸入會勘日期
-                                                    <input type="text" id="approveType1BothPAndL-PInvestigationDate" class="blank" placeholder="如：113年6月10日" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-PInvestigationResult" style="font-weight: lighter;">輸入會勘結果
-                                                    <input type="text" id="approveType1BothPAndL-PInvestigationResult" class="blank" placeholder="看你結論怎麼寫囉" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-POriginalTotal" style="font-weight: lighter;">輸入校方函報金額
-                                                    <input type="text" id="approveType1BothPAndL-POriginalTotal" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-POriginalConstructionFee" style="font-weight: lighter;">輸入校方函報施工費
-                                                    <input type="text" id="approveType1BothPAndL-POriginalConstructionFee" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-POriginalArchitectFee" style="font-weight: lighter;">輸入校方函報委技費
-                                                    <input type="text" id="approveType1BothPAndL-POriginalArchitectFee" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-POriginalManagementFee" style="font-weight: lighter;">輸入校方函報公管費
-                                                    <input type="text" id="approveType1BothPAndL-PLOriginalManagementFee" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                            </div>
-                                            <!--核定態樣一簽稿特殊情況-簽-->
-                                            <div id="approveType1BothPAndL-PConditions">
-                                            <label for="approveType1BothPAndL-PYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
-                                            <input type="radio" id="approveType1BothPAndL-PYesYearEnd" name="approveType1BothPAndL-PYesNoYearEnd" value="yes" required>
-                                            <label for="approveType1BothPAndL-PYesYearEnd">是</label>
-                                            <input type="radio" id="approveType1BothPAndL-PNoYearEnd" name="approveType1BothPAndL-PYesNoYearEnd" value="no" required>
-                                            <label for="approveType1BothPAndL-PNoYearEnd">否</label>
-            
-                                            <br>
-            
-                                            <label for="approveType1BothPAndL-PSourceAdjust">是否需調整財源？</label>
-                                            <input type="radio" id="approveType1BothPAndL-PYesSourceAdjust" name="approveType1BothPAndL-PYesNoSourceAdjust" value="yes" required>
-                                            <label for="approveType1BothPAndL-PYesSourceAdjust">是</label>
-                                            <input type="radio" id="approveType1BothPAndL-PNoSourceAdjust" name="approveType1BothPAndL-PYesNoSourceAdjust" value="no" required>
-                                            <label for="approveType1BothPAndL-PNoSourceAdjust">否</label>
-                                                <!--輸入財源調整資訊-->
-                                                <div id="approveType1BothPAndL-PAdditionalInfoSourceAdjust">
-                                                    <label for="approveType1BothPAndL-PTargetSource">目標財源：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PTargetSource"  class="blank">
-                                                    <label for="approveType1BothPAndL-PAdjustedSourceA">調整財源1：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PAdjustedSourceA"  class="blank">
-                                                    <label for="approveType1BothPAndL-PAdjustedSourceAAmount">財源1調整金額：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PAdjustedSourceAAmount"  class="blank">
-                                                    <label for="approveType1BothPAndL-PAdjustedSourceB">調整財源2：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PAdjustedSourceB"  class="blank">
-                                                    <label for="approveType1BothPAndL-PAdjustedSourceBAmount">財源2調整金額：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PAdjustedSourceBAmount"  class="blank">
-                                                    <label for="approveType1BothPAndL-PAdjustedSourceC">調整財源3：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PAdjustedSourceC"  class="blank">
-                                                    <label for="approveType1BothPAndL-PAdjustedSourceCAmount">財源3調整金額：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PAdjustedSourceCAmount"  class="blank">
-                                                    <label for="approveType1BothPAndL-PAdjustedSourceD">調整財源4：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PAdjustedSourceD"  class="blank">
-                                                    <label for="approveType1BothPAndL-PAdjustedSourceDAmount">財源4調整金額：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PAdjustedSourceDAmount"  class="blank">
-                                                    <label for="approveType1BothPAndL-PAdjustedSourceE">調整財源5：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PAdjustedSourceE"  class="blank">
-                                                    <label for="approveType1BothPAndL-PAdjustedSourceEAmount">財源5調整金額：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PAdjustedSourceEAmount"  class="blank">
+                                    <p id="approveType1KindsControls">選擇公文類型：
+                                        <div id="approveType1BothPAndLControls">
+                                            <input type="radio" id="approveType1BothPAndL" name="approveKinds" required>
+                                            <label for="approveType1BothPAndL">簽稿</label>
+                                            <!--核定態樣一簽稿-簽-->
+                                            <div id="approveType1BothPAndLPContent">
+                                                <!--核定態樣一簽稿個案細節-簽-->
+                                                <div id="approveType1BothPAndLPKeyInputs">
+                                                    <label for="approveType1BothPAndLPSchoolName" style="font-weight: lighter;">輸入校名
+                                                        <input type="text" id="approveType1BothPAndLPSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                                                    </label>
+                                                    <!--修修看國高中的表達方式-->
+                
+                                                    <label for="approveType1BothPAndLPProjectName" style="font-weight: lighter;">輸入案名
+                                                        <input type="text" id="approveType1BothPAndLPProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                                                    </label>
+                
+                                                    <label for="approveType1BothPAndLPApproveAmount" style="font-weight: lighter;">輸入核定金額
+                                                        <input type="text" id="approveType1BothPAndLPApproveAmount" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndLPComingDate" style="font-weight: lighter;">輸入來文日期
+                                                        <input type="text" id="approveType1BothPAndLPComingDate" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndLPComingWord" style="font-weight: lighter;">輸入來文字
+                                                        <input type="text" id="approveType1BothPAndLPComingWord" class="blank" placeholder="如：北市教工" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndLPComingNumber" style="font-weight: lighter;">輸入來文號
+                                                        <input type="text" id="approveType1BothPAndLPComingNumber" class="blank" placeholder="如：1131111234" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndLPAlertDate" style="font-weight: lighter;">輸入通報日期
+                                                        <input type="text" id="approveType1BothPAndLPAlertDate" class="blank" placeholder="如：113年6月10日" required>
+                                                    </label>
+                                                    <!--看有沒有辦法做個轉換從1130610轉成有年月日，他們打數字就好了-->
+                                                    
+                                                    <label for="approveType1BothPAndLPSituationArea" style="font-weight: lighter;">輸入狀況區域
+                                                        <input type="text" id="approveType1BothPAndLPSituationArea" class="blank" placeholder="如：明德樓" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndLPSituation" style="font-weight: lighter;">輸入狀況
+                                                        <input type="text" id="approveType1BothPAndLPSituation" class="blank" placeholder="如：牆裂柱爆" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndLPInvestigationDate" style="font-weight: lighter;">輸入會勘日期
+                                                        <input type="text" id="approveType1BothPAndLPInvestigationDate" class="blank" placeholder="如：113年6月10日" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndLPInvestigationResult" style="font-weight: lighter;">輸入會勘結果
+                                                        <input type="text" id="approveType1BothPAndLPInvestigationResult" class="blank" placeholder="看你結論怎麼寫囉" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndLPOriginalTotal" style="font-weight: lighter;">輸入校方函報金額
+                                                        <input type="text" id="approveType1BothPAndLPOriginalTotal" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndL-POriginalConstructionFee" style="font-weight: lighter;">輸入校方函報施工費
+                                                        <input type="text" id="approveType1BothPAndL-POriginalConstructionFee" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndL-POriginalArchitectFee" style="font-weight: lighter;">輸入校方函報委技費
+                                                        <input type="text" id="approveType1BothPAndL-POriginalArchitectFee" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndL-POriginalManagementFee" style="font-weight: lighter;">輸入校方函報公管費
+                                                        <input type="text" id="approveType1BothPAndL-PLOriginalManagementFee" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
                                                 </div>
-            
-                                            <br>
-            
-                                            <label for="approveType1BothPAndL-PSuggestedAmount">是否需調整額度？</label>
-                                            <input type="radio" id="approveType1BothPAndL-PYesSuggestedAmount" name="approveType1BothPAndL-PYesNoSuggestedAmound" value="yes" required>
-                                            <label for="approveType1BothPAndL-PYesSuggestedAmount">是</label>
-                                            <input type="radio" id="approveType1BothPAndL-PNoSuggestedAmount" name="approveType1BothPAndL-PYesNoSuggestedAmound" value="no" required>
-                                            <label for="approveType1BothPAndL-PNoSuggestedAmount">否</label>
-                                                <!--輸入建議補助資訊-->
-                                                <div id="approveType1BothPAndL-PAdditionalInfoSuggestedAmount">
-                                                    <label for="approveType1BothPAndL-PSuggestedTotal">建議補助總額：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PSuggestedTotal"  class="blank">
-                                                    <label for="approveType1BothPAndL-PSuggestedConstructionFee">建議補助施工費：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PSuggestedConstructionFee"  class="blank">
-                                                    <label for="approveType1BothPAndL-PSuggestedArchitectFee">建議補助委技費：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PSuggestedArchitectFee"  class="blank">
-                                                    <label for="approveType1BothPAndL-PSuggestedManagementFee">建議補助工管費：</label>
-                                                    <input type="text" id="approveType1BothPAndL-PSuggestedManagementFee"  class="blank">
+                                                <!--核定態樣一簽稿特殊情況-簽-->
+                                                <div id="approveType1BothPAndL-PConditions">
+                                                <label for="approveType1BothPAndL-PYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
+                                                <input type="radio" id="approveType1BothPAndL-PYesYearEnd" name="approveType1BothPAndL-PYesNoYearEnd" value="yes" required>
+                                                <label for="approveType1BothPAndL-PYesYearEnd">是</label>
+                                                <input type="radio" id="approveType1BothPAndL-PNoYearEnd" name="approveType1BothPAndL-PYesNoYearEnd" value="no" required>
+                                                <label for="approveType1BothPAndL-PNoYearEnd">否</label>
+                
+                                                <br>
+                
+                                                <label for="approveType1BothPAndL-PSourceAdjust">是否需調整財源？</label>
+                                                <input type="radio" id="approveType1BothPAndL-PYesSourceAdjust" name="approveType1BothPAndL-PYesNoSourceAdjust" value="yes" required>
+                                                <label for="approveType1BothPAndL-PYesSourceAdjust">是</label>
+                                                <input type="radio" id="approveType1BothPAndL-PNoSourceAdjust" name="approveType1BothPAndL-PYesNoSourceAdjust" value="no" required>
+                                                <label for="approveType1BothPAndL-PNoSourceAdjust">否</label>
+                                                    <!--輸入財源調整資訊-->
+                                                    <div id="approveType1BothPAndL-PAdditionalInfoSourceAdjust">
+                                                        <label for="approveType1BothPAndL-PTargetSource">目標財源：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PTargetSource"  class="blank">
+                                                        <label for="approveType1BothPAndL-PAdjustedSourceA">調整財源1：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PAdjustedSourceA"  class="blank">
+                                                        <label for="approveType1BothPAndL-PAdjustedSourceAAmount">財源1調整金額：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PAdjustedSourceAAmount"  class="blank">
+                                                        <label for="approveType1BothPAndL-PAdjustedSourceB">調整財源2：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PAdjustedSourceB"  class="blank">
+                                                        <label for="approveType1BothPAndL-PAdjustedSourceBAmount">財源2調整金額：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PAdjustedSourceBAmount"  class="blank">
+                                                        <label for="approveType1BothPAndL-PAdjustedSourceC">調整財源3：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PAdjustedSourceC"  class="blank">
+                                                        <label for="approveType1BothPAndL-PAdjustedSourceCAmount">財源3調整金額：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PAdjustedSourceCAmount"  class="blank">
+                                                        <label for="approveType1BothPAndL-PAdjustedSourceD">調整財源4：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PAdjustedSourceD"  class="blank">
+                                                        <label for="approveType1BothPAndL-PAdjustedSourceDAmount">財源4調整金額：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PAdjustedSourceDAmount"  class="blank">
+                                                        <label for="approveType1BothPAndL-PAdjustedSourceE">調整財源5：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PAdjustedSourceE"  class="blank">
+                                                        <label for="approveType1BothPAndL-PAdjustedSourceEAmount">財源5調整金額：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PAdjustedSourceEAmount"  class="blank">
+                                                    </div>
+                
+                                                <br>
+                
+                                                <label for="approveType1BothPAndL-PSuggestedAmount">是否需調整額度？</label>
+                                                <input type="radio" id="approveType1BothPAndL-PYesSuggestedAmount" name="approveType1BothPAndL-PYesNoSuggestedAmound" value="yes" required>
+                                                <label for="approveType1BothPAndL-PYesSuggestedAmount">是</label>
+                                                <input type="radio" id="approveType1BothPAndL-PNoSuggestedAmount" name="approveType1BothPAndL-PYesNoSuggestedAmound" value="no" required>
+                                                <label for="approveType1BothPAndL-PNoSuggestedAmount">否</label>
+                                                    <!--輸入建議補助資訊-->
+                                                    <div id="approveType1BothPAndL-PAdditionalInfoSuggestedAmount">
+                                                        <label for="approveType1BothPAndL-PSuggestedTotal">建議補助總額：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PSuggestedTotal"  class="blank">
+                                                        <label for="approveType1BothPAndL-PSuggestedConstructionFee">建議補助施工費：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PSuggestedConstructionFee"  class="blank">
+                                                        <label for="approveType1BothPAndL-PSuggestedArchitectFee">建議補助委技費：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PSuggestedArchitectFee"  class="blank">
+                                                        <label for="approveType1BothPAndL-PSuggestedManagementFee">建議補助工管費：</label>
+                                                        <input type="text" id="approveType1BothPAndL-PSuggestedManagementFee"  class="blank">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!--核定態樣一簽稿-稿-->
-                                        <div id="approveType1BothPAndL-LContent">
-                                            <!--核定態樣一簽稿個案細節-稿-->
-                                            <div id="approveType1BothPAndL-LKeyInputs">
-                                                <label for="approveType1BothPAndL-LSchoolName" style="font-weight: lighter;">輸入校名
-                                                    <input type="text" id="approveType1BothPAndL-LSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
-                                                </label>
-                                                <!--修修看國高中的表達方式-->
-            
-                                                <label for="approveType1BothPAndL-LProjectName" style="font-weight: lighter;">輸入案名
-                                                    <input type="text" id="approveType1BothPAndL-LProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
-                                                </label>
-            
-                                                <label for="approveType1BothPAndL-LApproveAmount" style="font-weight: lighter;">輸入核定金額
-                                                    <input type="text" id="approveType1BothPAndL-LApproveAmount" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-LComingDate" style="font-weight: lighter;">輸入來文日期
-                                                    <input type="text" id="approveType1BothPAndL-LComingDate" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-LComingWord" style="font-weight: lighter;">輸入來文字
-                                                    <input type="text" id="approveType1BothPAndL-LComingWord" class="blank" placeholder="如：北市教工" required>
-                                                </label>
-                                                
-                                                <label for="approveType1BothPAndL-LComingNumber" style="font-weight: lighter;">輸入來文號
-                                                    <input type="text" id="approveType1BothPAndL-LComingNumber" class="blank" placeholder="如：1131111234" required>
-                                                </label>
-                                            </div>
-                                            <!--核定態樣一簽稿特殊情況-稿-->
-                                            <div id="approveType1BothPAndL-LConditions">
-                                                <!--預算尚未通過部分-->
-                                                <label for="approveType1BothPAndL-LReviewFinished">是否有預算尚未經議會審議通過情形？</label>
-                                                <input type="radio" id="approveType1BothPAndL-LYesReviewFinished" name="approveType1BothPAndL-LYesNoReviewFinished" value="yes" required>
-                                                <label for="approveType1BothPAndL-LYesReviewFinished">是</label>
-                                                <input type="radio" id="approveType1BothPAndL-LNoReviewFinished" name="approveType1BothPAndL-LYesNoReviewFinished" value="no" required>
-                                                <label for="approveType1BothPAndL-LNoReviewFinished">否</label>
-                                                    <!--輸入預算審議年份-->
-                                                    <div id="approveType1BothPAndL-LBudgetReview">
-                                                        <label for="approveType1BothPAndL-LReviewYear" style="font-weight: lighter;">輸入預算年份：
-                                                            <input type="text" id="approveType1BothPAndL-LReviewYear" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
-                                                        </label>    
-                                                    </div>
+                                            <!--核定態樣一簽稿-稿-->
+                                            <div id="approveType1BothPAndL-LContent">
+                                                <!--核定態樣一簽稿個案細節-稿-->
+                                                <div id="approveType1BothPAndL-LKeyInputs">
+                                                    <label for="approveType1BothPAndL-LSchoolName" style="font-weight: lighter;">輸入校名
+                                                        <input type="text" id="approveType1BothPAndL-LSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                                                    </label>
+                                                    <!--修修看國高中的表達方式-->
+                
+                                                    <label for="approveType1BothPAndL-LProjectName" style="font-weight: lighter;">輸入案名
+                                                        <input type="text" id="approveType1BothPAndL-LProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                                                    </label>
+                
+                                                    <label for="approveType1BothPAndL-LApproveAmount" style="font-weight: lighter;">輸入核定金額
+                                                        <input type="text" id="approveType1BothPAndL-LApproveAmount" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndL-LComingDate" style="font-weight: lighter;">輸入來文日期
+                                                        <input type="text" id="approveType1BothPAndL-LComingDate" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndL-LComingWord" style="font-weight: lighter;">輸入來文字
+                                                        <input type="text" id="approveType1BothPAndL-LComingWord" class="blank" placeholder="如：北市教工" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1BothPAndL-LComingNumber" style="font-weight: lighter;">輸入來文號
+                                                        <input type="text" id="approveType1BothPAndL-LComingNumber" class="blank" placeholder="如：1131111234" required>
+                                                    </label>
+                                                </div>
+                                                <!--核定態樣一簽稿特殊情況-稿-->
+                                                <div id="approveType1BothPAndL-LConditions">
+                                                    <!--預算尚未通過部分-->
+                                                    <label for="approveType1BothPAndL-LReviewFinished">是否有預算尚未經議會審議通過情形？</label>
+                                                    <input type="radio" id="approveType1BothPAndL-LYesReviewFinished" name="approveType1BothPAndL-LYesNoReviewFinished" value="yes" required>
+                                                    <label for="approveType1BothPAndL-LYesReviewFinished">是</label>
+                                                    <input type="radio" id="approveType1BothPAndL-LNoReviewFinished" name="approveType1BothPAndL-LYesNoReviewFinished" value="no" required>
+                                                    <label for="approveType1BothPAndL-LNoReviewFinished">否</label>
+                                                        <!--輸入預算審議年份-->
+                                                        <div id="approveType1BothPAndL-LBudgetReview">
+                                                            <label for="approveType1BothPAndL-LReviewYear" style="font-weight: lighter;">輸入預算年份：
+                                                                <input type="text" id="approveType1BothPAndL-LReviewYear" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                                                            </label>    
+                                                        </div>
 
-                                                <!--工管費部分-->
-                                                <label for="approveType1BothPAndL-LManagementFee">是否編列工管費？</label>
-                                                <input type="radio" id="approveType1BothPAndL-LYesManagementFee" name="approveType1BothPAndL-LYesNoManagementFee" value="yes" required>
-                                                <label for="approveType1BothPAndL-LYesManagementFee">是</label>
-                                                <input type="radio" id="approveType1BothPAndL-LNoManagementFee" name="approveType1BothPAndL-LYesNoManagementFee" value="no" required>
-                                                <label for="approveType1BothPAndL-LNoManagementFee">否</label>
-                                                    <!--輸入工管費年份-->
-                                                    <div id="approveType1BothPAndL-LAdditionalInfoSourceAdjust">
-                                                        <label for="approveType1BothPAndL-LManagementFee">輸入工管費年份：</label>
-                                                        <input type="text" id="approveType1BothPAndL-LManagementFee"  class="blank">
-                                                    </div>
+                                                    <!--工管費部分-->
+                                                    <label for="approveType1BothPAndL-LManagementFee">是否編列工管費？</label>
+                                                    <input type="radio" id="approveType1BothPAndL-LYesManagementFee" name="approveType1BothPAndL-LYesNoManagementFee" value="yes" required>
+                                                    <label for="approveType1BothPAndL-LYesManagementFee">是</label>
+                                                    <input type="radio" id="approveType1BothPAndL-LNoManagementFee" name="approveType1BothPAndL-LYesNoManagementFee" value="no" required>
+                                                    <label for="approveType1BothPAndL-LNoManagementFee">否</label>
+                                                        <!--輸入工管費年份-->
+                                                        <div id="approveType1BothPAndL-LAdditionalInfoSourceAdjust">
+                                                            <label for="approveType1BothPAndL-LManagementFee">輸入工管費年份：</label>
+                                                            <input type="text" id="approveType1BothPAndL-LManagementFee"  class="blank">
+                                                        </div>
 
-                                                <!--調整預算部分-->
-                                                <label for="approveType1BothPAndL-LSuggestedAmount">是否有調整額度？</label>
-                                                <input type="radio" id="approveType1BothPAndL-LYesSuggestedAmount" name="approveType1BothPAndL-LYesNoSuggestedAmound" value="yes" required>
-                                                <label for="approveType1BothPAndL-LYesSuggestedAmount">是</label>
-                                                <input type="radio" id="approveType1BothPAndL-LNoSuggestedAmount" name="approveType1BothPAndL-LYesNoSuggestedAmound" value="no" required>
-                                                <label for="approveType1BothPAndL-LNoSuggestedAmount">否</label>
-                                                    <!--輸入各項建議補助金額-->
-                                                    <div id="approveType1BothPAndL-LAdditionalInfoSuggestedAmount">
-                                                        <label for="approveType1BothPAndL-LSuggestedTotal">建議補助總額：</label>
-                                                        <input type="text" id="approveType1BothPAndL-LSuggestedTotal"  class="blank">
-                                                        <label for="approveType1BothPAndL-LSuggestedConstructionFee">建議補助施工費：</label>
-                                                        <input type="text" id="approveType1BothPAndL-LSuggestedConstructionFee"  class="blank">
-                                                        <label for="approveType1BothPAndL-LSuggestedArchitectFee">建議補助委技費：</label>
-                                                        <input type="text" id="approveType1BothPAndL-LSuggestedArchitectFee"  class="blank">
-                                                        <label for="approveType1BothPAndL-LSuggestedManagementFee">建議補助工管費：</label>
-                                                        <input type="text" id="approveType1BothPAndL-LSuggestedManagementFee"  class="blank">
-                                                    </div>
+                                                    <!--調整預算部分-->
+                                                    <label for="approveType1BothPAndL-LSuggestedAmount">是否有調整額度？</label>
+                                                    <input type="radio" id="approveType1BothPAndL-LYesSuggestedAmount" name="approveType1BothPAndL-LYesNoSuggestedAmound" value="yes" required>
+                                                    <label for="approveType1BothPAndL-LYesSuggestedAmount">是</label>
+                                                    <input type="radio" id="approveType1BothPAndL-LNoSuggestedAmount" name="approveType1BothPAndL-LYesNoSuggestedAmound" value="no" required>
+                                                    <label for="approveType1BothPAndL-LNoSuggestedAmount">否</label>
+                                                        <!--輸入各項建議補助金額-->
+                                                        <div id="approveType1BothPAndL-LAdditionalInfoSuggestedAmount">
+                                                            <label for="approveType1BothPAndL-LSuggestedTotal">建議補助總額：</label>
+                                                            <input type="text" id="approveType1BothPAndL-LSuggestedTotal"  class="blank">
+                                                            <label for="approveType1BothPAndL-LSuggestedConstructionFee">建議補助施工費：</label>
+                                                            <input type="text" id="approveType1BothPAndL-LSuggestedConstructionFee"  class="blank">
+                                                            <label for="approveType1BothPAndL-LSuggestedArchitectFee">建議補助委技費：</label>
+                                                            <input type="text" id="approveType1BothPAndL-LSuggestedArchitectFee"  class="blank">
+                                                            <label for="approveType1BothPAndL-LSuggestedManagementFee">建議補助工管費：</label>
+                                                            <input type="text" id="approveType1BothPAndL-LSuggestedManagementFee"  class="blank">
+                                                        </div>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <input type="radio" id="approveType1Petition" name="approveKinds" required>
-                                        <label for="approveType1Petition">簽</label>
-                                        <!--核定態樣一簽-->
-                                        <div id="approveType1PetitionContent">
-                                            <!--核定態樣一簽個案細節-->
-                                            <div id="approveType1PetitionKeyInputs">
-                                                <label for="approveType1PetitionSchoolName" style="font-weight: lighter;">輸入校名
-                                                    <input type="text" id="approveType1PetitionSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
-                                                </label>
-                                                <!--修修看國高中的表達方式-->
-            
-                                                <label for="approveType1PetitionProjectName" style="font-weight: lighter;">輸入案名
-                                                    <input type="text" id="approveType1PetitionProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
-                                                </label>
-            
-                                                <label for="approveType1PetitionApproveAmount" style="font-weight: lighter;">輸入核定金額
-                                                    <input type="text" id="approveType1PetitionApproveAmount" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionComingDate" style="font-weight: lighter;">輸入來文日期
-                                                    <input type="text" id="approveType1PetitionComingDate" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionComingWord" style="font-weight: lighter;">輸入來文字
-                                                    <input type="text" id="approveType1PetitionComingWord" class="blank" placeholder="如：北市教工" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionComingNumber" style="font-weight: lighter;">輸入來文號
-                                                    <input type="text" id="approveType1PetitionComingNumber" class="blank" placeholder="如：1131111234" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionAlertDate" style="font-weight: lighter;">輸入通報日期
-                                                    <input type="text" id="approveType1PetitionAlertDate" class="blank" placeholder="如：113年6月10日" required>
-                                                </label>
-                                                <!--看有沒有辦法做個轉換從1130610轉成有年月日，他們打數字就好了-->
-                                                
-                                                <label for="approveType1PetitionSituationArea" style="font-weight: lighter;">輸入狀況區域
-                                                    <input type="text" id="approveType1PetitionSituationArea" class="blank" placeholder="如：明德樓" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionSituation" style="font-weight: lighter;">輸入狀況
-                                                    <input type="text" id="approveType1PetitionSituation" class="blank" placeholder="如：牆裂柱爆" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionInvestigationDate" style="font-weight: lighter;">輸入會勘日期
-                                                    <input type="text" id="approveType1PetitionInvestigationDate" class="blank" placeholder="如：113年6月10日" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionInvestigationResult" style="font-weight: lighter;">輸入會勘結果
-                                                    <input type="text" id="approveType1PetitionInvestigationResult" class="blank" placeholder="看你結論怎麼寫囉" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionOriginalTotal" style="font-weight: lighter;">輸入校方函報金額
-                                                    <input type="text" id="approveType1PetitionOriginalTotal" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionOriginalConstructionFee" style="font-weight: lighter;">輸入校方函報施工費
-                                                    <input type="text" id="approveType1PetitionOriginalConstructionFee" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionOriginalArchitectFee" style="font-weight: lighter;">輸入校方函報委技費
-                                                    <input type="text" id="approveType1PetitionOriginalArchitectFee" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1PetitionOriginalManagementFee" style="font-weight: lighter;">輸入校方函報公管費
-                                                    <input type="text" id="approveType1PetitionOriginalManagementFee" class="blank" placeholder="如：123456789123" required>
-                                                </label>
+                                            <input type="radio" id="approveType1Petition" name="approveKinds" required>
+                                            <label for="approveType1Petition">簽</label>
+                                            <!--核定態樣一簽-->
+                                            <div id="approveType1PetitionContent">
+                                                <!--核定態樣一簽個案細節-->
+                                                <div id="approveType1PetitionKeyInputs">
+                                                    <label for="approveType1PetitionSchoolName" style="font-weight: lighter;">輸入校名
+                                                        <input type="text" id="approveType1PetitionSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                                                    </label>
+                                                    <!--修修看國高中的表達方式-->
+                
+                                                    <label for="approveType1PetitionProjectName" style="font-weight: lighter;">輸入案名
+                                                        <input type="text" id="approveType1PetitionProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                                                    </label>
+                
+                                                    <label for="approveType1PetitionApproveAmount" style="font-weight: lighter;">輸入核定金額
+                                                        <input type="text" id="approveType1PetitionApproveAmount" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionComingDate" style="font-weight: lighter;">輸入來文日期
+                                                        <input type="text" id="approveType1PetitionComingDate" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionComingWord" style="font-weight: lighter;">輸入來文字
+                                                        <input type="text" id="approveType1PetitionComingWord" class="blank" placeholder="如：北市教工" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionComingNumber" style="font-weight: lighter;">輸入來文號
+                                                        <input type="text" id="approveType1PetitionComingNumber" class="blank" placeholder="如：1131111234" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionAlertDate" style="font-weight: lighter;">輸入通報日期
+                                                        <input type="text" id="approveType1PetitionAlertDate" class="blank" placeholder="如：113年6月10日" required>
+                                                    </label>
+                                                    <!--看有沒有辦法做個轉換從1130610轉成有年月日，他們打數字就好了-->
+                                                    
+                                                    <label for="approveType1PetitionSituationArea" style="font-weight: lighter;">輸入狀況區域
+                                                        <input type="text" id="approveType1PetitionSituationArea" class="blank" placeholder="如：明德樓" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionSituation" style="font-weight: lighter;">輸入狀況
+                                                        <input type="text" id="approveType1PetitionSituation" class="blank" placeholder="如：牆裂柱爆" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionInvestigationDate" style="font-weight: lighter;">輸入會勘日期
+                                                        <input type="text" id="approveType1PetitionInvestigationDate" class="blank" placeholder="如：113年6月10日" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionInvestigationResult" style="font-weight: lighter;">輸入會勘結果
+                                                        <input type="text" id="approveType1PetitionInvestigationResult" class="blank" placeholder="看你結論怎麼寫囉" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionOriginalTotal" style="font-weight: lighter;">輸入校方函報金額
+                                                        <input type="text" id="approveType1PetitionOriginalTotal" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionOriginalConstructionFee" style="font-weight: lighter;">輸入校方函報施工費
+                                                        <input type="text" id="approveType1PetitionOriginalConstructionFee" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionOriginalArchitectFee" style="font-weight: lighter;">輸入校方函報委技費
+                                                        <input type="text" id="approveType1PetitionOriginalArchitectFee" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1PetitionOriginalManagementFee" style="font-weight: lighter;">輸入校方函報公管費
+                                                        <input type="text" id="approveType1PetitionOriginalManagementFee" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                </div>
+                                                <!--核定態樣一簽特殊情況-->
+                                                <div id="approveType1PetitionConditions">
+                                                <label for="approveType1PetitionYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
+                                                <input type="radio" id="approveType1PetitionYesYearEnd" name="approveType1PetitionYesNoYearEnd" value="yes" required>
+                                                <label for="approveType1PetitionYesYearEnd">是</label>
+                                                <input type="radio" id="approveType1PetitionNoYearEnd" name="approveType1PetitionYesNoYearEnd" value="no" required>
+                                                <label for="approveType1PetitionNoYearEnd">否</label>
+                
+                                                <br>
+                
+                                                <label for="approveType1PetitionsourceAdjust">是否需調整財源？</label>
+                                                <input type="radio" id="approveType1PetitionyesSourceAdjust" name="approveType1PetitionyesNoSourceAdjust" value="yes" required>
+                                                <label for="approveType1PetitionyesSourceAdjust">是</label>
+                                                <input type="radio" id="approveType1PetitionnoSourceAdjust" name="approveType1PetitionyesNoSourceAdjust" value="no" required>
+                                                <label for="approveType1PetitionnoSourceAdjust">否</label>
+                                                <div id="approveType1PetitionadditionalInfoSourceAdjust">
+                                                    <label for="approveType1PetitiontargetSource">目標財源：</label>
+                                                    <input type="text" id="approveType1PetitiontargetSource"  class="blank">
+                                                    <label for="approveType1PetitionadjustedSourceA">調整財源1：</label>
+                                                    <input type="text" id="approveType1PetitionadjustedSourceA"  class="blank">
+                                                    <label for="approveType1PetitionadjustedSourceAAmount">財源1調整金額：</label>
+                                                    <input type="text" id="approveType1PetitionadjustedSourceAAmount"  class="blank">
+                                                    <label for="approveType1PetitionadjustedSourceB">調整財源2：</label>
+                                                    <input type="text" id="approveType1PetitionadjustedSourceB"  class="blank">
+                                                    <label for="approveType1PetitionadjustedSourceBAmount">財源2調整金額：</label>
+                                                    <input type="text" id="approveType1PetitionadjustedSourceBAmount"  class="blank">
+                                                    <label for="approveType1PetitionadjustedSourceC">調整財源3：</label>
+                                                    <input type="text" id="approveType1PetitionadjustedSourceC"  class="blank">
+                                                    <label for="approveType1PetitionadjustedSourceCAmount">財源3調整金額：</label>
+                                                    <input type="text" id="approveType1PetitionadjustedSourceCAmount"  class="blank">
+                                                    <label for="approveType1PetitionadjustedSourceD">調整財源4：</label>
+                                                    <input type="text" id="approveType1PetitionadjustedSourceD"  class="blank">
+                                                    <label for="approveType1PetitionadjustedSourceDAmount">財源4調整金額：</label>
+                                                    <input type="text" id="approveType1PetitionadjustedSourceDAmount"  class="blank">
+                                                    <label for="approveType1PetitionadjustedSourceE">調整財源5：</label>
+                                                    <input type="text" id="approveType1PetitionadjustedSourceE"  class="blank">
+                                                    <label for="approveType1PetitionadjustedSourceEAmount">財源5調整金額：</label>
+                                                    <input type="text" id="approveType1PetitionadjustedSourceEAmount"  class="blank">
+                                                </div>
+                
+                                                <br>
+                
+                                                <label for="approveType1PetitionsuggestedAmount">是否需調整額度？</label>
+                                                <input type="radio" id="approveType1PetitionyesSuggestedAmount" name="approveType1PetitionyesNoSuggestedAmound" value="yes" required>
+                                                <label for="approveType1PetitionyesSuggestedAmount">是</label>
+                                                <input type="radio" id="approveType1PetitionnoSuggestedAmount" name="approveType1PetitionyesNoSuggestedAmound" value="no" required>
+                                                <label for="approveType1PetitionnoSuggestedAmount">否</label>
+                                                <div id="approveType1PetitionadditionalInfoSuggestedAmount">
+                                                    <label for="approveType1PetitionsuggestedTotal">建議補助總額：</label>
+                                                    <input type="text" id="approveType1PetitionsuggestedTotal"  class="blank">
+                                                    <label for="approveType1PetitionsuggestedConstructionFee">建議補助施工費：</label>
+                                                    <input type="text" id="approveType1PetitionsuggestedConstructionFee"  class="blank">
+                                                    <label for="approveType1PetitionsuggestedArchitectFee">建議補助委技費：</label>
+                                                    <input type="text" id="approveType1PetitionsuggestedArchitectFee"  class="blank">
+                                                    <label for="approveType1PetitionsuggestedManagementFee">建議補助工管費：</label>
+                                                    <input type="text" id="approveType1PetitionsuggestedManagementFee"  class="blank">
+                                                </div>
+                                                </div>
                                             </div>
-                                            <!--核定態樣一簽特殊情況-->
-                                            <div id="approveType1PetitionConditions">
-                                            <label for="approveType1PetitionYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
-                                            <input type="radio" id="approveType1PetitionYesYearEnd" name="approveType1PetitionYesNoYearEnd" value="yes" required>
-                                            <label for="approveType1PetitionYesYearEnd">是</label>
-                                            <input type="radio" id="approveType1PetitionNoYearEnd" name="approveType1PetitionYesNoYearEnd" value="no" required>
-                                            <label for="approveType1PetitionNoYearEnd">否</label>
-            
-                                            <br>
-            
-                                            <label for="approveType1PetitionsourceAdjust">是否需調整財源？</label>
-                                            <input type="radio" id="approveType1PetitionyesSourceAdjust" name="approveType1PetitionyesNoSourceAdjust" value="yes" required>
-                                            <label for="approveType1PetitionyesSourceAdjust">是</label>
-                                            <input type="radio" id="approveType1PetitionnoSourceAdjust" name="approveType1PetitionyesNoSourceAdjust" value="no" required>
-                                            <label for="approveType1PetitionnoSourceAdjust">否</label>
-                                            <div id="approveType1PetitionadditionalInfoSourceAdjust">
-                                                <label for="approveType1PetitiontargetSource">目標財源：</label>
-                                                <input type="text" id="approveType1PetitiontargetSource"  class="blank">
-                                                <label for="approveType1PetitionadjustedSourceA">調整財源1：</label>
-                                                <input type="text" id="approveType1PetitionadjustedSourceA"  class="blank">
-                                                <label for="approveType1PetitionadjustedSourceAAmount">財源1調整金額：</label>
-                                                <input type="text" id="approveType1PetitionadjustedSourceAAmount"  class="blank">
-                                                <label for="approveType1PetitionadjustedSourceB">調整財源2：</label>
-                                                <input type="text" id="approveType1PetitionadjustedSourceB"  class="blank">
-                                                <label for="approveType1PetitionadjustedSourceBAmount">財源2調整金額：</label>
-                                                <input type="text" id="approveType1PetitionadjustedSourceBAmount"  class="blank">
-                                                <label for="approveType1PetitionadjustedSourceC">調整財源3：</label>
-                                                <input type="text" id="approveType1PetitionadjustedSourceC"  class="blank">
-                                                <label for="approveType1PetitionadjustedSourceCAmount">財源3調整金額：</label>
-                                                <input type="text" id="approveType1PetitionadjustedSourceCAmount"  class="blank">
-                                                <label for="approveType1PetitionadjustedSourceD">調整財源4：</label>
-                                                <input type="text" id="approveType1PetitionadjustedSourceD"  class="blank">
-                                                <label for="approveType1PetitionadjustedSourceDAmount">財源4調整金額：</label>
-                                                <input type="text" id="approveType1PetitionadjustedSourceDAmount"  class="blank">
-                                                <label for="approveType1PetitionadjustedSourceE">調整財源5：</label>
-                                                <input type="text" id="approveType1PetitionadjustedSourceE"  class="blank">
-                                                <label for="approveType1PetitionadjustedSourceEAmount">財源5調整金額：</label>
-                                                <input type="text" id="approveType1PetitionadjustedSourceEAmount"  class="blank">
-                                            </div>
-            
-                                            <br>
-            
-                                            <label for="approveType1PetitionsuggestedAmount">是否需調整額度？</label>
-                                            <input type="radio" id="approveType1PetitionyesSuggestedAmount" name="approveType1PetitionyesNoSuggestedAmound" value="yes" required>
-                                            <label for="approveType1PetitionyesSuggestedAmount">是</label>
-                                            <input type="radio" id="approveType1PetitionnoSuggestedAmount" name="approveType1PetitionyesNoSuggestedAmound" value="no" required>
-                                            <label for="approveType1PetitionnoSuggestedAmount">否</label>
-                                            <div id="approveType1PetitionadditionalInfoSuggestedAmount">
-                                                <label for="approveType1PetitionsuggestedTotal">建議補助總額：</label>
-                                                <input type="text" id="approveType1PetitionsuggestedTotal"  class="blank">
-                                                <label for="approveType1PetitionsuggestedConstructionFee">建議補助施工費：</label>
-                                                <input type="text" id="approveType1PetitionsuggestedConstructionFee"  class="blank">
-                                                <label for="approveType1PetitionsuggestedArchitectFee">建議補助委技費：</label>
-                                                <input type="text" id="approveType1PetitionsuggestedArchitectFee"  class="blank">
-                                                <label for="approveType1PetitionsuggestedManagementFee">建議補助工管費：</label>
-                                                <input type="text" id="approveType1PetitionsuggestedManagementFee"  class="blank">
-                                            </div>
-                                            </div>
-                                        </div>
 
-                                        <input type="radio" id="approveType1Letter" name="approveKinds" required>
-                                        <label for="approveType1Letter">稿</label>
-                                        <!--核定態樣一稿-->
-                                        <div id="approveType1LetterContent">
-                                            <!--核定態樣一稿個案細節-->
-                                            <div id="approveType1LetterKeyInputs">
-                                                <label for="approveType1LetterSchoolName" style="font-weight: lighter;">輸入校名
-                                                    <input type="text" id="approveType1LetterSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
-                                                </label>
-                                                <!--修修看國高中的表達方式-->
-            
-                                                <label for="approveType1LetterProjectName" style="font-weight: lighter;">輸入案名
-                                                    <input type="text" id="approveType1LetterProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
-                                                </label>
-            
-                                                <label for="approveType1LetterApproveAmount" style="font-weight: lighter;">輸入核定金額
-                                                    <input type="text" id="approveType1LetterApproveAmount" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1LetterComingDate" style="font-weight: lighter;">輸入來文日期
-                                                    <input type="text" id="approveType1LetterComingDate" class="blank" placeholder="如：123456789123" required>
-                                                </label>
-                                                
-                                                <label for="approveType1LetterComingWord" style="font-weight: lighter;">輸入來文字
-                                                    <input type="text" id="approveType1LetterComingWord" class="blank" placeholder="如：北市教工" required>
-                                                </label>
-                                                
-                                                <label for="approveType1LetterComingNumber" style="font-weight: lighter;">輸入來文號
-                                                    <input type="text" id="approveType1LetterComingNumber" class="blank" placeholder="如：1131111234" required>
-                                                </label>
-                                            </div>
-                                            <!--核定態樣一稿特殊情況-->
-                                            <div id="approveType1LetterConditions">
-                                                <!--預算尚未通過部分-->
-                                                <label for="approveType1LetterReviewFinished">是否有預算尚未經議會審議通過情形？</label>
-                                                <input type="radio" id="approveType1LetterYesReviewFinished" name="approveType1LetterYesNoReviewFinished" value="yes" required>
-                                                <label for="approveType1LetterYesReviewFinished">是</label>
-                                                <input type="radio" id="approveType1LetterNoReviewFinished" name="approveType1LetterYesNoReviewFinished" value="no" required>
-                                                <label for="approveType1LetterNoReviewFinished">否</label>
-                                                    <!--輸入預算審議年份-->
-                                                    <div>
-                                                        <label for="approveType1LetterReviewYear" style="font-weight: lighter;">輸入預算年份：
-                                                            <input type="text" id="approveType1LetterReviewYear" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
-                                                        </label>    
-                                                    </div>
+                                            <input type="radio" id="approveType1Letter" name="approveKinds" required>
+                                            <label for="approveType1Letter">稿</label>
+                                            <!--核定態樣一稿-->
+                                            <div id="approveType1LetterContent">
+                                                <!--核定態樣一稿個案細節-->
+                                                <div id="approveType1LetterKeyInputs">
+                                                    <label for="approveType1LetterSchoolName" style="font-weight: lighter;">輸入校名
+                                                        <input type="text" id="approveType1LetterSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                                                    </label>
+                                                    <!--修修看國高中的表達方式-->
+                
+                                                    <label for="approveType1LetterProjectName" style="font-weight: lighter;">輸入案名
+                                                        <input type="text" id="approveType1LetterProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                                                    </label>
+                
+                                                    <label for="approveType1LetterApproveAmount" style="font-weight: lighter;">輸入核定金額
+                                                        <input type="text" id="approveType1LetterApproveAmount" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1LetterComingDate" style="font-weight: lighter;">輸入來文日期
+                                                        <input type="text" id="approveType1LetterComingDate" class="blank" placeholder="如：123456789123" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1LetterComingWord" style="font-weight: lighter;">輸入來文字
+                                                        <input type="text" id="approveType1LetterComingWord" class="blank" placeholder="如：北市教工" required>
+                                                    </label>
+                                                    
+                                                    <label for="approveType1LetterComingNumber" style="font-weight: lighter;">輸入來文號
+                                                        <input type="text" id="approveType1LetterComingNumber" class="blank" placeholder="如：1131111234" required>
+                                                    </label>
+                                                </div>
+                                                <!--核定態樣一稿特殊情況-->
+                                                <div id="approveType1LetterConditions">
+                                                    <!--預算尚未通過部分-->
+                                                    <label for="approveType1LetterReviewFinished">是否有預算尚未經議會審議通過情形？</label>
+                                                    <input type="radio" id="approveType1LetterYesReviewFinished" name="approveType1LetterYesNoReviewFinished" value="yes" required>
+                                                    <label for="approveType1LetterYesReviewFinished">是</label>
+                                                    <input type="radio" id="approveType1LetterNoReviewFinished" name="approveType1LetterYesNoReviewFinished" value="no" required>
+                                                    <label for="approveType1LetterNoReviewFinished">否</label>
+                                                        <!--輸入預算審議年份-->
+                                                        <div>
+                                                            <label for="approveType1LetterReviewYear" style="font-weight: lighter;">輸入預算年份：
+                                                                <input type="text" id="approveType1LetterReviewYear" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                                                            </label>    
+                                                        </div>
 
-                                                <!--工管費部分-->
-                                                <label for="approveType1LetterManagementFee">是否編列工管費？</label>
-                                                <input type="radio" id="approveType1LetterYesManagementFee" name="approveType1LetterYesNoManagementFee" value="yes" required>
-                                                <label for="approveType1LetterYesManagementFee">是</label>
-                                                <input type="radio" id="approveType1LetterNoManagementFee" name="approveType1LetterYesNoManagementFee" value="no" required>
-                                                <label for="approveType1LetterNoManagementFee">否</label>
-                                                    <!--輸入工管費年份-->
-                                                    <div id="approveType1LetterAdditionalInfoSourceAdjust">
-                                                        <label for="approveType1LetterManagementFee">輸入工管費年份：</label>
-                                                        <input type="text" id="approveType1LetterManagementFee"  class="blank">
-                                                    </div>
+                                                    <!--工管費部分-->
+                                                    <label for="approveType1LetterManagementFee">是否編列工管費？</label>
+                                                    <input type="radio" id="approveType1LetterYesManagementFee" name="approveType1LetterYesNoManagementFee" value="yes" required>
+                                                    <label for="approveType1LetterYesManagementFee">是</label>
+                                                    <input type="radio" id="approveType1LetterNoManagementFee" name="approveType1LetterYesNoManagementFee" value="no" required>
+                                                    <label for="approveType1LetterNoManagementFee">否</label>
+                                                        <!--輸入工管費年份-->
+                                                        <div id="approveType1LetterAdditionalInfoSourceAdjust">
+                                                            <label for="approveType1LetterManagementFee">輸入工管費年份：</label>
+                                                            <input type="text" id="approveType1LetterManagementFee"  class="blank">
+                                                        </div>
 
-                                                <!--調整預算部分-->
-                                                <label for="approveType1LetterSuggestedAmount">是否有調整額度？</label>
-                                                <input type="radio" id="approveType1LetterYesSuggestedAmount" name="approveType1LetterYesNoSuggestedAmound" value="yes" required>
-                                                <label for="approveType1LetterYesSuggestedAmount">是</label>
-                                                <input type="radio" id="approveType1LetterNoSuggestedAmount" name="approveType1LetterYesNoSuggestedAmound" value="no" required>
-                                                <label for="approveType1LetterNoSuggestedAmount">否</label>
-                                                    <!--輸入各項建議補助金額-->
-                                                    <div id="approveType1LetterAdditionalInfoSuggestedAmount">
-                                                        <label for="approveType1LetterSuggestedTotal">建議補助總額：</label>
-                                                        <input type="text" id="approveType1LetterSuggestedTotal"  class="blank">
-                                                        <label for="approveType1LetterSuggestedConstructionFee">建議補助施工費：</label>
-                                                        <input type="text" id="approveType1LetterSuggestedConstructionFee"  class="blank">
-                                                        <label for="approveType1LetterSuggestedArchitectFee">建議補助委技費：</label>
-                                                        <input type="text" id="approveType1LetterSuggestedArchitectFee"  class="blank">
-                                                        <label for="approveType1LetterSuggestedManagementFee">建議補助工管費：</label>
-                                                        <input type="text" id="approveType1LetterSuggestedManagementFee"  class="blank">
-                                                    </div>
+                                                    <!--調整預算部分-->
+                                                    <label for="approveType1LetterSuggestedAmount">是否有調整額度？</label>
+                                                    <input type="radio" id="approveType1LetterYesSuggestedAmount" name="approveType1LetterYesNoSuggestedAmound" value="yes" required>
+                                                    <label for="approveType1LetterYesSuggestedAmount">是</label>
+                                                    <input type="radio" id="approveType1LetterNoSuggestedAmount" name="approveType1LetterYesNoSuggestedAmound" value="no" required>
+                                                    <label for="approveType1LetterNoSuggestedAmount">否</label>
+                                                        <!--輸入各項建議補助金額-->
+                                                        <div id="approveType1LetterAdditionalInfoSuggestedAmount">
+                                                            <label for="approveType1LetterSuggestedTotal">建議補助總額：</label>
+                                                            <input type="text" id="approveType1LetterSuggestedTotal"  class="blank">
+                                                            <label for="approveType1LetterSuggestedConstructionFee">建議補助施工費：</label>
+                                                            <input type="text" id="approveType1LetterSuggestedConstructionFee"  class="blank">
+                                                            <label for="approveType1LetterSuggestedArchitectFee">建議補助委技費：</label>
+                                                            <input type="text" id="approveType1LetterSuggestedArchitectFee"  class="blank">
+                                                            <label for="approveType1LetterSuggestedManagementFee">建議補助工管費：</label>
+                                                            <input type="text" id="approveType1LetterSuggestedManagementFee"  class="blank">
+                                                        </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </p>
