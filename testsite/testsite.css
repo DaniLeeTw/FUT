@@ -31,16 +31,20 @@ body {
     text-align: center;
     color: aquamarine;
 }
-
-/*hide everything first*/
 #selectApproveTypes{
     display: none;
 }
+
+/*隱藏核定態樣一*/
 #selectApproveType1Kinds{
     display: none;
 }
-#approveType1BothPAndLControls{
-    display: none;  
+#approveType1Controls{
+    display: none;
+}
+/*隱藏核定態樣一純工程簽稿-簽*/
+#approveType1BothPAndL{
+    display: none;
 }
 #approveType1BothPAndLPContent{
     display: none;
@@ -51,12 +55,13 @@ body {
 #approveType1BothPAndLPConditions{
     display: none;
 }
-#approveType1BothPAndLPAdditionalInfoSourceAdjustP{
+#approveType1BothPAndLPAdditionalInfoSourceAdjust{
     display: none;
 }
 #approveType1BothPAndLPAdditionalInfoSuggestedAmount{
     display: none;
 }
+/*隱藏核定態樣一純工程簽稿-稿*/
 #approveType1BothPAndLLContent{
     display: none;
 }
@@ -72,10 +77,135 @@ body {
 #approveType1BothPAndLLManagementFeeYear{
     display: none;
 }
-#approveType1BothPAndLLAdditionalInfoSuggestedAmount{
+
+/*隱藏核定態樣一純工程簽*/
+#approveType1Petition{
+    display: none;
+}
+#approveType1PetitionKeyInputs{
+    display: none;
+}
+#approveType1PetitionConditions{
+    display: none;
+}
+#approveType1PetitionadditionalInfoSourceAdjust{
+    display: none;
+}
+#approveType1PetitionadditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核定態樣一純工程稿*/
+#approveType1Letter{
+    display: none;
+}
+#approveType1LetterContent{
+    display: none;
+}
+#approveType1LetterKeyInputs{
+    display: none;
+}
+#approveType1LetterConditions{
+    display: none;
+}
+#approveType1LetterReviewYearWhen{
+    display: none;
+}
+#approveType1LetterAdditionalInfoSourceAdjust{
+    display: none;
+}
+#approveType1LetterAdditionalInfoSuggestedAmount{
     display: none;
 }
 
+
+/*隱藏核定態樣二*/
+#selectApproveType2Kinds{
+    display: none;
+}
+#approveType2Controls{
+    display: none;
+}
+/*隱藏核定態樣二純工程簽稿-簽*/
+#approveType2BothPAndL{
+    display: none;
+}
+#approveType2BothPAndLPContent{
+    display: none;
+}
+#approveType2BothPAndLPKeyInputs{
+    display: none;
+}
+#approveType2BothPAndLPConditions{
+    display: none;
+}
+#approveType2BothPAndLPAdditionalInfoSourceAdjust{
+    display: none;
+}
+#approveType2BothPAndLPAdditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核定態樣二純工程簽稿-稿*/
+#approveType2BothPAndLLContent{
+    display: none;
+}
+#approveType2BothPAndLLKeyInputs{
+    display: none;
+}
+#approveType2BothPAndLLConditions{
+    display: none;
+}
+#approveType2BothPAndLLBudgetReview{
+    display: none;
+}
+#approveType2BothPAndLLManagementFeeYear{
+    display: none;
+}
+
+/*隱藏核定態樣二純工程簽*/
+#approveType2Petition{
+    display: none;
+}
+#approveType2PetitionKeyInputs{
+    display: none;
+}
+#approveType2PetitionConditions{
+    display: none;
+}
+#approveType2PetitionadditionalInfoSourceAdjust{
+    display: none;
+}
+#approveType2PetitionadditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核定態樣二純工程稿*/
+#approveType2Letter{
+    display: none;
+}
+#approveType2LetterContent{
+    display: none;
+}
+#approveType2LetterKeyInputs{
+    display: none;
+}
+#approveType2LetterConditions{
+    display: none;
+}
+#approveType2LetterReviewYearWhen{
+    display: none;
+}
+#approveType2LetterAdditionalInfoSourceAdjust{
+    display: none;
+}
+#approveType2LetterAdditionalInfoSuggestedAmount{
+    display: none;
+}
+
+/*隱藏核定態樣二含設備簽稿*/
+/*隱藏核定態樣二含設備簽*/
+/*隱藏核定態樣二含設備稿*/
+/*隱藏核定態樣三純設備簽稿*/
+/*隱藏核定態樣三純設備簽*/
+/*隱藏核定態樣三純設備稿*/
 
 
 #selectAppropriateTypes{
@@ -85,8 +215,6 @@ body {
 #selectPreparedFundTypes{
     display: none;
 }
-
-
 
 
 
