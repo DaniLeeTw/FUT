@@ -200,6 +200,88 @@ body {
     display: none;
 }
 
+/*隱藏核定態樣三*/
+#selectApproveType3Kinds{
+    display: none;
+}
+#approveType3Controls{
+    display: none;
+}
+/*隱藏核定態樣三純工程簽稿-簽*/
+#approveType3BothPAndL{
+    display: none;
+}
+#approveType3BothPAndLPContent{
+    display: none;
+}
+#approveType3BothPAndLPKeyInputs{
+    display: none;
+}
+#approveType3BothPAndLPConditions{
+    display: none;
+}
+#approveType3BothPAndLPAdditionalInfoSourceAdjust{
+    display: none;
+}
+#approveType3BothPAndLPAdditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核定態樣三純工程簽稿-稿*/
+#approveType3BothPAndLLContent{
+    display: none;
+}
+#approveType3BothPAndLLKeyInputs{
+    display: none;
+}
+#approveType3BothPAndLLConditions{
+    display: none;
+}
+#approveType3BothPAndLLBudgetReview{
+    display: none;
+}
+#approveType3BothPAndLLManagementFeeYear{
+    display: none;
+}
+
+/*隱藏核定態樣三純工程簽*/
+#approveType3Petition{
+    display: none;
+}
+#approveType3PetitionKeyInputs{
+    display: none;
+}
+#approveType3PetitionConditions{
+    display: none;
+}
+#approveType3PetitionadditionalInfoSourceAdjust{
+    display: none;
+}
+#approveType3PetitionadditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核定態樣三純工程稿*/
+#approveType3Letter{
+    display: none;
+}
+#approveType3LetterContent{
+    display: none;
+}
+#approveType3LetterKeyInputs{
+    display: none;
+}
+#approveType3LetterConditions{
+    display: none;
+}
+#approveType3LetterReviewYearWhen{
+    display: none;
+}
+#approveType3LetterAdditionalInfoSourceAdjust{
+    display: none;
+}
+#approveType3LetterAdditionalInfoSuggestedAmount{
+    display: none;
+}
+
 /*隱藏核定態樣二含設備簽稿*/
 /*隱藏核定態樣二含設備簽*/
 /*隱藏核定態樣二含設備稿*/
