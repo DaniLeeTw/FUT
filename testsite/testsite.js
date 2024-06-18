@@ -3,6 +3,14 @@ const generalConfig = document.getElementById("generalConfig");
 const chooseBetweenApproveAndAppropriate = document.getElementById("chooseBetweenApproveAndAppropriate");
 const approve = document.getElementById("approve");
 const approveContainer = document.getElementById("approveContainer");
+const selectApproveTypes = document.getElementById("selectApproveTypes");
+const appropriate = document.getElementById("appropriate");
+const appropriateContainer = document.getElementById("appropriateContainer")
+const selectAppropriateTypes = document.getElementById("selectAppropriateTypes");
+const preparedFund = document.getElementById("preparedFund");
+const preparedFundContainer = document.getElementById("preparedFundContainer")
+const selectPreparedFundTypes = document.getElementById("selectPreparedFundTypes")
+
 //核定態樣
 const approveType1 = document.getElementById("approveType1");
 const approveType2 = document.getElementById("approveType2")
@@ -15,7 +23,7 @@ const selectApproveType3Kinds = document.getElementById("selectApproveType3Kinds
 const approveType1Controls = document.getElementById("approveType1Controls");
 const approveType1BothPAndL = document.getElementById("approveType1BothPAndL");
 const approveType1BothPAndLPContent = document.getElementById("approveType1BothPAndLPContent");
-const approveType1BothPAndLPKeyInputs = document.getElementById("approveType1BothPAndLPKeyInputs");
+const approveType1BothPAndLKeyInputs = document.getElementById("approveType1BothPAndLKeyInputs");
 const approveType1BothPAndLPConditions = document.getElementById("approveType1BothPAndLPConditions");
 const approveType1BothPAndLPAdditionalInfoSourceAdjust = document.getElementById("approveType1BothPAndLPAdditionalInfoSourceAdjust");
 const approveType1BothPAndLPAdditionalInfoSuggestedAmount = document.getElementById("approveType1BothPAndLPAdditionalInfoSuggestedAmount");
@@ -39,31 +47,90 @@ const approveType1LetterKeyInputs = document.getElementById("approveType1LetterK
 const approveType1LetterConditions = document.getElementById("approveType1LetterConditions");
 const approveType1LetterAdditionalInfoSourceAdjust = document.getElementById("approveType1LetterAdditionalInfoSourceAdjust");
 const approveType1LetterAdditionalInfoSuggestedAmount = document.getElementById("approveType1LetterAdditionalInfoSuggestedAmount");
-
+//核定態樣二*簽稿*
 const approveType2Controls = document.getElementById("approveType2Controls");
 const approveType2BothPAndL = document.getElementById("approveType2BothPAndL");
+const approveType2BothPAndLPContent = document.getElementById("approveType2BothPAndLPContent");
+const approveType2BothPAndLPKeyInputs = document.getElementById("approveType2BothPAndLPKeyInputs");
+const approveType2BothPAndLPConditions = document.getElementById("approveType2BothPAndLPConditions");
+const approveType2BothPAndLPAdditionalInfoSourceAdjust = document.getElementById("approveType2BothPAndLPAdditionalInfoSourceAdjust");
+const approveType2BothPAndLPAdditionalInfoSuggestedAmount = document.getElementById("approveType2BothPAndLPAdditionalInfoSuggestedAmount");
+const approveType2BothPAndLLContent = document.getElementById("approveType2BothPAndLLContent");
+const approveType2BothPAndLLKeyInputs = document.getElementById("approveType2BothPAndLLKeyInputs");
+const approveType2BothPAndLLConditions = document.getElementById("approveType2BothPAndLLConditions");
+const approveType2BothPAndLLBudgetReview = document.getElementById("approveType2BothPAndLLBudgetReview");
+const approveType2BothPAndLLManagementFeeYear = document.getElementById("approveType2BothPAndLLManagementFeeYear");
+const approveType2BothPAndLLAdditionalInfoSuggestedAmount = document.getElementById("approveType2BothPAndLLAdditionalInfoSuggestedAmount");
+//核定態樣二*簽*
 const approveType2Petition = document.getElementById("approveType2Petition");
+const approveType2PetitionContent = document.getElementById("approveType2PetitionContent");
+const approveType2PetitionKeyInputs = document.getElementById("approveType2PetitionKeyInputs");
+const approveType2PetitionConditions = document.getElementById("approveType2PetitionConditions");
+const approveType2PetitionadditionalInfoSourceAdjust = document.getElementById("approveType2PetitionadditionalInfoSourceAdjust");
+const approveType2PetitionadditionalInfoSuggestedAmount = document.getElementById("approveType2PetitionadditionalInfoSuggestedAmount");
+//核定態樣二*稿*
 const approveType2Letter = document.getElementById("approveType2Letter");
+const approveType2LetterContent = document.getElementById("approveType2LetterContent");
+const approveType2LetterKeyInputs = document.getElementById("approveType2LetterKeyInputs");
+const approveType2LetterConditions = document.getElementById("approveType2LetterConditions");
+const approveType2LetterAdditionalInfoSourceAdjust = document.getElementById("approveType2LetterAdditionalInfoSourceAdjust");
+const approveType2LetterAdditionalInfoSuggestedAmount = document.getElementById("approveType2LetterAdditionalInfoSuggestedAmount");
+//核定態樣二*簽稿*
 const approveType3Controls = document.getElementById("approveType3Controls");
 const approveType3BothPAndL = document.getElementById("approveType3BothPAndL");
+const approveType3BothPAndLPContent = document.getElementById("approveType3BothPAndLPContent");
+const approveType3BothPAndLPKeyInputs = document.getElementById("approveType3BothPAndLPKeyInputs");
+const approveType3BothPAndLPConditions = document.getElementById("approveType3BothPAndLPConditions");
+const approveType3BothPAndLPAdditionalInfoSourceAdjust = document.getElementById("approveType3BothPAndLPAdditionalInfoSourceAdjust");
+const approveType3BothPAndLPAdditionalInfoSuggestedAmount = document.getElementById("approveType3BothPAndLPAdditionalInfoSuggestedAmount");
+const approveType3BothPAndLLContent = document.getElementById("approveType3BothPAndLLContent");
+const approveType3BothPAndLLKeyInputs = document.getElementById("approveType3BothPAndLLKeyInputs");
+const approveType3BothPAndLLConditions = document.getElementById("approveType3BothPAndLLConditions");
+const approveType3BothPAndLLBudgetReview = document.getElementById("approveType3BothPAndLLBudgetReview");
+const approveType3BothPAndLLManagementFeeYear = document.getElementById("approveType3BothPAndLLManagementFeeYear");
+const approveType3BothPAndLLAdditionalInfoSuggestedAmount = document.getElementById("approveType3BothPAndLLAdditionalInfoSuggestedAmount");
+//核定態樣二*簽*
 const approveType3Petition = document.getElementById("approveType3Petition");
+const approveType3PetitionContent = document.getElementById("approveType3PetitionContent");
+const approveType3PetitionKeyInputs = document.getElementById("approveType3PetitionKeyInputs");
+const approveType3PetitionConditions = document.getElementById("approveType3PetitionConditions");
+const approveType3PetitionadditionalInfoSourceAdjust = document.getElementById("approveType3PetitionadditionalInfoSourceAdjust");
+const approveType3PetitionadditionalInfoSuggestedAmount = document.getElementById("approveType3PetitionadditionalInfoSuggestedAmount");
+//核定態樣二*稿*
 const approveType3Letter = document.getElementById("approveType3Letter");
-const appropriate = document.getElementById("appropriate");
-const preparedFund = document.getElementById("preparedFund");
-const selectApproveTypes = document.getElementById("selectApproveTypes");
+const approveType3LetterContent = document.getElementById("approveType3LetterContent");
+const approveType3LetterKeyInputs = document.getElementById("approveType3LetterKeyInputs");
+const approveType3LetterConditions = document.getElementById("approveType3LetterConditions");
+const approveType3LetterAdditionalInfoSourceAdjust = document.getElementById("approveType3LetterAdditionalInfoSourceAdjust");
+const approveType3LetterAdditionalInfoSuggestedAmount = document.getElementById("approveType3LetterAdditionalInfoSuggestedAmount");
+
+
+
 
 function selectApprove(){
     if(approve.checked){
         approveContainer.style.display = "block";
         selectApproveTypes.style.display = "block";
+        appropriateContainer.style.display = "none";
+        selectAppropriateTypes.style.display = "none";
+        preparedFundContainer.style.display = "none";
+        selectPreparedFundTypes.style.display = "none";
     }
     if(appropriate.checked){
         approveContainer.style.display = "none";
         selectApproveTypes.style.display = "none";
+        appropriateContainer.style.display = "block";
+        selectAppropriateTypes.style.display = "block";
+        preparedFundContainer.style.display = "none";
+        selectPreparedFundTypes.style.display = "none";
     }
     if(preparedFund.checked){
         approveContainer.style.display = "none";
         selectApproveTypes.style.display = "none";
+        appropriateContainer.style.display = "none";
+        selectAppropriateTypes.style.display = "none";
+        preparedFundContainer.style.display = "block";
+        selectPreparedFundTypes.style.display = "block";
     }
 }
 approve.addEventListener('change', selectApprove);
@@ -132,7 +199,10 @@ approveType3.addEventListener('change', selectApproveKinds);
 function enterContents(){
     if(approveType1BothPAndL.checked){
         approveType1BothPAndLPContent.style.display = "block";
+        approveType1BothPAndLKeyInputs.style.display = "block";
+        approveType1BothPAndLPConditions.style.display = "block"
         approveType1BothPAndLLContent.style.display = "block";
+        approveType1BothPAndLLConditions.style.display = "block";
         approveType1PetitionContent.style.display = "none";
         approveType1LetterContent.style.display = "none";
     }

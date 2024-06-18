@@ -54,3 +54,7 @@
             4. 建議補助工管費：suggestedManagementFee
         9. 工管費年份：managementFeeYear
         10. 議會審議年份 reviewYear
+準備金變數
+    同意動支
+        
+    不同意動支

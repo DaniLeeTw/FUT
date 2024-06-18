@@ -31,10 +31,13 @@ body {
     text-align: center;
     color: aquamarine;
 }
+/*隱藏核定態樣*/
+#approveContainer{
+    display: none;
+}
 #selectApproveTypes{
     display: none;
 }
-
 /*隱藏核定態樣一*/
 #selectApproveType1Kinds{
     display: none;
@@ -77,7 +80,6 @@ body {
 #approveType1BothPAndLLManagementFeeYear{
     display: none;
 }
-
 /*隱藏核定態樣一純工程簽*/
 #approveType1Petition{
     display: none;
@@ -116,7 +118,6 @@ body {
 #approveType1LetterAdditionalInfoSuggestedAmount{
     display: none;
 }
-
 
 /*隱藏核定態樣二*/
 #selectApproveType2Kinds{
@@ -242,7 +243,6 @@ body {
 #approveType3BothPAndLLManagementFeeYear{
     display: none;
 }
-
 /*隱藏核定態樣三純工程簽*/
 #approveType3Petition{
     display: none;
@@ -282,23 +282,276 @@ body {
     display: none;
 }
 
-/*隱藏核定態樣二含設備簽稿*/
-/*隱藏核定態樣二含設備簽*/
-/*隱藏核定態樣二含設備稿*/
-/*隱藏核定態樣三純設備簽稿*/
-/*隱藏核定態樣三純設備簽*/
-/*隱藏核定態樣三純設備稿*/
-
-
+/*隱藏核撥態樣*/
+#appropriateContainer{
+    display: none;
+}
 #selectAppropriateTypes{
     display: none;
 }
-
-#selectPreparedFundTypes{
+/*隱藏核撥態樣一*/
+#selectAppropriateType1Kinds{
+    display: none;
+}
+#appropriateType1Controls{
+    display: none;
+}
+/*隱藏核撥態樣一純工程簽稿-簽*/
+#appropriateType1BothPAndL{
+    display: none;
+}
+#appropriateType1BothPAndLPContent{
+    display: none;
+}
+#appropriateType1BothPAndLPKeyInputs{
+    display: none;
+}
+#appropriateType1BothPAndLPConditions{
+    display: none;
+}
+#appropriateType1BothPAndLPAdditionalInfoSourceAdjust{
+    display: none;
+}
+#appropriateType1BothPAndLPAdditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核撥態樣一純工程簽稿-稿*/
+#appropriateType1BothPAndLLContent{
+    display: none;
+}
+#appropriateType1BothPAndLLKeyInputs{
+    display: none;
+}
+#appropriateType1BothPAndLLConditions{
+    display: none;
+}
+#appropriateType1BothPAndLLBudgetReview{
+    display: none;
+}
+#appropriateType1BothPAndLLManagementFeeYear{
+    display: none;
+}
+/*隱藏核撥態樣一純工程簽*/
+#appropriateType1Petition{
+    display: none;
+}
+#appropriateType1PetitionKeyInputs{
+    display: none;
+}
+#appropriateType1PetitionConditions{
+    display: none;
+}
+#appropriateType1PetitionadditionalInfoSourceAdjust{
+    display: none;
+}
+#appropriateType1PetitionadditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核撥態樣一純工程稿*/
+#appropriateType1Letter{
+    display: none;
+}
+#appropriateType1LetterContent{
+    display: none;
+}
+#appropriateType1LetterKeyInputs{
+    display: none;
+}
+#appropriateType1LetterConditions{
+    display: none;
+}
+#appropriateType1LetterReviewYearWhen{
+    display: none;
+}
+#appropriateType1LetterAdditionalInfoSourceAdjust{
+    display: none;
+}
+#appropriateType1LetterAdditionalInfoSuggestedAmount{
     display: none;
 }
 
+/*隱藏核撥態樣二*/
+#selectAppropriateType2Kinds{
+    display: none;
+}
+#appropriateType2Controls{
+    display: none;
+}
+/*隱藏核定態樣二純工程簽稿-簽*/
+#appropriateType2BothPAndL{
+    display: none;
+}
+#appropriateType2BothPAndLPContent{
+    display: none;
+}
+#appropriateType2BothPAndLPKeyInputs{
+    display: none;
+}
+#appropriateType2BothPAndLPConditions{
+    display: none;
+}
+#appropriateType2BothPAndLPAdditionalInfoSourceAdjust{
+    display: none;
+}
+#appropriateType2BothPAndLPAdditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核定態樣二純工程簽稿-稿*/
+#appropriateType2BothPAndLLContent{
+    display: none;
+}
+#appropriateType2BothPAndLLKeyInputs{
+    display: none;
+}
+#appropriateType2BothPAndLLConditions{
+    display: none;
+}
+#appropriateType2BothPAndLLBudgetReview{
+    display: none;
+}
+#appropriateType2BothPAndLLManagementFeeYear{
+    display: none;
+}
+/*隱藏核定態樣二純工程簽*/
+#appropriateType2Petition{
+    display: none;
+}
+#appropriateType2PetitionKeyInputs{
+    display: none;
+}
+#appropriateType2PetitionConditions{
+    display: none;
+}
+#appropriateType2PetitionadditionalInfoSourceAdjust{
+    display: none;
+}
+#appropriateType2PetitionadditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核定態樣二純工程稿*/
+#appropriateType2Letter{
+    display: none;
+}
+#appropriateType2LetterContent{
+    display: none;
+}
+#appropriateType2LetterKeyInputs{
+    display: none;
+}
+#appropriateType2LetterConditions{
+    display: none;
+}
+#appropriateType2LetterReviewYearWhen{
+    display: none;
+}
+#appropriateType2LetterAdditionalInfoSourceAdjust{
+    display: none;
+}
+#appropriateType2LetterAdditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核定態樣三*/
+#selectAppropriateType3Kinds{
+    display: none;
+}
+#appropriateType3Controls{
+    display: none;
+}
+/*隱藏核定態樣三純工程簽稿-簽*/
+#appropriateType3BothPAndL{
+    display: none;
+}
+#appropriateType3BothPAndLPContent{
+    display: none;
+}
+#appropriateType3BothPAndLPKeyInputs{
+    display: none;
+}
+#appropriateType3BothPAndLPConditions{
+    display: none;
+}
+#appropriateType3BothPAndLPAdditionalInfoSourceAdjust{
+    display: none;
+}
+#appropriateType3BothPAndLPAdditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核定態樣三純工程簽稿-稿*/
+#appropriateType3BothPAndLLContent{
+    display: none;
+}
+#appropriateType3BothPAndLLKeyInputs{
+    display: none;
+}
+#appropriateType3BothPAndLLConditions{
+    display: none;
+}
+#appropriateType3BothPAndLLBudgetReview{
+    display: none;
+}
+#appropriateType3BothPAndLLManagementFeeYear{
+    display: none;
+}
+/*隱藏核定態樣三純工程簽*/
+#appropriateType3Petition{
+    display: none;
+}
+#appropriateType3PetitionKeyInputs{
+    display: none;
+}
+#appropriateType3PetitionConditions{
+    display: none;
+}
+#appropriateType3PetitionadditionalInfoSourceAdjust{
+    display: none;
+}
+#appropriateType3PetitionadditionalInfoSuggestedAmount{
+    display: none;
+}
+/*隱藏核定態樣三純工程稿*/
+#appropriateType3Letter{
+    display: none;
+}
+#appropriateType3LetterContent{
+    display: none;
+}
+#appropriateType3LetterKeyInputs{
+    display: none;
+}
+#appropriateType3LetterConditions{
+    display: none;
+}
+#appropriateType3LetterReviewYearWhen{
+    display: none;
+}
+#appropriateType3LetterAdditionalInfoSourceAdjust{
+    display: none;
+}
+#appropriateType3LetterAdditionalInfoSuggestedAmount{
+    display: none;
+}
 
+/*隱藏準備金態樣*/
+#preparedFundContainer{
+    display: none;
+}
+#selectPreparedFundTypes{
+    display: none;
+}
+/*隱藏準備金態樣一*/
+#preparedFundType1Content{
+    display: none;
+}
+#preparedFundType1KeyInputs{
+    display: none;
+}
+/*隱藏準備金態樣二*/
+#preparedFundType2Content{
+    display: none;
+}
+#preparedFundType2KeyInputs{
+    display: none;
+}
 
 
 
