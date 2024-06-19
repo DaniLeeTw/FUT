@@ -34,11 +34,14 @@ const approveType1BothPAndLPAdditionalInfoSuggestedAmount = document.getElementB
 const approveType1BothPAndLPYesSourceAdjust = document.getElementById("approveType1BothPAndLPYesSourceAdjust");
 const approveType1BothPAndLPNoSourceAdjust = document.getElementById("approveType1BothPAndLPNoSourceAdjust");
 const approveType1BothPAndLPYesSuggestedAmount = document.getElementById("approveType1BothPAndLPYesSuggestedAmount");
-const approveType1BothPAndLPNoSuggestedAmount = document.getElementById("approveType1BothPAndLPYesSuggestedAmount");
+const approveType1BothPAndLPNoSuggestedAmount = document.getElementById("approveType1BothPAndLPNoSuggestedAmount");
 const approveType1BothPAndLLContent = document.getElementById("approveType1BothPAndLLContent");
-const approveType1BothPAndLLKeyInputs = document.getElementById("approveType1BothPAndLLKeyInputs");
 const approveType1BothPAndLLConditions = document.getElementById("approveType1BothPAndLLConditions");
+const approveType1BothPAndLLYesReviewFinished = document.getElementById("approveType1BothPAndLLYesReviewFinished");
+const approveType1BothPAndLLNoReviewFinished = document.getElementById("approveType1BothPAndLLNoReviewFinished");
 const approveType1BothPAndLLBudgetReview = document.getElementById("approveType1BothPAndLLBudgetReview");
+const approveType1BothPAndLLYesManagementFee = document.getElementById("approveType1BothPAndLLYesManagementFee");
+const approveType1BothPAndLLNoManagementFee = document.getElementById("approveType1BothPAndLLNoManagementFee");
 const approveType1BothPAndLLManagementFeeYear = document.getElementById("approveType1BothPAndLLManagementFeeYear");
 const approveType1BothPAndLLAdditionalInfoSuggestedAmount = document.getElementById("approveType1BothPAndLLAdditionalInfoSuggestedAmount");
 //核定態樣一*簽*
@@ -337,32 +340,46 @@ approveType1Petition.addEventListener('change', enterContents);
 approveType1Letter.addEventListener('change', enterContents);
 
 //核定態樣一簽稿特殊情形
-function enterApproveType1BothPAndLPconditions(){
+function enterApproveType1BothPAndLPConditions(){
     if(approveType1BothPAndLPYesYearEnd.checked){
         approveType1BothPAndLPAdditionalInfoYearEnd.style.display = "block";
-    }
-    if(approveType1BothPAndLPNoYearEnd.checked){
+    } else if(approveType1BothPAndLPNoYearEnd.checked){
         approveType1BothPAndLPAdditionalInfoYearEnd.style.display = "none";
     }
     if(approveType1BothPAndLPYesSourceAdjust.checked){
         approveType1BothPAndLPAdditionalInfoSourceAdjust.style.display = "block";
-    }
-    if(approveType1BothPAndLPNoSourceAdjust.checked){
+    } else if(approveType1BothPAndLPNoSourceAdjust.checked){
         approveType1BothPAndLPAdditionalInfoSourceAdjust.style.display = "none";
     }
     if(approveType1BothPAndLPYesSuggestedAmount.checked){
         approveType1BothPAndLPAdditionalInfoSuggestedAmount.style.display = "block";
-    }
-    if(approveType1BothPAndLPNoSuggestedAmount.checked){
+    } else if(approveType1BothPAndLPNoSuggestedAmount.checked){
         approveType1BothPAndLPAdditionalInfoSuggestedAmount.style.display = "none";
     }
+    if(approveType1BothPAndLLYesReviewFinished.checked){
+        approveType1BothPAndLLBudgetReview.style.display = "block";
+    } else if(approveType1BothPAndLLNoReviewFinished.checked){
+        approveType1BothPAndLLBudgetReview.style.display = "none";
+    }
+    if(approveType1BothPAndLLYesManagementFee.checked){
+        approveType1BothPAndLLManagementFeeYear.style.display = "block";
+    } else if(approveType1BothPAndLLNoManagementFee.checked){
+        approveType1BothPAndLLManagementFeeYear.style.display = "none";
+    }
 }
-approveType1BothPAndLPYesYearEnd.addEventListener('change', enterApproveType1BothPAndLPconditions);
-approveType1BothPAndLPNoYearEnd.addEventListener('change', enterApproveType1BothPAndLPconditions);
-approveType1BothPAndLPYesSourceAdjust.addEventListener('change', enterApproveType1BothPAndLPconditions);
-approveType1BothPAndLPNoSourceAdjust.addEventListener('change', enterApproveType1BothPAndLPconditions);
-approveType1BothPAndLPYesSuggestedAmount.addEventListener('change', enterApproveType1BothPAndLPconditions);
-approveType1BothPAndLPNoSuggestedAmount.addEventListener('change', enterApproveType1BothPAndLPconditions);
+approveType1BothPAndLPYesYearEnd.addEventListener('change', enterApproveType1BothPAndLPConditions);
+approveType1BothPAndLPNoYearEnd.addEventListener('change', enterApproveType1BothPAndLPConditions);
+approveType1BothPAndLPYesSourceAdjust.addEventListener('change', enterApproveType1BothPAndLPConditions);
+approveType1BothPAndLPNoSourceAdjust.addEventListener('change', enterApproveType1BothPAndLPConditions);
+approveType1BothPAndLPYesSuggestedAmount.addEventListener('change', enterApproveType1BothPAndLPConditions);
+approveType1BothPAndLPNoSuggestedAmount.addEventListener('change', enterApproveType1BothPAndLPConditions);
+approveType1BothPAndLLYesReviewFinished.addEventListener('change', enterApproveType1BothPAndLPConditions);
+approveType1BothPAndLLNoReviewFinished.addEventListener('change', enterApproveType1BothPAndLPConditions);
+approveType1BothPAndLLYesManagementFee.addEventListener('change', enterApproveType1BothPAndLPConditions);
+approveType1BothPAndLLNoManagementFee.addEventListener('change', enterApproveType1BothPAndLPConditions);
+
+//to be continued
+//function approveType1BothPAndLSummary(){}
 
 submit.onclick = function(){
     if(bothPAndL.checked){
