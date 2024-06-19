@@ -90,6 +90,9 @@ body {
 #approveType1PetitionConditions{
     display: none;
 }
+#approveType1BothPAndLPAdditionalInfoYearEnd{
+    display: none;
+}
 #approveType1PetitionadditionalInfoSourceAdjust{
     display: none;
 }

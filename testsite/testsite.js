@@ -11,6 +11,8 @@ const preparedFund = document.getElementById("preparedFund");
 const preparedFundContainer = document.getElementById("preparedFundContainer")
 const selectPreparedFundTypes = document.getElementById("selectPreparedFundTypes")
 
+
+
 //核定態樣
 const approveType1 = document.getElementById("approveType1");
 const approveType2 = document.getElementById("approveType2")
@@ -25,8 +27,14 @@ const approveType1BothPAndL = document.getElementById("approveType1BothPAndL");
 const approveType1BothPAndLPContent = document.getElementById("approveType1BothPAndLPContent");
 const approveType1BothPAndLKeyInputs = document.getElementById("approveType1BothPAndLKeyInputs");
 const approveType1BothPAndLPConditions = document.getElementById("approveType1BothPAndLPConditions");
+const approveType1BothPAndLPAdditionalInfoYearEnd = document.getElementById("approveType1BothPAndLPAdditionalInfoYearEnd");
+const approveType1BothPAndLPAdditionalInfoYearEndAmount = document.getElementById("approveType1BothPAndLPAdditionalInfoYearEndAmount");
 const approveType1BothPAndLPAdditionalInfoSourceAdjust = document.getElementById("approveType1BothPAndLPAdditionalInfoSourceAdjust");
 const approveType1BothPAndLPAdditionalInfoSuggestedAmount = document.getElementById("approveType1BothPAndLPAdditionalInfoSuggestedAmount");
+const approveType1BothPAndLPYesSourceAdjust = document.getElementById("approveType1BothPAndLPYesSourceAdjust");
+const approveType1BothPAndLPNoSourceAdjust = document.getElementById("approveType1BothPAndLPNoSourceAdjust");
+const approveType1BothPAndLPYesSuggestedAmount = document.getElementById("approveType1BothPAndLPYesSuggestedAmount");
+const approveType1BothPAndLPNoSuggestedAmount = document.getElementById("approveType1BothPAndLPYesSuggestedAmount");
 const approveType1BothPAndLLContent = document.getElementById("approveType1BothPAndLLContent");
 const approveType1BothPAndLLKeyInputs = document.getElementById("approveType1BothPAndLLKeyInputs");
 const approveType1BothPAndLLConditions = document.getElementById("approveType1BothPAndLLConditions");
@@ -75,7 +83,7 @@ const approveType2LetterKeyInputs = document.getElementById("approveType2LetterK
 const approveType2LetterConditions = document.getElementById("approveType2LetterConditions");
 const approveType2LetterAdditionalInfoSourceAdjust = document.getElementById("approveType2LetterAdditionalInfoSourceAdjust");
 const approveType2LetterAdditionalInfoSuggestedAmount = document.getElementById("approveType2LetterAdditionalInfoSuggestedAmount");
-//核定態樣二*簽稿*
+//核定態樣三*簽稿*
 const approveType3Controls = document.getElementById("approveType3Controls");
 const approveType3BothPAndL = document.getElementById("approveType3BothPAndL");
 const approveType3BothPAndLPContent = document.getElementById("approveType3BothPAndLPContent");
@@ -89,14 +97,14 @@ const approveType3BothPAndLLConditions = document.getElementById("approveType3Bo
 const approveType3BothPAndLLBudgetReview = document.getElementById("approveType3BothPAndLLBudgetReview");
 const approveType3BothPAndLLManagementFeeYear = document.getElementById("approveType3BothPAndLLManagementFeeYear");
 const approveType3BothPAndLLAdditionalInfoSuggestedAmount = document.getElementById("approveType3BothPAndLLAdditionalInfoSuggestedAmount");
-//核定態樣二*簽*
+//核定態三*簽*
 const approveType3Petition = document.getElementById("approveType3Petition");
 const approveType3PetitionContent = document.getElementById("approveType3PetitionContent");
 const approveType3PetitionKeyInputs = document.getElementById("approveType3PetitionKeyInputs");
 const approveType3PetitionConditions = document.getElementById("approveType3PetitionConditions");
 const approveType3PetitionadditionalInfoSourceAdjust = document.getElementById("approveType3PetitionadditionalInfoSourceAdjust");
 const approveType3PetitionadditionalInfoSuggestedAmount = document.getElementById("approveType3PetitionadditionalInfoSuggestedAmount");
-//核定態樣二*稿*
+//核定態樣三*稿*
 const approveType3Letter = document.getElementById("approveType3Letter");
 const approveType3LetterContent = document.getElementById("approveType3LetterContent");
 const approveType3LetterKeyInputs = document.getElementById("approveType3LetterKeyInputs");
@@ -104,6 +112,111 @@ const approveType3LetterConditions = document.getElementById("approveType3Letter
 const approveType3LetterAdditionalInfoSourceAdjust = document.getElementById("approveType3LetterAdditionalInfoSourceAdjust");
 const approveType3LetterAdditionalInfoSuggestedAmount = document.getElementById("approveType3LetterAdditionalInfoSuggestedAmount");
 
+
+
+//核撥態樣
+const appropriateType1 = document.getElementById("appropriateType1");
+const appropriateType2 = document.getElementById("appropriateType2")
+const appropriateType3 = document.getElementById("appropriateType3")
+//核撥態樣種類
+const selectAppropriateType1Kinds = document.getElementById("selectAppropriateType1Kinds");
+const selectAppropriateType2Kinds = document.getElementById("selectAppropriateType2Kinds");
+const selectAppropriateType3Kinds = document.getElementById("selectAppropriateType3Kinds");
+//核撥態樣一*簽稿*
+const appropriateType1Controls = document.getElementById("appropriateType1Controls");
+const appropriateType1BothPAndL = document.getElementById("appropriateType1BothPAndL");
+const appropriateType1BothPAndLPContent = document.getElementById("appropriateType1BothPAndLPContent");
+const appropriateType1BothPAndLKeyInputs = document.getElementById("appropriateType1BothPAndLKeyInputs");
+const appropriateType1BothPAndLPConditions = document.getElementById("appropriateType1BothPAndLPConditions");
+const appropriateType1BothPAndLPAdditionalInfoSourceAdjust = document.getElementById("appropriateType1BothPAndLPAdditionalInfoSourceAdjust");
+const appropriateType1BothPAndLPAdditionalInfoSuggestedAmount = document.getElementById("appropriateType1BothPAndLPAdditionalInfoSuggestedAmount");
+const appropriateType1BothPAndLLContent = document.getElementById("appropriateType1BothPAndLLContent");
+const appropriateType1BothPAndLLKeyInputs = document.getElementById("appropriateType1BothPAndLLKeyInputs");
+const appropriateType1BothPAndLLConditions = document.getElementById("appropriateType1BothPAndLLConditions");
+const appropriateType1BothPAndLLBudgetReview = document.getElementById("appropriateType1BothPAndLLBudgetReview");
+const appropriateType1BothPAndLLManagementFeeYear = document.getElementById("appropriateType1BothPAndLLManagementFeeYear");
+const appropriateType1BothPAndLLAdditionalInfoSuggestedAmount = document.getElementById("appropriateType1BothPAndLLAdditionalInfoSuggestedAmount");
+const approveType1BothPAndLPYesYearEnd = document.getElementById("approveType1BothPAndLPYesYearEnd");
+const approveType1BothPAndLPNoYearEnd = document.getElementById("approveType1BothPAndLPNoYearEnd");
+//核撥態樣一*簽*
+const appropriateType1Petition = document.getElementById("appropriateType1Petition");
+const appropriateType1PetitionContent = document.getElementById("appropriateType1PetitionContent");
+const appropriateType1PetitionKeyInputs = document.getElementById("appropriateType1PetitionKeyInputs");
+const appropriateType1PetitionConditions = document.getElementById("appropriateType1PetitionConditions");
+const appropriateType1PetitionadditionalInfoSourceAdjust = document.getElementById("appropriateType1PetitionadditionalInfoSourceAdjust");
+const appropriateType1PetitionadditionalInfoSuggestedAmount = document.getElementById("appropriateType1PetitionadditionalInfoSuggestedAmount");
+//核撥態樣一*稿*
+const appropriateType1Letter = document.getElementById("appropriateType1Letter");
+const appropriateType1LetterContent = document.getElementById("appropriateType1LetterContent");
+const appropriateType1LetterKeyInputs = document.getElementById("appropriateType1LetterKeyInputs");
+const appropriateType1LetterConditions = document.getElementById("appropriateType1LetterConditions");
+const appropriateType1LetterAdditionalInfoSourceAdjust = document.getElementById("appropriateType1LetterAdditionalInfoSourceAdjust");
+const appropriateType1LetterAdditionalInfoSuggestedAmount = document.getElementById("appropriateType1LetterAdditionalInfoSuggestedAmount");
+//核撥態樣二*簽稿*
+const appropriateType2Controls = document.getElementById("appropriateType2Controls");
+const appropriateType2BothPAndL = document.getElementById("appropriateType2BothPAndL");
+const appropriateType2BothPAndLPContent = document.getElementById("appropriateType2BothPAndLPContent");
+const appropriateType2BothPAndLPKeyInputs = document.getElementById("appropriateType2BothPAndLPKeyInputs");
+const appropriateType2BothPAndLPConditions = document.getElementById("appropriateType2BothPAndLPConditions");
+const appropriateType2BothPAndLPAdditionalInfoSourceAdjust = document.getElementById("appropriateType2BothPAndLPAdditionalInfoSourceAdjust");
+const appropriateType2BothPAndLPAdditionalInfoSuggestedAmount = document.getElementById("appropriateType2BothPAndLPAdditionalInfoSuggestedAmount");
+const appropriateType2BothPAndLLContent = document.getElementById("appropriateType2BothPAndLLContent");
+const appropriateType2BothPAndLLKeyInputs = document.getElementById("appropriateType2BothPAndLLKeyInputs");
+const appropriateType2BothPAndLLConditions = document.getElementById("appropriateType2BothPAndLLConditions");
+const appropriateType2BothPAndLLBudgetReview = document.getElementById("appropriateType2BothPAndLLBudgetReview");
+const appropriateType2BothPAndLLManagementFeeYear = document.getElementById("appropriateType2BothPAndLLManagementFeeYear");
+const appropriateType2BothPAndLLAdditionalInfoSuggestedAmount = document.getElementById("appropriateType2BothPAndLLAdditionalInfoSuggestedAmount");
+//核撥態樣二*簽*
+const appropriateType2Petition = document.getElementById("appropriateType2Petition");
+const appropriateType2PetitionContent = document.getElementById("appropriateType2PetitionContent");
+const appropriateType2PetitionKeyInputs = document.getElementById("appropriateType2PetitionKeyInputs");
+const appropriateType2PetitionConditions = document.getElementById("appropriateType2PetitionConditions");
+const appropriateType2PetitionadditionalInfoSourceAdjust = document.getElementById("appropriateType2PetitionadditionalInfoSourceAdjust");
+const appropriateType2PetitionadditionalInfoSuggestedAmount = document.getElementById("appropriateType2PetitionadditionalInfoSuggestedAmount");
+//核撥態樣二*稿*
+const appropriateType2Letter = document.getElementById("appropriateType2Letter");
+const appropriateType2LetterContent = document.getElementById("appropriateType2LetterContent");
+const appropriateType2LetterKeyInputs = document.getElementById("appropriateType2LetterKeyInputs");
+const appropriateType2LetterConditions = document.getElementById("appropriateType2LetterConditions");
+const appropriateType2LetterAdditionalInfoSourceAdjust = document.getElementById("appropriateType2LetterAdditionalInfoSourceAdjust");
+const appropriateType2LetterAdditionalInfoSuggestedAmount = document.getElementById("appropriateType2LetterAdditionalInfoSuggestedAmount");
+//核撥態樣三*簽稿*
+const appropriateType3Controls = document.getElementById("approveType3Controls");
+const appropriateType3BothPAndL = document.getElementById("approveType3BothPAndL");
+const appropriateType3BothPAndLPContent = document.getElementById("approveType3BothPAndLPContent");
+const appropriateType3BothPAndLPKeyInputs = document.getElementById("approveType3BothPAndLPKeyInputs");
+const appropriateType3BothPAndLPConditions = document.getElementById("approveType3BothPAndLPConditions");
+const appropriateType3BothPAndLPAdditionalInfoSourceAdjust = document.getElementById("approveType3BothPAndLPAdditionalInfoSourceAdjust");
+const appropriateType3BothPAndLPAdditionalInfoSuggestedAmount = document.getElementById("approveType3BothPAndLPAdditionalInfoSuggestedAmount");
+const appropriateType3BothPAndLLContent = document.getElementById("approveType3BothPAndLLContent");
+const appropriateType3BothPAndLLKeyInputs = document.getElementById("approveType3BothPAndLLKeyInputs");
+const appropriateType3BothPAndLLConditions = document.getElementById("approveType3BothPAndLLConditions");
+const appropriateType3BothPAndLLBudgetReview = document.getElementById("approveType3BothPAndLLBudgetReview");
+const appropriateType3BothPAndLLManagementFeeYear = document.getElementById("approveType3BothPAndLLManagementFeeYear");
+const appropriateType3BothPAndLLAdditionalInfoSuggestedAmount = document.getElementById("approveType3BothPAndLLAdditionalInfoSuggestedAmount");
+//核撥態三*簽*
+const appropriateType3Petition = document.getElementById("appropriateType3Petition");
+const appropriateType3PetitionContent = document.getElementById("appropriateType3PetitionContent");
+const appropriateType3PetitionKeyInputs = document.getElementById("appropriateType3PetitionKeyInputs");
+const appropriateType3PetitionConditions = document.getElementById("appropriateType3PetitionConditions");
+const appropriateType3PetitionadditionalInfoSourceAdjust = document.getElementById("appropriateType3PetitionadditionalInfoSourceAdjust");
+const appropriateType3PetitionadditionalInfoSuggestedAmount = document.getElementById("appropriateType3PetitionadditionalInfoSuggestedAmount");
+//核定態樣三*稿*
+const appropriateType3Letter = document.getElementById("appropriateType3Letter");
+const appropriateType3LetterContent = document.getElementById("appropriateType3LetterContent");
+const appropriateType3LetterKeyInputs = document.getElementById("appropriateType3LetterKeyInputs");
+const appropriateType3LetterConditions = document.getElementById("appropriateType3LetterConditions");
+const appropriateType3LetterAdditionalInfoSourceAdjust = document.getElementById("appropriateType3LetterAdditionalInfoSourceAdjust");
+const appropriateType3LetterAdditionalInfoSuggestedAmount = document.getElementById("appropriateType3LetterAdditionalInfoSuggestedAmount");
+
+
+
+//準備金態樣一
+const preparedFundType1Content = document.getElementById("preparedFundType1Content");
+const preparedFundType1KeyInputs = document.getElementById("preparedFundType1KeyInputs");
+//準備金態樣二
+const preparedFundType2Content = document.getElementById("preparedFundType2Content");
+const preparedFundType2KeyInputs = document.getElementById("preparedFundType2KeyInputs");
 
 
 
@@ -223,8 +336,33 @@ approveType1BothPAndL.addEventListener('change', enterContents);
 approveType1Petition.addEventListener('change', enterContents);
 approveType1Letter.addEventListener('change', enterContents);
 
-
-
+//核定態樣一簽稿特殊情形
+function enterApproveType1BothPAndLPconditions(){
+    if(approveType1BothPAndLPYesYearEnd.checked){
+        approveType1BothPAndLPAdditionalInfoYearEnd.style.display = "block";
+    }
+    if(approveType1BothPAndLPNoYearEnd.checked){
+        approveType1BothPAndLPAdditionalInfoYearEnd.style.display = "none";
+    }
+    if(approveType1BothPAndLPYesSourceAdjust.checked){
+        approveType1BothPAndLPAdditionalInfoSourceAdjust.style.display = "block";
+    }
+    if(approveType1BothPAndLPNoSourceAdjust.checked){
+        approveType1BothPAndLPAdditionalInfoSourceAdjust.style.display = "none";
+    }
+    if(approveType1BothPAndLPYesSuggestedAmount.checked){
+        approveType1BothPAndLPAdditionalInfoSuggestedAmount.style.display = "block";
+    }
+    if(approveType1BothPAndLPNoSuggestedAmount.checked){
+        approveType1BothPAndLPAdditionalInfoSuggestedAmount.style.display = "none";
+    }
+}
+approveType1BothPAndLPYesYearEnd.addEventListener('change', enterApproveType1BothPAndLPconditions);
+approveType1BothPAndLPNoYearEnd.addEventListener('change', enterApproveType1BothPAndLPconditions);
+approveType1BothPAndLPYesSourceAdjust.addEventListener('change', enterApproveType1BothPAndLPconditions);
+approveType1BothPAndLPNoSourceAdjust.addEventListener('change', enterApproveType1BothPAndLPconditions);
+approveType1BothPAndLPYesSuggestedAmount.addEventListener('change', enterApproveType1BothPAndLPconditions);
+approveType1BothPAndLPNoSuggestedAmount.addEventListener('change', enterApproveType1BothPAndLPconditions);
 
 submit.onclick = function(){
     if(bothPAndL.checked){
