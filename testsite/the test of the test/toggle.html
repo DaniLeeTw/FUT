@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="radio" name="toggle" id="radioDiv1" value="div1"> Div 1
+        <input type="radio" name="toggle" id="radioDiv2" value="div2"> Div 2
+        <input type="radio" name="toggle" id="radioDiv3" value="div3"> Div 3
+    
+        <div id="div1" class="toggle-div">
+            <input type="text" id="input1Div1" placeholder="Input 1 Div 1" required>
+            <input type="text" id="input2Div1" placeholder="Input 2 Div 1" required>
+            <p>123</p>
+        </div>
+        <div id="div2" class="toggle-div">
+            <input type="text" id="input1Div2" placeholder="Input 1 Div 2" required>
+            <input type="text" id="input2Div2" placeholder="Input 2 Div 2" required>
+            <p>456</p>
+        </div>
+        <div id="div3" class="toggle-div">
+            <input type="text" id="input1Div3" placeholder="Input 1 Div 3" required>
+            <input type="text" id="input2Div3" placeholder="Input 2 Div 3" required>
+            <p>789</p>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+</body>
+<script src="toggle.js"></script>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Site</title>
+    <link rel="stylesheet" href="gptSuggested.css">
+</head>
+<body>
+    <form id="myForm">
+        <input type="radio" name="toggle" id="bothPAndL" value="bothPAndL"> Both P and L
+        <input type="radio" name="toggle" id="Petition" value="Petition"> Petition
+        <input type="radio" name="toggle" id="Letter" value="Letter"> Letter
+
+        <div id="bothPAndLContainer" class="toggle-div">
+            <div class="section">
+                <div class="layer1">
+                    <input type="text" placeholder="Approve Input 1" required>
+                    <div class="layer2">
+                        <input type="text" placeholder="Approve Input 2" required>
+                        <div class="layer3">
+                            <input type="text" placeholder="Approve Input 3" required>
+                            <div class="layer4">
+                                <input type="text" placeholder="Approve Input 4" required>
+                                <div class="layer5">
+                                    <input type="text" placeholder="Approve Input 5" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer1">
+                    <input type="text" placeholder="Approve Input 6" required>
+                    <div class="layer2">
+                        <input type="text" placeholder="Approve Input 7" required>
+                        <div class="layer3">
+                            <input type="text" placeholder="Approve Input 8" required>
+                            <div class="layer4">
+                                <input type="text" placeholder="Approve Input 9" required>
+                                <div class="layer5">
+                                    <input type="text" placeholder="Approve Input 10" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="PetitionContainer" class="toggle-div">
+            <div class="section">
+                <div class="layer1">
+                    <input type="text" placeholder="Appropriate Input 1" required>
+                    <div class="layer2">
+                        <input type="text" placeholder="Appropriate Input 2" required>
+                        <div class="layer3">
+                            <input type="text" placeholder="Appropriate Input 3" required>
+                            <div class="layer4">
+                                <input type="text" placeholder="Appropriate Input 4" required>
+                                <div class="layer5">
+                                    <input type="text" placeholder="Appropriate Input 5" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer1">
+                    <input type="text" placeholder="Appropriate Input 6" required>
+                    <div class="layer2">
+                        <input type="text" placeholder="Appropriate Input 7" required>
+                        <div class="layer3">
+                            <input type="text" placeholder="Appropriate Input 8" required>
+                            <div class="layer4">
+                                <input type="text" placeholder="Appropriate Input 9" required>
+                                <div class="layer5">
+                                    <input type="text" placeholder="Appropriate Input 10" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="LetterContainer" class="toggle-div">
+            <div class="section">
+                <div class="layer1">
+                    <input type="text" placeholder="Prepared Fund Input 1" required>
+                    <div class="layer2">
+                        <input type="text" placeholder="Prepared Fund Input 2" required>
+                        <div class="layer3">
+                            <input type="text" placeholder="Prepared Fund Input 3" required>
+                            <div class="layer4">
+                                <input type="text" placeholder="Prepared Fund Input 4" required>
+                                <div class="layer5">
+                                    <input type="text" placeholder="Prepared Fund Input 5" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer1">
+                    <input type="text" placeholder="Prepared Fund Input 6" required>
+                    <div class="layer2">
+                        <input type="text" placeholder="Prepared Fund Input 7" required>
+                        <div class="layer3">
+                            <input type="text" placeholder="Prepared Fund Input 8" required>
+                            <div class="layer4">
+                                <input type="text" placeholder="Prepared Fund Input 9" required>
+                                <div class="layer5">
+                                    <input type="text" placeholder="Prepared Fund Input 10" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+        <p id="result"></p>
+    </form>
+
+    <script src="gptSuggested.js"></script>
+</body>
+</html>
