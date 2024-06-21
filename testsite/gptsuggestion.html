@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="chooseBetweenApproveAndAppropriate">
+        <p>選擇動作：</p>
+        <input type="radio" id="approve" name="actionTypes" value="approve" required>
+        <label for="approve">核定</label>   
+        <input type="radio" id="appropriate" name="actionTypes" value="appropriate" required>
+        <label for="appropriate">撥款</label>
+        <input type="radio" id="preparedFund" name="actionTypes" value="preparedFund" required>
+        <label for="preparedFund">備用金</label>
+    </div>
+    
+    <div id="approveContainer" style="display: none;">
+        <div id="selectApproveTypes" class="section">
+            <p>選擇核定態樣：</p>
+            <input type="radio" id="approveType1" name="approveTypes" value="type1" required>
+            <label for="approveType1">態樣一（純工程）</label>   
+            <input type="radio" id="approveType2" name="approveTypes" value="type2" required>
+            <label for="approveType2">態樣二（含設備）</label>
+            <input type="radio" id="approveType3" name="approveTypes" value="type3" required>
+            <label for="approveType3">態樣三（純設備）</label>
+        </div>
+    
+        <div id="selectApproveType1Kinds" class="section selectKinds" style="display: none;">
+            <p>選擇公文類型：</p>
+            <div id="approveType1Controls" class="layer1">
+                <input type="radio" id="approveType1BothPAndL" name="approveType1Kinds" value="type1BothPAndL" required>
+                <label for="approveType1BothPAndL">簽稿</label>
+                <input type="radio" id="approveType1Petition" name="approveType1Kinds" value="type1Petition" required>
+                <label for="approveType1Petition">簽</label>
+                <input type="radio" id="approveType1Letter" name="approveType1Kinds" value="type1Letter" required>
+                <label for="approveType1Letter">稿</label>
+            </div>
+        </div>
+    
+        <div id="approveType1PetitionContent" class="section content" style="display: none;">
+            <div id="approveType1PetitionKeyInputs" class="layer1">
+                <label for="approveType1PetitionSchoolName" style="font-weight: lighter;">輸入校名
+                    <input type="text" id="approveType1PetitionSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                </label>
+                <!-- Add other input fields here similar to the above -->
+            </div>
+            <div id="approveType1PetitionConditions" class="layer1">
+                <label for="approveType1PetitionYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
+                <input type="radio" id="approveType1PetitionYesYearEnd" name="approveType1PetitionYesNoYearEnd" value="yes" required>
+                <label for="approveType1PetitionYesYearEnd">是</label>
+                <input type="radio" id="approveType1PetitionNoYearEnd" name="approveType1PetitionYesNoYearEnd" value="no" required>
+                <label for="approveType1PetitionNoYearEnd">否</label>
+                <!-- Add other radio buttons and input fields here similar to the above -->
+            </div>
+        </div>
+        <!-- Repeat similar blocks for all other content divs -->
+    </div>
+    
+    <div id="result"></div>
+    <button id="submit">Submit</button>
+    
+</body>
+</html>

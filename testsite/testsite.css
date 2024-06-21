@@ -31,6 +31,7 @@ body {
     text-align: center;
     color: aquamarine;
 }
+
 /*隱藏核定態樣*/
 #approveContainer{
     display: none;
@@ -121,7 +122,6 @@ body {
 #approveType1LetterAdditionalInfoSuggestedAmount{
     display: none;
 }
-
 /*隱藏核定態樣二*/
 #selectApproveType2Kinds{
     display: none;
@@ -164,7 +164,6 @@ body {
 #approveType2BothPAndLLManagementFeeYear{
     display: none;
 }
-
 /*隱藏核定態樣二純工程簽*/
 #approveType2Petition{
     display: none;
@@ -203,7 +202,6 @@ body {
 #approveType2LetterAdditionalInfoSuggestedAmount{
     display: none;
 }
-
 /*隱藏核定態樣三*/
 #selectApproveType3Kinds{
     display: none;
@@ -284,7 +282,6 @@ body {
 #approveType3LetterAdditionalInfoSuggestedAmount{
     display: none;
 }
-
 /*隱藏核撥態樣*/
 #appropriateContainer{
     display: none;
@@ -372,7 +369,6 @@ body {
 #appropriateType1LetterAdditionalInfoSuggestedAmount{
     display: none;
 }
-
 /*隱藏核撥態樣二*/
 #selectAppropriateType2Kinds{
     display: none;
