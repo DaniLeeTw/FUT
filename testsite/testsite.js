@@ -399,7 +399,7 @@ approveType1BothPAndLLNoManagementFee.addEventListener('change', enterApproveTyp
 //to be continued
 //function approveType1BothPAndLSummary(){}
 
-submit.onclick = function(){
+/*submit.onclick = function(){
     if(bothPAndL.checked){
         result.textContent = `*還沒做好，請耐心*已選擇簽`;
     }
@@ -412,7 +412,7 @@ submit.onclick = function(){
     else{
         result.textContent = `請選擇公文類型！`;
     }
-}
+}*/
 document.addEventListener('DOMContentLoaded', () => {
     const actionTypes = document.querySelectorAll('input[name="actionTypes"]');
     const approveTypes = document.querySelectorAll('input[name="approveTypes"]');
