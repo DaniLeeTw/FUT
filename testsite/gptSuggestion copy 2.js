@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const actionTypes = document.querySelectorAll('input[name="actionTypes"]');
     const approveTypes = document.querySelectorAll('input[name="approveTypes"]');
+    const sections = document.querySelectorAll('section');
     const kindContainers = document.querySelectorAll('.selectKinds');
     const contentDivs = document.querySelectorAll('.content');
     const submitButton = document.getElementById('submit');
@@ -8,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const approveContainer = document.getElementById('approveContainer');
     const appropriateContainer = document.getElementById('appropriateContainer');
     const preparedFundContainer = document.getElementById('preparedFundContainer');
-
 
     function hideAll(elements) {
         elements.forEach(element => {
@@ -24,12 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
         inputs.forEach(input => input.disabled = false);
     }
 
-    function toggleApproveContainer() {
+    function toggleContainers() {
         const selectedAction = document.querySelector('input[name="actionTypes"]:checked');
-        if (selectedAction && selectedAction.value === 'approve') {
-            showElement(approveContainer);
-        } else {
-            hideAll([approveContainer]);
+        if (selectedAction) {
+            hideAll([approveContainer, appropriateContainer, preparedFundContainer]);
+
+            switch (selectedAction.value) {
+                case 'approve':
+                    showElement(approveContainer);
+                    break;
+                case 'appropriate':
+                    showElement(appropriateContainer);
+                    break;
+                case 'preparedFund':
+                    showElement(preparedFundContainer);
+                    break;
+            }
         }
     }
 
@@ -93,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     actionTypes.forEach(radio => {
         radio.addEventListener('change', () => {
-            toggleApproveContainer();
+            toggleContainers();
             toggleKinds();
             toggleContent();
         });
@@ -130,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Initial state
-    hideAll([approveContainer]);
+    hideAll([approveContainer, appropriateContainer, preparedFundContainer]);
     hideAll(kindContainers);
     hideAll(contentDivs);
 });
