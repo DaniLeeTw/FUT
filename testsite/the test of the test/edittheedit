@@ -1,8 +1,0 @@
-    function toggleApproveContainer() {
-        const selectedAction = document.querySelector('input[name="actionTypes"]:checked');
-        if (selectedAction && selectedAction.value === 'approve') {
-            showElement(approveContainer);
-        } else {
-            hideAll([approveContainer]);
-        }
-    }
