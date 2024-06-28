@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+                <div id="appropriateContainer" class="container">
+                    <!--type selection for appropriate container-->
+                    <div id="appropriateTypeSelection">
+                        <p>選擇核撥態樣：</p>
+                        <input type="radio" name="appropriateContainerTypes" id="appropriateContainerType1Radio" value="appropriateContainerType1">
+                        <label for="appropriateContainerType1Radio">態樣一（純工程）</label>   
+                        <input type="radio" name="appropriateContainerTypes" id="appropriateContainerType2Radio" value="appropriateContainerType2">
+                        <label for="appropriateContainerType2Radio">態樣二（含設備）</label>
+                        <input type="radio" name="appropriateContainerTypes" id="appropriateContainerType3Radio" value="appropriateContainerType3">
+                        <label for="appropriateContainerType3Radio">態樣三（純設備）</label>
+                    </div>
+
+                    <!--kind selection within appropriate container types-->
+                    <div id="appropriateContainerType1" class="type">
+                        <p>選擇公文類型：</p>
+                        <input type="radio" name="appropriateContainerType1Kinds" id="appropriateContainerType1Kind1" value="appropriateContainerType1Kind1">
+                        <label for="appropriateContainerType1Kind1">簽稿</label>
+                        <input type="radio" name="appropriateContainerType1Kinds" id="appropriateContainerType1Kind2" value="appropriateContainerType1Kind2">
+                        <label for="appropriateContainerType1Kind2">簽</label>
+                        <input type="radio" name="appropriateContainerType1Kinds" id="appropriateContainerType1Kind3" value="appropriateContainerType1Kind3">
+                        <label for="appropriateContainerType1Kind3">稿</label>
+                    </div>
+                    <div id="appropriateContainerType2" class="type">
+                        <p>選擇公文類型：</p>
+                        <input type="radio" name="appropriateContainerType2Kinds" id="appropriateContainerType2Kind1" value="appropriateContainerType2Kind1">
+                        <label for="appropriateContainerType2Kind1">簽稿</label>
+                        <input type="radio" name="appropriateContainerType2Kinds" id="appropriateContainerType2Kind2" value="appropriateContainerType2Kind2">
+                        <label for="appropriateContainerType2Kind2">簽</label>
+                        <input type="radio" name="appropriateContainerType2Kinds" id="appropriateContainerType2Kind3" value="appropriateContainerType2Kind3">
+                        <label for="appropriateContainerType2Kind3">稿</label>
+                    </div>
+                    <div id="appropriateContainerType3" class="type">
+                        <p>選擇公文類型：</p>
+                        <input type="radio" name="appropriateContainerType3Kinds" id="appropriateContainerType3Kind1" value="appropriateContainerType3Kind1">
+                        <label for="appropriateContainerType3Kind1">簽稿</label>
+                        <input type="radio" name="appropriateContainerType3Kinds" id="appropriateContainerType3Kind2" value="appropriateContainerType3Kind2">
+                        <label for="appropriateContainerType3Kind2">簽</label>
+                        <input type="radio" name="appropriateContainerType3Kinds" id="appropriateContainerType3Kind3" value="appropriateContainerType3Kind3">
+                        <label for="appropriateContainerType3Kind3">稿</label>
+                    </div>
+
+                    <!--content divs for container 1 kinds (regardless of types)-->
+                    <!--準備金態樣一選擇準備金公文類型簽稿-->        
+                    <div id="appropriateContainerType1Kind1Content" class="content">
+                        <!--準備金態樣一簽稿個案細節-簽-->
+                        <div id="appropriateType1BothPAndLKeyInputs" class="layer1">
+                            <label for="appropriateType1BothPAndLSchoolName" style="font-weight: lighter;">輸入校名
+                                <input type="text" id="appropriateType1BothPAndLSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                            </label>
+                            <!--修修看國高中的表達方式-->
+                            <label for="appropriateType1BothPAndLProjectName" style="font-weight: lighter;">輸入案名
+                                <input type="text" id="appropriateType1BothPAndLProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                            </label>
+                            <label for="appropriateType1BothPAndLappropriateAmount" style="font-weight: lighter;">輸入準備金金額
+                                <input type="text" id="appropriateType1BothPAndLappropriateAmount" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                            <label for="appropriateType1BothPAndLComingDate" style="font-weight: lighter;">輸入來文日期
+                                <input type="text" id="appropriateType1BothPAndLComingDate" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                            <label for="appropriateType1BothPAndLComingWord" style="font-weight: lighter;">輸入來文字
+                                <input type="text" id="appropriateType1BothPAndLComingWord" class="blank" placeholder="如：北市教工" required>
+                            </label>
+                            <label for="appropriateType1BothPAndLComingNumber" style="font-weight: lighter;">輸入來文號
+                                <input type="text" id="appropriateType1BothPAndLComingNumber" class="blank" placeholder="如：1131111234" required>
+                            </label>
+                            <label for="appropriateType1BothPAndLPAlertDate" style="font-weight: lighter;">輸入通報日期
+                                <input type="text" id="appropriateType1BothPAndLPAlertDate" class="blank" placeholder="如：113年6月10日" required>
+                            </label>
+                            <!--看有沒有辦法做個轉換從1130610轉成有年月日，他們打數字就好了-->
+                            <label for="appropriateType1BothPAndLPSituationArea" style="font-weight: lighter;">輸入狀況區域
+                                <input type="text" id="appropriateType1BothPAndLPSituationArea" class="blank" placeholder="如：明德樓" required>
+                            </label>
+                            <label for="appropriateType1BothPAndLPSituation" style="font-weight: lighter;">輸入狀況
+                                <input type="text" id="appropriateType1BothPAndLPSituation" class="blank" placeholder="如：牆裂柱爆" required>
+                            </label>
+                            <label for="appropriateType1BothPAndLPInvestigationDate" style="font-weight: lighter;">輸入會勘日期
+                                <input type="text" id="appropriateType1BothPAndLPInvestigationDate" class="blank" placeholder="如：113年6月10日" required>
+                            </label>            
+                            <label for="appropriateType1BothPAndLPInvestigationResult" style="font-weight: lighter;">輸入會勘結果
+                                <input type="text" id="appropriateType1BothPAndLPInvestigationResult" class="blank" placeholder="看你結論怎麼寫囉" required>
+                            </label>               
+                            <label for="appropriateType1BothPAndLPOriginalTotal" style="font-weight: lighter;">輸入校方函報金額
+                                <input type="text" id="appropriateType1BothPAndLPOriginalTotal" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                            <label for="appropriateType1BothPAndLPOriginalConstructionFee" style="font-weight: lighter;">輸入校方函報施工費
+                                <input type="text" id="appropriateType1BothPAndLPOriginalConstructionFee" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                            <label for="appropriateType1BothPAndLPOriginalArchitectFee" style="font-weight: lighter;">輸入校方函報委技費
+                                <input type="text" id="appropriateType1BothPAndLPOriginalArchitectFee" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                            <label for="appropriateType1BothPAndLPOriginalManagementFee" style="font-weight: lighter;">輸入校方函報工管費
+                                <input type="text" id="appropriateType1BothPAndLPLOriginalManagementFee" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                        </div>
+                        <!--準備金態樣一簽稿特殊情況-簽-->
+                        <div id="appropriateType1BothPAndLPConditions" class="layer1">
+                            <label for="appropriateType1BothPAndLPYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
+                            <input type="radio" id="appropriateType1BothPAndLPYesYearEnd" name="appropriateType1BothPAndLPYesNoYearEnd" value="yes" required>
+                            <label for="appropriateType1BothPAndLPYesYearEnd">是</label>
+                            <input type="radio" id="appropriateType1BothPAndLPNoYearEnd" name="appropriateType1BothPAndLPYesNoYearEnd" value="no" required>
+                            <label for="appropriateType1BothPAndLPNoYearEnd">否</label>
+                                <div id="appropriateType1BothPAndLPAdditionalInfoYearEnd" class="layer2">
+                                    <label for="appropriateType1BothPAndLPAdditionalInfoYearEndAmount">先行準備金規劃設計費金額：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdditionalInfoYearEndAmount" placeholder="如：123456789123">
+                                </div>
+                            <br>
+                            <label for="appropriateType1BothPAndLPSourceAdjust">是否需調整財源？</label>
+                            <input type="radio" id="appropriateType1BothPAndLPYesSourceAdjust" name="appropriateType1BothPAndLPYesNoSourceAdjust" value="yes" required>
+                            <label for="appropriateType1BothPAndLPYesSourceAdjust">是</label>
+                            <input type="radio" id="appropriateType1BothPAndLPNoSourceAdjust" name="appropriateType1BothPAndLPYesNoSourceAdjust" value="no" required>
+                            <label for="appropriateType1BothPAndLPNoSourceAdjust">否</label>
+                                <!--輸入財源調整資訊-->
+                                <div id="appropriateType1BothPAndLPAdditionalInfoSourceAdjust" class="layer2">
+                                    <label for="appropriateType1BothPAndLPTargetSource">目標財源：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPTargetSource"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1BothPAndLPAdjustedSourceA">調整財源1：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdjustedSourceA"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1BothPAndLPAdjustedSourceAAmount">財源1調整金額：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdjustedSourceAAmount"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1BothPAndLPAdjustedSourceB">調整財源2：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdjustedSourceB"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1BothPAndLPAdjustedSourceBAmount">財源2調整金額：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdjustedSourceBAmount"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1BothPAndLPAdjustedSourceC">調整財源3：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdjustedSourceC"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1BothPAndLPAdjustedSourceCAmount">財源3調整金額：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdjustedSourceCAmount"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1BothPAndLPAdjustedSourceD">調整財源4：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdjustedSourceD"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1BothPAndLPAdjustedSourceDAmount">財源4調整金額：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdjustedSourceDAmount"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1BothPAndLPAdjustedSourceE">調整財源5：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdjustedSourceE"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1BothPAndLPAdjustedSourceEAmount">財源5調整金額：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPAdjustedSourceEAmount"  class="blank" placeholder="如：123456789123">
+                                </div>
+                            <br>
+                            <label for="appropriateType1BothPAndLPSuggestedAmount">是否有建議補助額度？</label>
+                            <input type="radio" id="appropriateType1BothPAndLPYesSuggestedAmount" name="appropriateType1BothPAndLPYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType1BothPAndLPYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType1BothPAndLPNoSuggestedAmount" name="appropriateType1BothPAndLPYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType1BothPAndLPNoSuggestedAmount">否</label>
+                                <!--輸入建議補助資訊-->
+                                <div id="appropriateType1BothPAndLPAdditionalInfoSuggestedAmount" class="layer2">
+                                    <label for="appropriateType1BothPAndLPSuggestedTotal">建議補助總額：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPSuggestedTotal"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1BothPAndLPSuggestedConstructionFee">建議補助施工費：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPSuggestedConstructionFee"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1BothPAndLPSuggestedArchitectFee">建議補助委技費：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPSuggestedArchitectFee"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1BothPAndLPSuggestedManagementFee">建議補助工管費：</label>
+                                    <input type="text" id="appropriateType1BothPAndLPSuggestedManagementFee"  class="blank" placeholder="如：123456789123">
+                                </div>
+                        </div>
+                    <!--準備金態樣一選擇準備金公文類型簽稿-稿-->
+                        <!--準備金態樣一簽稿特殊情況-稿-->
+                        <div id="appropriateType1BothPAndLLConditions" class="layer1">
+                            <!--預算尚未通過部分-->
+                            <label for="appropriateType1BothPAndLLReviewFinished">是否有預算尚未經議會審議通過情形？</label>
+                            <input type="radio" id="appropriateType1BothPAndLLYesReviewFinished" name="appropriateType1BothPAndLLYesNoReviewFinished" value="yes" required>
+                            <label for="appropriateType1BothPAndLLYesReviewFinished">是</label>
+                            <input type="radio" id="appropriateType1BothPAndLLNoReviewFinished" name="appropriateType1BothPAndLLYesNoReviewFinished" value="no" required>
+                            <label for="appropriateType1BothPAndLLNoReviewFinished">否</label>
+                                <!--輸入預算審議年份-->
+                                <div id="appropriateType1BothPAndLLBudgetReview" class="layer2">
+                                    <label for="appropriateType1BothPAndLLReviewYear" style="font-weight: lighter;">輸入預算年份：
+                                        <input type="text" id="appropriateType1BothPAndL-LReviewYear" class="blank" placeholder="如：113" width = "50px;" required>
+                                    </label>    
+                                </div>
+                            <br>
+                            <!--工管費部分-->
+                            <label for="appropriateType1BothPAndLLManagementFee">是否編列工管費？</label>
+                            <input type="radio" id="appropriateType1BothPAndLLYesManagementFee" name="appropriateType1BothPAndLLYesNoManagementFee" value="yes" required>
+                            <label for="appropriateType1BothPAndLLYesManagementFee">是</label>
+                            <input type="radio" id="appropriateType1BothPAndLLNoManagementFee" name="appropriateType1BothPAndLLYesNoManagementFee" value="no" required>
+                            <label for="appropriateType1BothPAndLLNoManagementFee">否</label>
+                                <!--輸入工管費年份-->
+                                <div id="appropriateType1BothPAndLLManagementFeeYear" class="layer2">
+                                    <label for="appropriateType1BothPAndLLManagementFee">輸入工管費年份：</label>
+                                    <input type="text" id="appropriateType1BothPAndLLManagementFee" placeholder="如：113" class="blank">
+                                </div>
+                            <br>
+                            <!--調整預算部分-->
+                            <label for="appropriateType1BothPAndLLSuggestedAmount">是否有調整額度？</label>
+                            <input type="radio" id="appropriateType1BothPAndLLYesSuggestedAmount" name="appropriateType1BothPAndLLYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType1BothPAndLLYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType1BothPAndLLNoSuggestedAmount" name="appropriateType1BothPAndLLYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType1BothPAndLLNoSuggestedAmount">否</label>
+                        </div>
+                    </div>
+                    <!--準備金態樣一選擇準備金公文類型簽-->
+                    <div id="appropriateContainerType1Kind2Content" class="content">
+                        <!--準備金態樣一簽個案細節-->
+                        <div id="appropriateType1PetitionKeyInputs" class="layer1">
+                            <label for="appropriateType1BothPAndLSchoolName" style="font-weight: lighter;">輸入校名
+                                <input type="text" id="appropriateType1PetitionSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                            </label>
+                            <!--修修看國高中的表達方式-->
+            
+                            <label for="appropriateType1PetitionProjectName" style="font-weight: lighter;">輸入案名
+                                <input type="text" id="appropriateType1PetitionProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                            </label>
+            
+                            <label for="appropriateType1PetitionappropriateAmount" style="font-weight: lighter;">輸入準備金金額
+                                <input type="text" id="appropriateType1PetitionappropriateAmount" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionComingDate" style="font-weight: lighter;">輸入來文日期
+                                <input type="text" id="appropriateType1PetitionComingDate" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionComingWord" style="font-weight: lighter;">輸入來文字
+                                <input type="text" id="appropriateType1PetitionComingWord" class="blank" placeholder="如：北市教工" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionComingNumber" style="font-weight: lighter;">輸入來文號
+                                <input type="text" id="appropriateType1PetitionComingNumber" class="blank" placeholder="如：1131111234" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionAlertDate" style="font-weight: lighter;">輸入通報日期
+                                <input type="text" id="appropriateType1PetitionAlertDate" class="blank" placeholder="如：113年6月10日" required>
+                            </label>
+                            <!--看有沒有辦法做個轉換從1130610轉成有年月日，他們打數字就好了-->
+                            
+                            <label for="appropriateType1PetitionSituationArea" style="font-weight: lighter;">輸入狀況區域
+                                <input type="text" id="appropriateType1PetitionSituationArea" class="blank" placeholder="如：明德樓" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionSituation" style="font-weight: lighter;">輸入狀況
+                                <input type="text" id="appropriateType1PetitionSituation" class="blank" placeholder="如：牆裂柱爆" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionInvestigationDate" style="font-weight: lighter;">輸入會勘日期
+                                <input type="text" id="appropriateType1PetitionInvestigationDate" class="blank" placeholder="如：113年6月10日" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionInvestigationResult" style="font-weight: lighter;">輸入會勘結果
+                                <input type="text" id="appropriateType1PetitionInvestigationResult" class="blank" placeholder="看你結論怎麼寫囉" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionOriginalTotal" style="font-weight: lighter;">輸入校方函報金額
+                                <input type="text" id="appropriateType1PetitionOriginalTotal" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionOriginalConstructionFee" style="font-weight: lighter;">輸入校方函報施工費
+                                <input type="text" id="appropriateType1PetitionOriginalConstructionFee" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionOriginalArchitectFee" style="font-weight: lighter;">輸入校方函報委技費
+                                <input type="text" id="appropriateType1PetitionOriginalArchitectFee" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                            
+                            <label for="appropriateType1PetitionOriginalManagementFee" style="font-weight: lighter;">輸入校方函報工管費
+                                <input type="text" id="appropriateType1PetitionOriginalManagementFee" class="blank" placeholder="如：123456789123" required>
+                            </label>
+                        </div>
+                        <!--準備金態樣一簽特殊情況-->
+                        <div id="appropriateType1PetitionConditions" class="layer1">
+                            <label for="appropriateType1PetitionYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
+                            <input type="radio" id="appropriateType1PetitionYesYearEnd" name="appropriateType1PetitionYesNoYearEnd" value="yes" required>
+                            <label for="appropriateType1PetitionYesYearEnd">是</label>
+                            <input type="radio" id="appropriateType1PetitionNoYearEnd" name="appropriateType1PetitionYesNoYearEnd" value="no" required>
+                            <label for="appropriateType1PetitionNoYearEnd">否</label>
+                                <div id="appropriateType1PetitionAdditionalInfoYearEnd" class="layer2">
+                                    <label for="appropriateType1PetitionAdditionalInfoYearEndAmount">先行準備金規劃設計費金額：</label>
+                                    <input type="text" id="appropriateType1PetitionAdditionalInfoYearEndAmount" placeholder="如：123456789123">
+                                </div>
+                            <br>
+                            <label for="appropriateType1PetitionSourceAdjust">是否需調整財源？</label>
+                            <input type="radio" id="appropriateType1PetitionYesSourceAdjust" name="appropriateType1PetitionYesNoSourceAdjust" value="yes" required>
+                            <label for="appropriateType1PetitionYesSourceAdjust">是</label>
+                            <input type="radio" id="appropriateType1PetitionNoSourceAdjust" name="appropriateType1PetitionYesNoSourceAdjust" value="no" required>
+                            <label for="appropriateType1PetitionNoSourceAdjust">否</label>
+                                <!--輸入財源調整資訊-->
+                                <div id="appropriateType1PetitionAdditionalInfoSourceAdjust" class="layer2">
+                                    <label for="appropriateType1PetitionTargetSource">目標財源：</label>
+                                    <input type="text" id="appropriateType1PetitionTargetSource"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1PetitionAdjustedSourceA">調整財源1：</label>
+                                    <input type="text" id="appropriateType1PetitionAdjustedSourceA"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1PetitionAdjustedSourceAAmount">財源1調整金額：</label>
+                                    <input type="text" id="appropriateType1PetitionAdjustedSourceAAmount"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1PetitionAdjustedSourceB">調整財源2：</label>
+                                    <input type="text" id="appropriateType1PetitionAdjustedSourceB"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1PetitionAdjustedSourceBAmount">財源2調整金額：</label>
+                                    <input type="text" id="appropriateType1PetitionAdjustedSourceBAmount"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1PetitionAdjustedSourceC">調整財源3：</label>
+                                    <input type="text" id="appropriateType1PetitionAdjustedSourceC"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1PetitionAdjustedSourceCAmount">財源3調整金額：</label>
+                                    <input type="text" id="appropriateType1PetitionAdjustedSourceCAmount"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1PetitionAdjustedSourceD">調整財源4：</label>
+                                    <input type="text" id="appropriateType1PetitionAdjustedSourceD"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1PetitionAdjustedSourceDAmount">財源4調整金額：</label>
+                                    <input type="text" id="appropriateType1PetitionAdjustedSourceDAmount"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1PetitionAdjustedSourceE">調整財源5：</label>
+                                    <input type="text" id="appropriateType1PetitionAdjustedSourceE"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType1PetitionAdjustedSourceEAmount">財源5調整金額：</label>
+                                    <input type="text" id="appropriateType1PetitionAdjustedSourceEAmount"  class="blank" placeholder="如：123456789123">
+                                </div>
+                            <br>
+                            <label for="appropriateType1PetitionSuggestedAmount">是否有建議補助額度？</label>
+                            <input type="radio" id="appropriateType1PetitionYesSuggestedAmount" name="appropriateType1PetitionYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType1BothPAndLPPetitionYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType1PetitionNoSuggestedAmount" name="appropriateType1PetitionYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType1PetitionNoSuggestedAmount">否</label>
+                                <!--輸入建議補助資訊-->
+                                <div id="appropriateType1PetitionAdditionalInfoSuggestedAmount" class="layer2">
+                                    <label for="appropriateType1PetitionSuggestedTotal">建議補助總額：</label>
+                                    <input type="text" id="appropriateType1PetitionSuggestedTotal"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1PetitionSuggestedConstructionFee">建議補助施工費：</label>
+                                    <input type="text" id="appropriateType1PetitionSuggestedConstructionFee"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1PetitionSuggestedArchitectFee">建議補助委技費：</label>
+                                    <input type="text" id="appropriateType1PetitionSuggestedArchitectFee"  class="blank" placeholder="如：123456789123">
+                                    <label for="appropriateType1PetitionSuggestedManagementFee">建議補助工管費：</label>
+                                    <input type="text" id="appropriateType1PetitionSuggestedManagementFee"  class="blank" placeholder="如：123456789123">
+                                </div>
+                        </div>
+                    </div>
+                    <!--準備金態樣一選擇準備金公文類型稿-->
+                    <div id="appropriateContainerType1Kind3Content" class="content">
+                        <!--準備金態樣一簽稿特殊情況-稿-->
+                        <div id="appropriateType1LetterConditions" class="layer1">
+                            <!--預算尚未通過部分-->
+                            <label for="appropriateType1LetterReviewFinished">是否有預算尚未經議會審議通過情形？</label>
+                            <input type="radio" id="appropriateType1LetterYesReviewFinished" name="appropriateType1LetterYesNoReviewFinished" value="yes" required>
+                            <label for="appropriateType1LetterYesReviewFinished">是</label>
+                            <input type="radio" id="appropriateType1LetterNoReviewFinished" name="appropriateType1LetterYesNoReviewFinished" value="no" required>
+                            <label for="appropriateType1LetterNoReviewFinished">否</label>
+                                <!--輸入預算審議年份-->
+                                <div id="appropriateType1LetterBudgetReview" class="layer2">
+                                    <label for="appropriateType1LetterReviewYear" style="font-weight: lighter;">輸入預算年份：
+                                        <input type="text" id="appropriateType1LetterReviewYear" class="blank" placeholder="如：113" width = "50px;" required>
+                                    </label>    
+                                </div>
+                            <br>
+                            <!--工管費部分-->
+                            <label for="appropriateType1LetterManagementFee">是否編列工管費？</label>
+                            <input type="radio" id="appropriateType1LetterYesManagementFee" name="appropriateType1LetterYesNoManagementFee" value="yes" required>
+                            <label for="appropriateType1LetterYesManagementFee">是</label>
+                            <input type="radio" id="appropriateType1LetterNoManagementFee" name="appropriateType1LetterYesNoManagementFee" value="no" required>
+                            <label for="appropriateType1LetterNoManagementFee">否</label>
+                                <!--輸入工管費年份-->
+                                <div id="appropriateType1LetterManagementFeeYear" class="layer2">
+                                    <label for="appropriateType1LetterManagementFee">輸入工管費年份：</label>
+                                    <input type="text" id="appropriateType1LetterManagementFee" placeholder="如：113" class="blank">
+                                </div>
+                            <br>
+                            <!--調整預算部分-->
+                            <label for="appropriateType1LetterSuggestedAmount">是否有調整額度？</label>
+                            <input type="radio" id="appropriateType1LetterYesSuggestedAmount" name="appropriateType1LetterYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType1LetterYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType1LetterNoSuggestedAmount" name="appropriateType1LetterYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType1LetterNoSuggestedAmount">否</label>
+                        </div>
+                    </div>
+                    <!--準備金態樣二選擇準備金公文類型簽稿-->        
+                    <div id="appropriateContainerType2Kind1Content" class="content">
+                        <!--準備金態樣二簽稿個案細節-簽-->
+                        <div id="appropriateType2BothPAndLKeyInputs" class="layer2">
+                            <label for="appropriateType2BothPAndLSchoolName" style="font-weight: lighter;">輸入校名
+                                <input type="text" id="appropriateType2BothPAndLSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                            </label>
+                            <!--修修看國高中的表達方式-->
+                            <label for="appropriateType2BothPAndLProjectName" style="font-weight: lighter;">輸入案名
+                                <input type="text" id="appropriateType2BothPAndLProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                            </label>
+                            <label for="appropriateType2BothPAndLappropriateAmount" style="font-weight: lighter;">輸入準備金金額
+                                <input type="text" id="appropriateType2BothPAndLappropriateAmount" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                            <label for="appropriateType2BothPAndLComingDate" style="font-weight: lighter;">輸入來文日期
+                                <input type="text" id="appropriateType2BothPAndLComingDate" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                            <label for="appropriateType2BothPAndLComingWord" style="font-weight: lighter;">輸入來文字
+                                <input type="text" id="appropriateType2BothPAndLComingWord" class="blank" placeholder="如：北市教工" required>
+                            </label>
+                            <label for="appropriateType2BothPAndLComingNumber" style="font-weight: lighter;">輸入來文號
+                                <input type="text" id="appropriateType2BothPAndLComingNumber" class="blank" placeholder="如：2232222234" required>
+                            </label>
+                            <label for="appropriateType2BothPAndLPAlertDate" style="font-weight: lighter;">輸入通報日期
+                                <input type="text" id="appropriateType2BothPAndLPAlertDate" class="blank" placeholder="如：223年6月20日" required>
+                            </label>
+                            <!--看有沒有辦法做個轉換從2230620轉成有年月日，他們打數字就好了-->
+                            <label for="appropriateType2BothPAndLPSituationArea" style="font-weight: lighter;">輸入狀況區域
+                                <input type="text" id="appropriateType2BothPAndLPSituationArea" class="blank" placeholder="如：明德樓" required>
+                            </label>
+                            <label for="appropriateType2BothPAndLPSituation" style="font-weight: lighter;">輸入狀況
+                                <input type="text" id="appropriateType2BothPAndLPSituation" class="blank" placeholder="如：牆裂柱爆" required>
+                            </label>
+                            <label for="appropriateType2BothPAndLPInvestigationDate" style="font-weight: lighter;">輸入會勘日期
+                                <input type="text" id="appropriateType2BothPAndLPInvestigationDate" class="blank" placeholder="如：223年6月20日" required>
+                            </label>            
+                            <label for="appropriateType2BothPAndLPInvestigationResult" style="font-weight: lighter;">輸入會勘結果
+                                <input type="text" id="appropriateType2BothPAndLPInvestigationResult" class="blank" placeholder="看你結論怎麼寫囉" required>
+                            </label>               
+                            <label for="appropriateType2BothPAndLPOriginalTotal" style="font-weight: lighter;">輸入校方函報金額
+                                <input type="text" id="appropriateType2BothPAndLPOriginalTotal" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                            <label for="appropriateType2BothPAndLPOriginalConstructionFee" style="font-weight: lighter;">輸入校方函報施工費
+                                <input type="text" id="appropriateType2BothPAndLPOriginalConstructionFee" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                            <label for="appropriateType2BothPAndLPOriginalArchitectFee" style="font-weight: lighter;">輸入校方函報委技費
+                                <input type="text" id="appropriateType2BothPAndLPOriginalArchitectFee" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                            <label for="appropriateType2BothPAndLPOriginalManagementFee" style="font-weight: lighter;">輸入校方函報工管費
+                                <input type="text" id="appropriateType2BothPAndLPLOriginalManagementFee" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                        </div>
+                        <!--準備金態樣二簽稿特殊情況-簽-->
+                        <div id="appropriateType2BothPAndLPConditions" class="layer2">
+                            <label for="appropriateType2BothPAndLPYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
+                            <input type="radio" id="appropriateType2BothPAndLPYesYearEnd" name="appropriateType2BothPAndLPYesNoYearEnd" value="yes" required>
+                            <label for="appropriateType2BothPAndLPYesYearEnd">是</label>
+                            <input type="radio" id="appropriateType2BothPAndLPNoYearEnd" name="appropriateType2BothPAndLPYesNoYearEnd" value="no" required>
+                            <label for="appropriateType2BothPAndLPNoYearEnd">否</label>
+                                <div id="appropriateType2BothPAndLPAdditionalInfoYearEnd" class="layer2">
+                                    <label for="appropriateType2BothPAndLPAdditionalInfoYearEndAmount">先行準備金規劃設計費金額：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdditionalInfoYearEndAmount" placeholder="如：223456789223">
+                                </div>
+                            <br>
+                            <label for="appropriateType2BothPAndLPSourceAdjust">是否需調整財源？</label>
+                            <input type="radio" id="appropriateType2BothPAndLPYesSourceAdjust" name="appropriateType2BothPAndLPYesNoSourceAdjust" value="yes" required>
+                            <label for="appropriateType2BothPAndLPYesSourceAdjust">是</label>
+                            <input type="radio" id="appropriateType2BothPAndLPNoSourceAdjust" name="appropriateType2BothPAndLPYesNoSourceAdjust" value="no" required>
+                            <label for="appropriateType2BothPAndLPNoSourceAdjust">否</label>
+                                <!--輸入財源調整資訊-->
+                                <div id="appropriateType2BothPAndLPAdditionalInfoSourceAdjust" class="layer2">
+                                    <label for="appropriateType2BothPAndLPTargetSource">目標財源：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPTargetSource"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2BothPAndLPAdjustedSourceA">調整財源2：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdjustedSourceA"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2BothPAndLPAdjustedSourceAAmount">財源2調整金額：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdjustedSourceAAmount"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2BothPAndLPAdjustedSourceB">調整財源2：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdjustedSourceB"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2BothPAndLPAdjustedSourceBAmount">財源2調整金額：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdjustedSourceBAmount"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2BothPAndLPAdjustedSourceC">調整財源3：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdjustedSourceC"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2BothPAndLPAdjustedSourceCAmount">財源3調整金額：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdjustedSourceCAmount"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2BothPAndLPAdjustedSourceD">調整財源4：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdjustedSourceD"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2BothPAndLPAdjustedSourceDAmount">財源4調整金額：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdjustedSourceDAmount"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2BothPAndLPAdjustedSourceE">調整財源5：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdjustedSourceE"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2BothPAndLPAdjustedSourceEAmount">財源5調整金額：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPAdjustedSourceEAmount"  class="blank" placeholder="如：223456789223">
+                                </div>
+                            <br>
+                            <label for="appropriateType2BothPAndLPSuggestedAmount">是否有建議補助額度？</label>
+                            <input type="radio" id="appropriateType2BothPAndLPYesSuggestedAmount" name="appropriateType2BothPAndLPYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType2BothPAndLPYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType2BothPAndLPNoSuggestedAmount" name="appropriateType2BothPAndLPYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType2BothPAndLPNoSuggestedAmount">否</label>
+                                <!--輸入建議補助資訊-->
+                                <div id="appropriateType2BothPAndLPAdditionalInfoSuggestedAmount" class="layer2">
+                                    <label for="appropriateType2BothPAndLPSuggestedTotal">建議補助總額：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPSuggestedTotal"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2BothPAndLPSuggestedConstructionFee">建議補助施工費：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPSuggestedConstructionFee"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2BothPAndLPSuggestedArchitectFee">建議補助委技費：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPSuggestedArchitectFee"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2BothPAndLPSuggestedManagementFee">建議補助工管費：</label>
+                                    <input type="text" id="appropriateType2BothPAndLPSuggestedManagementFee"  class="blank" placeholder="如：223456789223">
+                                </div>
+                        </div>
+                    <!--準備金態樣二選擇準備金公文類型簽稿-稿-->
+                        <!--準備金態樣二簽稿特殊情況-稿-->
+                        <div id="appropriateType2BothPAndLLConditions" class="layer2">
+                            <!--預算尚未通過部分-->
+                            <label for="appropriateType2BothPAndLLReviewFinished">是否有預算尚未經議會審議通過情形？</label>
+                            <input type="radio" id="appropriateType2BothPAndLLYesReviewFinished" name="appropriateType2BothPAndLLYesNoReviewFinished" value="yes" required>
+                            <label for="appropriateType2BothPAndLLYesReviewFinished">是</label>
+                            <input type="radio" id="appropriateType2BothPAndLLNoReviewFinished" name="appropriateType2BothPAndLLYesNoReviewFinished" value="no" required>
+                            <label for="appropriateType2BothPAndLLNoReviewFinished">否</label>
+                                <!--輸入預算審議年份-->
+                                <div id="appropriateType2BothPAndLLBudgetReview" class="layer2">
+                                    <label for="appropriateType2BothPAndLLReviewYear" style="font-weight: lighter;">輸入預算年份：
+                                        <input type="text" id="appropriateType2BothPAndL-LReviewYear" class="blank" placeholder="如：223" width = "50px;" required>
+                                    </label>    
+                                </div>
+                            <br>
+                            <!--工管費部分-->
+                            <label for="appropriateType2BothPAndLLManagementFee">是否編列工管費？</label>
+                            <input type="radio" id="appropriateType2BothPAndLLYesManagementFee" name="appropriateType2BothPAndLLYesNoManagementFee" value="yes" required>
+                            <label for="appropriateType2BothPAndLLYesManagementFee">是</label>
+                            <input type="radio" id="appropriateType2BothPAndLLNoManagementFee" name="appropriateType2BothPAndLLYesNoManagementFee" value="no" required>
+                            <label for="appropriateType2BothPAndLLNoManagementFee">否</label>
+                                <!--輸入工管費年份-->
+                                <div id="appropriateType2BothPAndLLManagementFeeYear" class="layer2">
+                                    <label for="appropriateType2BothPAndLLManagementFee">輸入工管費年份：</label>
+                                    <input type="text" id="appropriateType2BothPAndLLManagementFee" placeholder="如：223" class="blank">
+                                </div>
+                            <br>
+                            <!--調整預算部分-->
+                            <label for="appropriateType2BothPAndLLSuggestedAmount">是否有調整額度？</label>
+                            <input type="radio" id="appropriateType2BothPAndLLYesSuggestedAmount" name="appropriateType2BothPAndLLYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType2BothPAndLLYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType2BothPAndLLNoSuggestedAmount" name="appropriateType2BothPAndLLYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType2BothPAndLLNoSuggestedAmount">否</label>
+                        </div>
+                    </div>
+                    <!--準備金態樣二選擇準備金公文類型簽-->
+                    <div id="appropriateContainerType2Kind2Content" class="content">
+                        <!--準備金態樣二簽個案細節-->
+                        <div id="appropriateType2PetitionKeyInputs" class="layer2">
+                            <label for="appropriateType2BothPAndLSchoolName" style="font-weight: lighter;">輸入校名
+                                <input type="text" id="appropriateType2PetitionSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                            </label>
+                            <!--修修看國高中的表達方式-->
+            
+                            <label for="appropriateType2PetitionProjectName" style="font-weight: lighter;">輸入案名
+                                <input type="text" id="appropriateType2PetitionProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                            </label>
+            
+                            <label for="appropriateType2PetitionappropriateAmount" style="font-weight: lighter;">輸入準備金金額
+                                <input type="text" id="appropriateType2PetitionappropriateAmount" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionComingDate" style="font-weight: lighter;">輸入來文日期
+                                <input type="text" id="appropriateType2PetitionComingDate" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionComingWord" style="font-weight: lighter;">輸入來文字
+                                <input type="text" id="appropriateType2PetitionComingWord" class="blank" placeholder="如：北市教工" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionComingNumber" style="font-weight: lighter;">輸入來文號
+                                <input type="text" id="appropriateType2PetitionComingNumber" class="blank" placeholder="如：2232222234" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionAlertDate" style="font-weight: lighter;">輸入通報日期
+                                <input type="text" id="appropriateType2PetitionAlertDate" class="blank" placeholder="如：223年6月20日" required>
+                            </label>
+                            <!--看有沒有辦法做個轉換從2230620轉成有年月日，他們打數字就好了-->
+                            
+                            <label for="appropriateType2PetitionSituationArea" style="font-weight: lighter;">輸入狀況區域
+                                <input type="text" id="appropriateType2PetitionSituationArea" class="blank" placeholder="如：明德樓" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionSituation" style="font-weight: lighter;">輸入狀況
+                                <input type="text" id="appropriateType2PetitionSituation" class="blank" placeholder="如：牆裂柱爆" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionInvestigationDate" style="font-weight: lighter;">輸入會勘日期
+                                <input type="text" id="appropriateType2PetitionInvestigationDate" class="blank" placeholder="如：223年6月20日" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionInvestigationResult" style="font-weight: lighter;">輸入會勘結果
+                                <input type="text" id="appropriateType2PetitionInvestigationResult" class="blank" placeholder="看你結論怎麼寫囉" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionOriginalTotal" style="font-weight: lighter;">輸入校方函報金額
+                                <input type="text" id="appropriateType2PetitionOriginalTotal" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionOriginalConstructionFee" style="font-weight: lighter;">輸入校方函報施工費
+                                <input type="text" id="appropriateType2PetitionOriginalConstructionFee" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionOriginalArchitectFee" style="font-weight: lighter;">輸入校方函報委技費
+                                <input type="text" id="appropriateType2PetitionOriginalArchitectFee" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                            
+                            <label for="appropriateType2PetitionOriginalManagementFee" style="font-weight: lighter;">輸入校方函報工管費
+                                <input type="text" id="appropriateType2PetitionOriginalManagementFee" class="blank" placeholder="如：223456789223" required>
+                            </label>
+                        </div>
+                        <!--準備金態樣二簽特殊情況-->
+                        <div id="appropriateType2PetitionConditions" class="layer2">
+                            <label for="appropriateType2PetitionYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
+                            <input type="radio" id="appropriateType2PetitionYesYearEnd" name="appropriateType2PetitionYesNoYearEnd" value="yes" required>
+                            <label for="appropriateType2PetitionYesYearEnd">是</label>
+                            <input type="radio" id="appropriateType2PetitionNoYearEnd" name="appropriateType2PetitionYesNoYearEnd" value="no" required>
+                            <label for="appropriateType2PetitionNoYearEnd">否</label>
+                                <div id="appropriateType2PetitionAdditionalInfoYearEnd" class="layer2">
+                                    <label for="appropriateType2PetitionAdditionalInfoYearEndAmount">先行準備金規劃設計費金額：</label>
+                                    <input type="text" id="appropriateType2PetitionAdditionalInfoYearEndAmount" placeholder="如：223456789223">
+                                </div>
+                            <br>
+                            <label for="appropriateType2PetitionSourceAdjust">是否需調整財源？</label>
+                            <input type="radio" id="appropriateType2PetitionYesSourceAdjust" name="appropriateType2PetitionYesNoSourceAdjust" value="yes" required>
+                            <label for="appropriateType2PetitionYesSourceAdjust">是</label>
+                            <input type="radio" id="appropriateType2PetitionNoSourceAdjust" name="appropriateType2PetitionYesNoSourceAdjust" value="no" required>
+                            <label for="appropriateType2PetitionNoSourceAdjust">否</label>
+                                <!--輸入財源調整資訊-->
+                                <div id="appropriateType2PetitionAdditionalInfoSourceAdjust" class="layer2">
+                                    <label for="appropriateType2PetitionTargetSource">目標財源：</label>
+                                    <input type="text" id="appropriateType2PetitionTargetSource"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2PetitionAdjustedSourceA">調整財源2：</label>
+                                    <input type="text" id="appropriateType2PetitionAdjustedSourceA"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2PetitionAdjustedSourceAAmount">財源2調整金額：</label>
+                                    <input type="text" id="appropriateType2PetitionAdjustedSourceAAmount"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2PetitionAdjustedSourceB">調整財源2：</label>
+                                    <input type="text" id="appropriateType2PetitionAdjustedSourceB"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2PetitionAdjustedSourceBAmount">財源2調整金額：</label>
+                                    <input type="text" id="appropriateType2PetitionAdjustedSourceBAmount"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2PetitionAdjustedSourceC">調整財源3：</label>
+                                    <input type="text" id="appropriateType2PetitionAdjustedSourceC"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2PetitionAdjustedSourceCAmount">財源3調整金額：</label>
+                                    <input type="text" id="appropriateType2PetitionAdjustedSourceCAmount"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2PetitionAdjustedSourceD">調整財源4：</label>
+                                    <input type="text" id="appropriateType2PetitionAdjustedSourceD"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2PetitionAdjustedSourceDAmount">財源4調整金額：</label>
+                                    <input type="text" id="appropriateType2PetitionAdjustedSourceDAmount"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2PetitionAdjustedSourceE">調整財源5：</label>
+                                    <input type="text" id="appropriateType2PetitionAdjustedSourceE"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType2PetitionAdjustedSourceEAmount">財源5調整金額：</label>
+                                    <input type="text" id="appropriateType2PetitionAdjustedSourceEAmount"  class="blank" placeholder="如：223456789223">
+                                </div>
+                            <br>
+                            <label for="appropriateType2PetitionSuggestedAmount">是否有建議補助額度？</label>
+                            <input type="radio" id="appropriateType2PetitionYesSuggestedAmount" name="appropriateType2PetitionYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType2BothPAndLPPetitionYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType2PetitionNoSuggestedAmount" name="appropriateType2PetitionYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType2PetitionNoSuggestedAmount">否</label>
+                                <!--輸入建議補助資訊-->
+                                <div id="appropriateType2PetitionAdditionalInfoSuggestedAmount" class="layer2">
+                                    <label for="appropriateType2PetitionSuggestedTotal">建議補助總額：</label>
+                                    <input type="text" id="appropriateType2PetitionSuggestedTotal"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2PetitionSuggestedConstructionFee">建議補助施工費：</label>
+                                    <input type="text" id="appropriateType2PetitionSuggestedConstructionFee"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2PetitionSuggestedArchitectFee">建議補助委技費：</label>
+                                    <input type="text" id="appropriateType2PetitionSuggestedArchitectFee"  class="blank" placeholder="如：223456789223">
+                                    <label for="appropriateType2PetitionSuggestedManagementFee">建議補助工管費：</label>
+                                    <input type="text" id="appropriateType2PetitionSuggestedManagementFee"  class="blank" placeholder="如：223456789223">
+                                </div>
+                        </div>
+                    </div>
+                    <!--準備金態樣二選擇準備金公文類型稿-->
+                    <div id="appropriateContainerType2Kind3Content" class="content">
+                        <!--準備金態樣二簽稿特殊情況-稿-->
+                        <div id="appropriateType2LetterConditions" class="layer2">
+                            <!--預算尚未通過部分-->
+                            <label for="appropriateType2LetterReviewFinished">是否有預算尚未經議會審議通過情形？</label>
+                            <input type="radio" id="appropriateType2LetterYesReviewFinished" name="appropriateType2LetterYesNoReviewFinished" value="yes" required>
+                            <label for="appropriateType2LetterYesReviewFinished">是</label>
+                            <input type="radio" id="appropriateType2LetterNoReviewFinished" name="appropriateType2LetterYesNoReviewFinished" value="no" required>
+                            <label for="appropriateType2LetterNoReviewFinished">否</label>
+                                <!--輸入預算審議年份-->
+                                <div id="appropriateType2LetterBudgetReview" class="layer2">
+                                    <label for="appropriateType2LetterReviewYear" style="font-weight: lighter;">輸入預算年份：
+                                        <input type="text" id="appropriateType2LetterReviewYear" class="blank" placeholder="如：223" width = "50px;" required>
+                                    </label>    
+                                </div>
+                            <br>
+                            <!--工管費部分-->
+                            <label for="appropriateType2LetterManagementFee">是否編列工管費？</label>
+                            <input type="radio" id="appropriateType2LetterYesManagementFee" name="appropriateType2LetterYesNoManagementFee" value="yes" required>
+                            <label for="appropriateType2LetterYesManagementFee">是</label>
+                            <input type="radio" id="appropriateType2LetterNoManagementFee" name="appropriateType2LetterYesNoManagementFee" value="no" required>
+                            <label for="appropriateType2LetterNoManagementFee">否</label>
+                                <!--輸入工管費年份-->
+                                <div id="appropriateType2LetterManagementFeeYear" class="layer2">
+                                    <label for="appropriateType2LetterManagementFee">輸入工管費年份：</label>
+                                    <input type="text" id="appropriateType2LetterManagementFee" placeholder="如：223" class="blank">
+                                </div>
+                            <br>
+                            <!--調整預算部分-->
+                            <label for="appropriateType2LetterSuggestedAmount">是否有調整額度？</label>
+                            <input type="radio" id="appropriateType2LetterYesSuggestedAmount" name="appropriateType2LetterYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType2LetterYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType2LetterNoSuggestedAmount" name="appropriateType2LetterYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType2LetterNoSuggestedAmount">否</label>
+                        </div>
+                    </div>
+                    <!--準備金態樣三選擇準備金公文類型簽稿-簽-->        
+                    <div id="appropriateContainerType3Kind1Content" class="content">
+                        <!--準備金態樣三簽稿個案細節-簽-->
+                        <div id="appropriateType3BothPAndLKeyInputs" class="layer3">
+                            <label for="appropriateType3BothPAndLSchoolName" style="font-weight: lighter;">輸入校名
+                                <input type="text" id="appropriateType3BothPAndLSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                            </label>
+                            <!--修修看國高中的表達方式-->
+                            <label for="appropriateType3BothPAndLProjectName" style="font-weight: lighter;">輸入案名
+                                <input type="text" id="appropriateType3BothPAndLProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                            </label>
+                            <label for="appropriateType3BothPAndLappropriateAmount" style="font-weight: lighter;">輸入準備金金額
+                                <input type="text" id="appropriateType3BothPAndLappropriateAmount" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                            <label for="appropriateType3BothPAndLComingDate" style="font-weight: lighter;">輸入來文日期
+                                <input type="text" id="appropriateType3BothPAndLComingDate" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                            <label for="appropriateType3BothPAndLComingWord" style="font-weight: lighter;">輸入來文字
+                                <input type="text" id="appropriateType3BothPAndLComingWord" class="blank" placeholder="如：北市教工" required>
+                            </label>
+                            <label for="appropriateType3BothPAndLComingNumber" style="font-weight: lighter;">輸入來文號
+                                <input type="text" id="appropriateType3BothPAndLComingNumber" class="blank" placeholder="如：3333333334" required>
+                            </label>
+                            <label for="appropriateType3BothPAndLPAlertDate" style="font-weight: lighter;">輸入通報日期
+                                <input type="text" id="appropriateType3BothPAndLPAlertDate" class="blank" placeholder="如：333年6月30日" required>
+                            </label>
+                            <!--看有沒有辦法做個轉換從3330630轉成有年月日，他們打數字就好了-->
+                            <label for="appropriateType3BothPAndLPSituationArea" style="font-weight: lighter;">輸入狀況區域
+                                <input type="text" id="appropriateType3BothPAndLPSituationArea" class="blank" placeholder="如：明德樓" required>
+                            </label>
+                            <label for="appropriateType3BothPAndLPSituation" style="font-weight: lighter;">輸入狀況
+                                <input type="text" id="appropriateType3BothPAndLPSituation" class="blank" placeholder="如：牆裂柱爆" required>
+                            </label>
+                            <label for="appropriateType3BothPAndLPInvestigationDate" style="font-weight: lighter;">輸入會勘日期
+                                <input type="text" id="appropriateType3BothPAndLPInvestigationDate" class="blank" placeholder="如：333年6月30日" required>
+                            </label>            
+                            <label for="appropriateType3BothPAndLPInvestigationResult" style="font-weight: lighter;">輸入會勘結果
+                                <input type="text" id="appropriateType3BothPAndLPInvestigationResult" class="blank" placeholder="看你結論怎麼寫囉" required>
+                            </label>               
+                            <label for="appropriateType3BothPAndLPOriginalTotal" style="font-weight: lighter;">輸入校方函報金額
+                                <input type="text" id="appropriateType3BothPAndLPOriginalTotal" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                            <label for="appropriateType3BothPAndLPOriginalConstructionFee" style="font-weight: lighter;">輸入校方函報施工費
+                                <input type="text" id="appropriateType3BothPAndLPOriginalConstructionFee" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                            <label for="appropriateType3BothPAndLPOriginalArchitectFee" style="font-weight: lighter;">輸入校方函報委技費
+                                <input type="text" id="appropriateType3BothPAndLPOriginalArchitectFee" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                            <label for="appropriateType3BothPAndLPOriginalManagementFee" style="font-weight: lighter;">輸入校方函報工管費
+                                <input type="text" id="appropriateType3BothPAndLPLOriginalManagementFee" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                        </div>
+                        <!--準備金態樣三簽稿特殊情況-簽-->
+                        <div id="appropriateType3BothPAndLPConditions" class="layer3">
+                            <label for="appropriateType3BothPAndLPYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
+                            <input type="radio" id="appropriateType3BothPAndLPYesYearEnd" name="appropriateType3BothPAndLPYesNoYearEnd" value="yes" required>
+                            <label for="appropriateType3BothPAndLPYesYearEnd">是</label>
+                            <input type="radio" id="appropriateType3BothPAndLPNoYearEnd" name="appropriateType3BothPAndLPYesNoYearEnd" value="no" required>
+                            <label for="appropriateType3BothPAndLPNoYearEnd">否</label>
+                                <div id="appropriateType3BothPAndLPAdditionalInfoYearEnd" class="layer3">
+                                    <label for="appropriateType3BothPAndLPAdditionalInfoYearEndAmount">先行準備金規劃設計費金額：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdditionalInfoYearEndAmount" placeholder="如：333456789333">
+                                </div>
+                            <br>
+                            <label for="appropriateType3BothPAndLPSourceAdjust">是否需調整財源？</label>
+                            <input type="radio" id="appropriateType3BothPAndLPYesSourceAdjust" name="appropriateType3BothPAndLPYesNoSourceAdjust" value="yes" required>
+                            <label for="appropriateType3BothPAndLPYesSourceAdjust">是</label>
+                            <input type="radio" id="appropriateType3BothPAndLPNoSourceAdjust" name="appropriateType3BothPAndLPYesNoSourceAdjust" value="no" required>
+                            <label for="appropriateType3BothPAndLPNoSourceAdjust">否</label>
+                                <!--輸入財源調整資訊-->
+                                <div id="appropriateType3BothPAndLPAdditionalInfoSourceAdjust" class="layer3">
+                                    <label for="appropriateType3BothPAndLPTargetSource">目標財源：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPTargetSource"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3BothPAndLPAdjustedSourceA">調整財源3：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdjustedSourceA"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3BothPAndLPAdjustedSourceAAmount">財源3調整金額：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdjustedSourceAAmount"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3BothPAndLPAdjustedSourceB">調整財源3：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdjustedSourceB"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3BothPAndLPAdjustedSourceBAmount">財源3調整金額：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdjustedSourceBAmount"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3BothPAndLPAdjustedSourceC">調整財源3：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdjustedSourceC"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3BothPAndLPAdjustedSourceCAmount">財源3調整金額：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdjustedSourceCAmount"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3BothPAndLPAdjustedSourceD">調整財源4：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdjustedSourceD"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3BothPAndLPAdjustedSourceDAmount">財源4調整金額：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdjustedSourceDAmount"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3BothPAndLPAdjustedSourceE">調整財源5：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdjustedSourceE"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3BothPAndLPAdjustedSourceEAmount">財源5調整金額：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPAdjustedSourceEAmount"  class="blank" placeholder="如：333456789333">
+                                </div>
+                            <br>
+                            <label for="appropriateType3BothPAndLPSuggestedAmount">是否有建議補助額度？</label>
+                            <input type="radio" id="appropriateType3BothPAndLPYesSuggestedAmount" name="appropriateType3BothPAndLPYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType3BothPAndLPYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType3BothPAndLPNoSuggestedAmount" name="appropriateType3BothPAndLPYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType3BothPAndLPNoSuggestedAmount">否</label>
+                                <!--輸入建議補助資訊-->
+                                <div id="appropriateType3BothPAndLPAdditionalInfoSuggestedAmount" class="layer3">
+                                    <label for="appropriateType3BothPAndLPSuggestedTotal">建議補助總額：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPSuggestedTotal"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3BothPAndLPSuggestedConstructionFee">建議補助施工費：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPSuggestedConstructionFee"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3BothPAndLPSuggestedArchitectFee">建議補助委技費：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPSuggestedArchitectFee"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3BothPAndLPSuggestedManagementFee">建議補助工管費：</label>
+                                    <input type="text" id="appropriateType3BothPAndLPSuggestedManagementFee"  class="blank" placeholder="如：333456789333">
+                                </div>
+                        </div>
+                    <!--準備金態樣三選擇準備金公文類型簽稿-稿-->
+                        <!--準備金態樣三簽稿特殊情況-稿-->
+                        <div id="appropriateType3BothPAndLLConditions" class="layer3">
+                            <!--預算尚未通過部分-->
+                            <label for="appropriateType3BothPAndLLReviewFinished">是否有預算尚未經議會審議通過情形？</label>
+                            <input type="radio" id="appropriateType3BothPAndLLYesReviewFinished" name="appropriateType3BothPAndLLYesNoReviewFinished" value="yes" required>
+                            <label for="appropriateType3BothPAndLLYesReviewFinished">是</label>
+                            <input type="radio" id="appropriateType3BothPAndLLNoReviewFinished" name="appropriateType3BothPAndLLYesNoReviewFinished" value="no" required>
+                            <label for="appropriateType3BothPAndLLNoReviewFinished">否</label>
+                                <!--輸入預算審議年份-->
+                                <div id="appropriateType3BothPAndLLBudgetReview" class="layer3">
+                                    <label for="appropriateType3BothPAndLLReviewYear" style="font-weight: lighter;">輸入預算年份：
+                                        <input type="text" id="appropriateType3BothPAndL-LReviewYear" class="blank" placeholder="如：333" width = "50px;" required>
+                                    </label>    
+                                </div>
+                            <br>
+                            <!--工管費部分-->
+                            <label for="appropriateType3BothPAndLLManagementFee">是否編列工管費？</label>
+                            <input type="radio" id="appropriateType3BothPAndLLYesManagementFee" name="appropriateType3BothPAndLLYesNoManagementFee" value="yes" required>
+                            <label for="appropriateType3BothPAndLLYesManagementFee">是</label>
+                            <input type="radio" id="appropriateType3BothPAndLLNoManagementFee" name="appropriateType3BothPAndLLYesNoManagementFee" value="no" required>
+                            <label for="appropriateType3BothPAndLLNoManagementFee">否</label>
+                                <!--輸入工管費年份-->
+                                <div id="appropriateType3BothPAndLLManagementFeeYear" class="layer3">
+                                    <label for="appropriateType3BothPAndLLManagementFee">輸入工管費年份：</label>
+                                    <input type="text" id="appropriateType3BothPAndLLManagementFee" placeholder="如：333" class="blank">
+                                </div>
+                            <br>
+                            <!--調整預算部分-->
+                            <label for="appropriateType3BothPAndLLSuggestedAmount">是否有調整額度？</label>
+                            <input type="radio" id="appropriateType3BothPAndLLYesSuggestedAmount" name="appropriateType3BothPAndLLYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType3BothPAndLLYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType3BothPAndLLNoSuggestedAmount" name="appropriateType3BothPAndLLYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType3BothPAndLLNoSuggestedAmount">否</label>
+                        </div>
+                    </div>
+                    <!--準備金態樣三選擇準備金公文類型簽-->
+                    <div id="appropriateContainerType3Kind2Content" class="content">
+                        <!--準備金態樣三簽個案細節-->
+                        <div id="appropriateType3PetitionKeyInputs" class="layer3">
+                            <label for="appropriateType3BothPAndLSchoolName" style="font-weight: lighter;">輸入校名
+                                <input type="text" id="appropriateType3PetitionSchoolName" class="blank" placeholder="如：北投區桃源國小／立明德國民中學" required>
+                            </label>
+                            <!--修修看國高中的表達方式-->
+            
+                            <label for="appropriateType3PetitionProjectName" style="font-weight: lighter;">輸入案名
+                                <input type="text" id="appropriateType3PetitionProjectName" class="blank" placeholder="如：中正樓外牆及地下室滲水整修工程" width = "50px;" required>
+                            </label>
+            
+                            <label for="appropriateType3PetitionappropriateAmount" style="font-weight: lighter;">輸入準備金金額
+                                <input type="text" id="appropriateType3PetitionappropriateAmount" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionComingDate" style="font-weight: lighter;">輸入來文日期
+                                <input type="text" id="appropriateType3PetitionComingDate" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionComingWord" style="font-weight: lighter;">輸入來文字
+                                <input type="text" id="appropriateType3PetitionComingWord" class="blank" placeholder="如：北市教工" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionComingNumber" style="font-weight: lighter;">輸入來文號
+                                <input type="text" id="appropriateType3PetitionComingNumber" class="blank" placeholder="如：3333333334" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionAlertDate" style="font-weight: lighter;">輸入通報日期
+                                <input type="text" id="appropriateType3PetitionAlertDate" class="blank" placeholder="如：333年6月30日" required>
+                            </label>
+                            <!--看有沒有辦法做個轉換從3330630轉成有年月日，他們打數字就好了-->
+                            
+                            <label for="appropriateType3PetitionSituationArea" style="font-weight: lighter;">輸入狀況區域
+                                <input type="text" id="appropriateType3PetitionSituationArea" class="blank" placeholder="如：明德樓" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionSituation" style="font-weight: lighter;">輸入狀況
+                                <input type="text" id="appropriateType3PetitionSituation" class="blank" placeholder="如：牆裂柱爆" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionInvestigationDate" style="font-weight: lighter;">輸入會勘日期
+                                <input type="text" id="appropriateType3PetitionInvestigationDate" class="blank" placeholder="如：333年6月30日" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionInvestigationResult" style="font-weight: lighter;">輸入會勘結果
+                                <input type="text" id="appropriateType3PetitionInvestigationResult" class="blank" placeholder="看你結論怎麼寫囉" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionOriginalTotal" style="font-weight: lighter;">輸入校方函報金額
+                                <input type="text" id="appropriateType3PetitionOriginalTotal" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionOriginalConstructionFee" style="font-weight: lighter;">輸入校方函報施工費
+                                <input type="text" id="appropriateType3PetitionOriginalConstructionFee" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionOriginalArchitectFee" style="font-weight: lighter;">輸入校方函報委技費
+                                <input type="text" id="appropriateType3PetitionOriginalArchitectFee" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                            
+                            <label for="appropriateType3PetitionOriginalManagementFee" style="font-weight: lighter;">輸入校方函報工管費
+                                <input type="text" id="appropriateType3PetitionOriginalManagementFee" class="blank" placeholder="如：333456789333" required>
+                            </label>
+                        </div>
+                        <!--準備金態樣三簽特殊情況-->
+                        <div id="appropriateType3PetitionConditions" class="layer3">
+                            <label for="appropriateType3PetitionYearEnd">是否為年底沒錢或申請學校有預算執行率問題？</label>
+                            <input type="radio" id="appropriateType3PetitionYesYearEnd" name="appropriateType3PetitionYesNoYearEnd" value="yes" required>
+                            <label for="appropriateType3PetitionYesYearEnd">是</label>
+                            <input type="radio" id="appropriateType3PetitionNoYearEnd" name="appropriateType3PetitionYesNoYearEnd" value="no" required>
+                            <label for="appropriateType3PetitionNoYearEnd">否</label>
+                                <div id="appropriateType3PetitionAdditionalInfoYearEnd" class="layer3">
+                                    <label for="appropriateType3PetitionAdditionalInfoYearEndAmount">先行準備金規劃設計費金額：</label>
+                                    <input type="text" id="appropriateType3PetitionAdditionalInfoYearEndAmount" placeholder="如：333456789333">
+                                </div>
+                            <br>
+                            <label for="appropriateType3PetitionSourceAdjust">是否需調整財源？</label>
+                            <input type="radio" id="appropriateType3PetitionYesSourceAdjust" name="appropriateType3PetitionYesNoSourceAdjust" value="yes" required>
+                            <label for="appropriateType3PetitionYesSourceAdjust">是</label>
+                            <input type="radio" id="appropriateType3PetitionNoSourceAdjust" name="appropriateType3PetitionYesNoSourceAdjust" value="no" required>
+                            <label for="appropriateType3PetitionNoSourceAdjust">否</label>
+                                <!--輸入財源調整資訊-->
+                                <div id="appropriateType3PetitionAdditionalInfoSourceAdjust" class="layer3">
+                                    <label for="appropriateType3PetitionTargetSource">目標財源：</label>
+                                    <input type="text" id="appropriateType3PetitionTargetSource"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3PetitionAdjustedSourceA">調整財源3：</label>
+                                    <input type="text" id="appropriateType3PetitionAdjustedSourceA"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3PetitionAdjustedSourceAAmount">財源3調整金額：</label>
+                                    <input type="text" id="appropriateType3PetitionAdjustedSourceAAmount"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3PetitionAdjustedSourceB">調整財源3：</label>
+                                    <input type="text" id="appropriateType3PetitionAdjustedSourceB"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3PetitionAdjustedSourceBAmount">財源3調整金額：</label>
+                                    <input type="text" id="appropriateType3PetitionAdjustedSourceBAmount"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3PetitionAdjustedSourceC">調整財源3：</label>
+                                    <input type="text" id="appropriateType3PetitionAdjustedSourceC"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3PetitionAdjustedSourceCAmount">財源3調整金額：</label>
+                                    <input type="text" id="appropriateType3PetitionAdjustedSourceCAmount"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3PetitionAdjustedSourceD">調整財源4：</label>
+                                    <input type="text" id="appropriateType3PetitionAdjustedSourceD"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3PetitionAdjustedSourceDAmount">財源4調整金額：</label>
+                                    <input type="text" id="appropriateType3PetitionAdjustedSourceDAmount"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3PetitionAdjustedSourceE">調整財源5：</label>
+                                    <input type="text" id="appropriateType3PetitionAdjustedSourceE"  class="blank" placeholder="如：設施改善">
+                                    <label for="appropriateType3PetitionAdjustedSourceEAmount">財源5調整金額：</label>
+                                    <input type="text" id="appropriateType3PetitionAdjustedSourceEAmount"  class="blank" placeholder="如：333456789333">
+                                </div>
+                            <br>
+                            <label for="appropriateType3PetitionSuggestedAmount">是否有建議補助額度？</label>
+                            <input type="radio" id="appropriateType3PetitionYesSuggestedAmount" name="appropriateType3PetitionYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType3BothPAndLPPetitionYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType3PetitionNoSuggestedAmount" name="appropriateType3PetitionYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType3PetitionNoSuggestedAmount">否</label>
+                                <!--輸入建議補助資訊-->
+                                <div id="appropriateType3PetitionAdditionalInfoSuggestedAmount" class="layer3">
+                                    <label for="appropriateType3PetitionSuggestedTotal">建議補助總額：</label>
+                                    <input type="text" id="appropriateType3PetitionSuggestedTotal"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3PetitionSuggestedConstructionFee">建議補助施工費：</label>
+                                    <input type="text" id="appropriateType3PetitionSuggestedConstructionFee"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3PetitionSuggestedArchitectFee">建議補助委技費：</label>
+                                    <input type="text" id="appropriateType3PetitionSuggestedArchitectFee"  class="blank" placeholder="如：333456789333">
+                                    <label for="appropriateType3PetitionSuggestedManagementFee">建議補助工管費：</label>
+                                    <input type="text" id="appropriateType3PetitionSuggestedManagementFee"  class="blank" placeholder="如：333456789333">
+                                </div>
+                        </div>
+                    </div>
+                    <!--準備金態樣三選擇準備金公文類型稿-->
+                    <div id="appropriateContainerType3Kind3Content" class="content">
+                        <!--準備金態樣三簽稿特殊情況-稿-->
+                        <div id="appropriateType3LetterConditions" class="layer3">
+                            <!--預算尚未通過部分-->
+                            <label for="appropriateType3LetterReviewFinished">是否有預算尚未經議會審議通過情形？</label>
+                            <input type="radio" id="appropriateType3LetterYesReviewFinished" name="appropriateType3LetterYesNoReviewFinished" value="yes" required>
+                            <label for="appropriateType3LetterYesReviewFinished">是</label>
+                            <input type="radio" id="appropriateType3LetterNoReviewFinished" name="appropriateType3LetterYesNoReviewFinished" value="no" required>
+                            <label for="appropriateType3LetterNoReviewFinished">否</label>
+                                <!--輸入預算審議年份-->
+                                <div id="appropriateType3LetterBudgetReview" class="layer3">
+                                    <label for="appropriateType3LetterReviewYear" style="font-weight: lighter;">輸入預算年份：
+                                        <input type="text" id="appropriateType3LetterReviewYear" class="blank" placeholder="如：333" width = "50px;" required>
+                                    </label>    
+                                </div>
+                            <br>
+                            <!--工管費部分-->
+                            <label for="appropriateType3LetterManagementFee">是否編列工管費？</label>
+                            <input type="radio" id="appropriateType3LetterYesManagementFee" name="appropriateType3LetterYesNoManagementFee" value="yes" required>
+                            <label for="appropriateType3LetterYesManagementFee">是</label>
+                            <input type="radio" id="appropriateType3LetterNoManagementFee" name="appropriateType3LetterYesNoManagementFee" value="no" required>
+                            <label for="appropriateType3LetterNoManagementFee">否</label>
+                                <!--輸入工管費年份-->
+                                <div id="appropriateType3LetterManagementFeeYear" class="layer3">
+                                    <label for="appropriateType3LetterManagementFee">輸入工管費年份：</label>
+                                    <input type="text" id="appropriateType3LetterManagementFee" placeholder="如：333" class="blank">
+                                </div>
+                            <br>
+                            <!--調整預算部分-->
+                            <label for="appropriateType3LetterSuggestedAmount">是否有調整額度？</label>
+                            <input type="radio" id="appropriateType3LetterYesSuggestedAmount" name="appropriateType3LetterYesNoSuggestedAmound" value="yes" required>
+                            <label for="appropriateType3LetterYesSuggestedAmount">是</label>
+                            <input type="radio" id="appropriateType3LetterNoSuggestedAmount" name="appropriateType3LetterYesNoSuggestedAmound" value="no" required>
+                            <label for="appropriateType3LetterNoSuggestedAmount">否</label>
+                        </div>
+                    </div>        
+                </div>

@@ -33,12 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Function to toggle the visibility of container divs
-    function toggleContainers() {
+    function toggleContainersWithSelection() {
         console.log('Toggling containers'); // Log that containers are being toggled
+        console.log('Executing toggleContainersWithSelection');
         hideAll(Array.from(allContainers.children)); // Hide all container divs
         const selectedContainer = document.querySelector('input[name="containers"]:checked'); // Get the selected container radio button
         if (selectedContainer) { // If a container is selected
-            const containerDiv = document.getElementById(`${selectedContainer.value}Div`); // Get the corresponding container div
+            const containerDiv = document.getElementById(`${selectedContainer.value}`); // Get the corresponding container div
             console.log('Selected container:', selectedContainer.value, containerDiv); // Log the selected container and its div
             if (containerDiv) {
                 showElement(containerDiv); // Show the selected container div
@@ -47,15 +48,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Function to toggle the visibility of type divs within the selected container
-    function toggleTypes() {
+    function toggleTypesWithSelection() {
         console.log('Toggling types'); // Log that types are being toggled
+        console.log('Executing toggleTypesWithSelection');
         hideAll(document.querySelectorAll('.type')); // Hide all type divs
         hideAll(contentDivs); // Hide all content divs
         const selectedContainer = document.querySelector('input[name="containers"]:checked'); // Get the selected container radio button
         if (selectedContainer) { // If a container is selected
             const selectedType = document.querySelector(`input[name="${selectedContainer.value}Types"]:checked`); // Get the selected type radio button within the container
             if (selectedType) { // If a type is selected
-                const typeDiv = document.getElementById(`${selectedType.value}Div`); // Get the corresponding type div
+                const typeDiv = document.getElementById(`${selectedType.value}`); // Get the corresponding type div
                 console.log('Selected type:', selectedType.value, typeDiv); // Log the selected type and its div
                 if (typeDiv) {
                     showElement(typeDiv); // Show the selected type div
@@ -65,8 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Function to toggle the visibility of kind divs within the selected type
-    function toggleKinds() {
+    function toggleKindsWithSelection() {
         console.log('Toggling kinds'); // Log that kinds are being toggled
+        console.log('Executing toggleKindsWithSelection');
         hideAll(contentDivs); // Hide all content divs
         const selectedContainer = document.querySelector('input[name="containers"]:checked'); // Get the selected container radio button
         if (selectedContainer) { // If a container is selected
@@ -107,39 +110,39 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add event listeners to container radio buttons
     containerRadios.forEach(radio => {
         radio.addEventListener('change', () => {
-            toggleContainers(); // Toggle containers when a container radio button is changed
-            toggleTypes(); // Toggle types when a container radio button is changed
-            toggleKinds(); // Toggle kinds when a container radio button is changed
+            toggleContainersWithSelection(); // Toggle containers when a container radio button is changed
+            toggleTypesWithSelection(); // Toggle types when a container radio button is changed
+            toggleKindsWithSelection(); // Toggle kinds when a container radio button is changed
         });
     });
 
     // Add event listener to handle changes to type and kind radio buttons
     typeRadios.forEach(radio => {
         radio.addEventListener('change', () => {
-            toggleTypes(); // Toggle types when a type radio button is changed
-            toggleKinds(); // Toggle kinds when a type radio button is changed
+            toggleTypesWithSelection(); // Toggle types when a type radio button is changed
+            toggleKindsWithSelection(); // Toggle kinds when a type radio button is changed
         });
     });
 
+    // Add event listener to handle changes to kind radio buttons
     kindRadios.forEach(radio => {
-        radio.addEventListener('change', toggleKinds); // Toggle kinds when a kind radio button is changed
+        radio.addEventListener('change', toggleKindsWithSelection); // Toggle kinds when a kind radio button is changed
     });
 
-    // Add event listener to the submit button to validate the form and display the result
+    // Add event listener to handle the form submission
     submitButton.addEventListener('click', (e) => {
         e.preventDefault(); // Prevent the default form submission behavior
-        if (validateForm()) { // If the form is valid
+        if (validateForm()) { // Validate the form
             const selectedContainer = document.querySelector('input[name="containers"]:checked'); // Get the selected container radio button
             const selectedType = document.querySelector(`input[name="${selectedContainer.value}Types"]:checked`); // Get the selected type radio button within the container
             const selectedKind = document.querySelector(`input[name="${selectedType.value}Kinds"]:checked`); // Get the selected kind radio button within the type
             const resultText = `Selected Container: ${selectedContainer.id}, Selected Type: ${selectedType.id}, Selected Kind: ${selectedKind.id}`; // Construct the result text
-            result.textContent = resultText; // Display the result
+            result.textContent = resultText; // Display the result text
         }
     });
 
-    // Initial state
-    hideAll(Array.from(allContainers.children)); // Hide all container divs initially
-    hideAll(document.querySelectorAll('.type')); // Hide all type divs initially
-    hideAll(document.querySelectorAll('.kind')); // Hide all kind divs initially
-    hideAll(contentDivs); // Hide all content divs initially
+    // Initial state: Hide all containers, types, kinds, and content divs
+    hideAll(Array.from(allContainers.children));
+    hideAll(document.querySelectorAll('.type'));
+    hideAll(contentDivs);
 });
