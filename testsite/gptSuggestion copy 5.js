@@ -1,22 +1,30 @@
+
+// Work
+// On
+// This
+// Version
+// You
+// Can
+// Do
+// It
+// !
+// Try
+// Not
+// To
+// AI
+// !
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Select all radio buttons for choosing containers
     const containerRadios = document.querySelectorAll('input[name="containers"]');
-    // Select the parent div containing all container divs
     const allContainers = document.getElementById('allContainers');
-    // Select all radio buttons for choosing types within containers
     const typeRadios = document.querySelectorAll('input[name^="container"][name$="Types"]');
-    // Select all radio buttons for choosing kinds within types
     const kindRadios = document.querySelectorAll('input[name$="Kinds"]');
-    // Select all content divs
     const contentDivs = document.querySelectorAll('.content');
-    // Select the submit button
     const submitButton = document.getElementById('submit');
-    // Select the div where the result will be displayed
     const result = document.getElementById('result');
 
     // Function to hide all specified elements and disable their inputs
     function hideAll(elements) {
-        console.log('Hiding elements:', elements);
         elements.forEach(element => {
             element.style.display = 'none';
             const inputs = element.querySelectorAll('input');
@@ -26,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to show a specific element and enable its inputs
     function showElement(element) {
-        console.log('Showing element:', element);
         element.style.display = 'block';
         const inputs = element.querySelectorAll('input');
         inputs.forEach(input => input.disabled = false);
@@ -34,13 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to toggle the visibility of container divs
     function toggleContainersWithSelection() {
-        console.log('Toggling containers'); // Log that containers are being toggled
-        console.log('Executing toggleContainersWithSelection');
         hideAll(Array.from(allContainers.children)); // Hide all container divs
         const selectedContainer = document.querySelector('input[name="containers"]:checked'); // Get the selected container radio button
         if (selectedContainer) { // If a container is selected
             const containerDiv = document.getElementById(`${selectedContainer.value}`); // Get the corresponding container div
-            console.log('Selected container:', selectedContainer.value, containerDiv); // Log the selected container and its div
             if (containerDiv) {
                 showElement(containerDiv); // Show the selected container div
             }
@@ -49,8 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to toggle the visibility of type divs within the selected container
     function toggleTypesWithSelection() {
-        console.log('Toggling types'); // Log that types are being toggled
-        console.log('Executing toggleTypesWithSelection');
         hideAll(document.querySelectorAll('.type')); // Hide all type divs
         hideAll(contentDivs); // Hide all content divs
         const selectedContainer = document.querySelector('input[name="containers"]:checked'); // Get the selected container radio button
@@ -58,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const selectedType = document.querySelector(`input[name="${selectedContainer.value}Types"]:checked`); // Get the selected type radio button within the container
             if (selectedType) { // If a type is selected
                 const typeDiv = document.getElementById(`${selectedType.value}`); // Get the corresponding type div
-                console.log('Selected type:', selectedType.value, typeDiv); // Log the selected type and its div
                 if (typeDiv) {
                     showElement(typeDiv); // Show the selected type div
                 }
@@ -68,8 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to toggle the visibility of kind divs within the selected type
     function toggleKindsWithSelection() {
-        console.log('Toggling kinds'); // Log that kinds are being toggled
-        console.log('Executing toggleKindsWithSelection');
         hideAll(contentDivs); // Hide all content divs
         const selectedContainer = document.querySelector('input[name="containers"]:checked'); // Get the selected container radio button
         if (selectedContainer) { // If a container is selected
@@ -78,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const selectedKind = document.querySelector(`input[name="${selectedType.value}Kinds"]:checked`); // Get the selected kind radio button within the type
                 if (selectedKind) { // If a kind is selected
                     const contentDiv = document.getElementById(`${selectedKind.value}Content`); // Get the corresponding content div
-                    console.log('Selected kind:', selectedKind.value, contentDiv); // Log the selected kind and its div
                     if (contentDiv) {
                         showElement(contentDiv); // Show the selected content div
                     }
